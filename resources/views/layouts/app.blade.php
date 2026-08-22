@@ -31,10 +31,10 @@
                 </a>
             </div>
             <div class="hidden md:flex items-center gap-6 font-medium">
-                <a href="#" class="hover:text-gray-900 transition-colors duration-300">About Us</a>
+                <a href="/about" wire:navigate class="hover:text-gray-900 transition-colors duration-300">About Us</a>
                 <a href="#" class="hover:text-gray-900 transition-colors duration-300">Our Team</a>
-                <a href="#" class="hover:text-gray-900 transition-colors duration-300">Contact</a>
-                <a href="#" class="hover:text-gray-900 transition-colors duration-300">Careers</a>
+                <a href="/contact" wire:navigate class="hover:text-gray-900 transition-colors duration-300">Contact</a>
+                <a href="/careers" wire:navigate class="hover:text-gray-900 transition-colors duration-300">Careers</a>
                 <a href="#" class="hover:text-gray-900 transition-colors duration-300">Gallery</a>
             </div>
         </div>
@@ -161,7 +161,7 @@
                         class="w-10 h-10 rounded-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-800 dark:hover:bg-blue-700 transition flex items-center justify-center">
                         <ion-icon name="moon-outline" id="themeIcon" class="text-xl"></ion-icon>
                     </button>
-                    <a href="#"
+                    <a href="/book" wire:navigate
                         class="bg-amber-500 hover:bg-amber-400 px-5 py-3 rounded-full text-black font-semibold flex items-center gap-2 transition">
                         Book Consulatancy
                         <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -187,7 +187,7 @@
                 </button>
             </div>
             <div class="p-5">
-                <a href="#" class="block py-3 font-medium border-b dark:border-gray-800">Home</a>
+                <a href="/" wire:navigate class="block py-3 font-medium border-b dark:border-gray-800">Home</a>
                 <a href="#" class="block py-3 font-medium border-b dark:border-gray-800">Webinars</a>
                 <!-- Data Protection -->
                 <details class="border-b dark:border-gray-800 group">
@@ -255,7 +255,7 @@
                         <ion-icon name="moon-outline" id="mobileThemeIcon"></ion-icon>
                         <span>Dark Mode</span>
                     </button>
-                    <a href="#"
+                    <a href="/book" wire:navigate
                         class="flex items-center justify-center gap-2 text-black bg-amber-500 hover:bg-amber-400 py-3 rounded-lg font-semibold transition">
                         Book Consultancy
                         <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -312,11 +312,11 @@
                 <div class="lg:col-span-2">
                     <h3 class="footer-title">Company</h3>
                     <ul class="footer-links">
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="/about" wire:navigate>About Us</a></li>
                         <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="/careers" wire:navigate>Careers</a></li>
                         <li><a href="#">Insights</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/contact" wire:navigate>Contact</a></li>
                     </ul>
                 </div>
                 <!-- Contact -->

@@ -15,13 +15,13 @@ new class extends Component
         <div class="relative max-w-7xl mx-auto px-6 py-20 lg:py-28">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <div
+                    <div data-aos="fade-down"
                         class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white dark:bg-gray-800 border border-blue-100 dark:border-gray-700 shadow-sm">
                         <span class="w-2.5 h-2.5 rounded-full bg-accent-yellow animate-pulse"></span>
                         <span class="text-sm font-semibold text-blue-700 dark:text-blue-400">Trusted Technology
                             Partner in East Africa</span>
                     </div>
-                    <h1
+                    <h1 data-aos="fade-up"
                         class="mt-8 text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white">
                         Protect Your Data.
                         <br>
@@ -29,14 +29,16 @@ new class extends Component
                         <br>
                         Transform Through Technology.
                     </h1>
-                    <p class="mt-8 text-lg text-slate-600 dark:text-gray-300 leading-8 max-w-2xl">
+                    <p data-aos="fade-up" data-aos-delay="100"
+                        class="mt-8 text-lg text-slate-600 dark:text-gray-300 leading-8 max-w-2xl">
                         South-End Tech helps organizations protect sensitive
                         information, strengthen cybersecurity, comply with
                         data protection regulations, and unlock business value
                         through AI-powered digital solutions.
                     </p>
-                    <div class="mt-10 grid text-center items-center md:flex flex-wrap gap-4">
-                        <a href="#contact"
+                    <div data-aos="fade-up" data-aos-delay="200"
+                        class="mt-10 grid text-center items-center md:flex flex-wrap gap-4">
+                        <a href="/book" wire:navigate
                             class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent-yellow hover:bg-amber-400 text-slate-900 font-bold shadow-lg transition">
                             <ion-icon name="calendar-outline" class="text-xl"></ion-icon>
                             Book a Consultation
@@ -47,7 +49,8 @@ new class extends Component
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </a>
                     </div>
-                    <div class="mt-10 flex flex-wrap gap-5 text-slate-700 dark:text-gray-300">
+                    <div data-aos="fade-up" data-aos-delay="300"
+                        class="mt-10 flex flex-wrap gap-5 text-slate-700 dark:text-gray-300">
                         <div class="flex items-center gap-2">
                             <ion-icon name="checkmark-circle" class="text-green-500 text-xl"></ion-icon>
                             <span>Data Protection</span>
@@ -62,7 +65,7 @@ new class extends Component
                         </div>
                     </div>
                 </div>
-                <div class="relative">
+                <div class="relative" data-aos="zoom-in" data-aos-duration="1000">
                     <div
                         class="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-gray-700 shadow-2xl bg-white dark:bg-gray-800">
                         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
@@ -78,7 +81,7 @@ new class extends Component
     <!-- ===== PARTNERS MARQUEE ===== -->
     <section class="py-10 dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 mb-8">
-            <div class="text-center">
+            <div class="text-center" data-aos="fade-up">
                 <p class="text-sm font-semibold tracking-[0.25em] uppercase text-amber-600">Trusted Technology
                     Partners</p>
                 <h2 class="mt-2 text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Powered by
@@ -137,7 +140,7 @@ new class extends Component
     <!-- ===== DIGITAL CHALLENGE ===== -->
     <section class="relative py-24 border-y border-slate-200 bg-slate-50 dark:bg-slate-900 overflow-hidden">
         <div class="relative max-w-7xl mx-auto px-6">
-            <div class="max-w-3xl mb-16">
+            <div class="max-w-3xl mb-16" data-aos="fade-up">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-700 dark:text-amber-400 text-sm font-semibold">
                     <ion-icon name="alert-circle-outline"></ion-icon>
@@ -159,7 +162,7 @@ new class extends Component
                 <div>
                     <h3 class="text-2xl font-bold mb-8">Organizations today face:</h3>
                     <div class="space-y-5">
-                        <div
+                        <div data-aos="fade-right"
                             class="flex gap-5 items-start p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-amber-400 transition">
                             <div
                                 class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-50 dark:bg-red-500/10 flex items-center justify-center">
@@ -172,7 +175,7 @@ new class extends Component
                                     customer trust.</p>
                             </div>
                         </div>
-                        <div
+                        <div data-aos="fade-right" data-aos-delay="100"
                             class="flex gap-5 items-start p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-amber-400 transition">
                             <div
                                 class="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center">
@@ -185,7 +188,7 @@ new class extends Component
                                 </p>
                             </div>
                         </div>
-                        <div
+                        <div data-aos="fade-right" data-aos-delay="200"
                             class="flex gap-5 items-start p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-amber-400 transition">
                             <div
                                 class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center">
@@ -201,7 +204,7 @@ new class extends Component
                         </div>
                     </div>
                 </div>
-                <div class="relative rounded-3xl bg-blue-950 text-white p-10 overflow-hidden">
+                <div class="relative rounded-3xl bg-blue-950 text-white p-10 overflow-hidden" data-aos="fade-left">
                     <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-amber-400/20 blur-3xl"></div>
                     <div class="relative">
                         <div class="w-16 h-16 rounded-2xl bg-amber-500 flex items-center justify-center mb-8">
@@ -225,11 +228,11 @@ new class extends Component
                                 <span>Scalable technology solutions</span>
                             </div>
                         </div>
-                        <button
-                            class="mt-10 bg-amber-500 hover:bg-amber-600 px-7 py-3 rounded-xl font-semibold flex items-center gap-2 transition">
+                        <a href="/about" wire:navigate
+                            class="mt-10 bg-amber-500 hover:bg-amber-600 px-7 py-3 rounded-xl font-semibold flex items-center gap-2 transition w-fit">
                             Discover How We Help
                             <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -239,7 +242,7 @@ new class extends Component
     <!-- ===== SOLUTIONS ===== -->
     <section class="relative py-24 bg-white dark:bg-slate-950 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-3xl mb-20">
+            <div class="max-w-3xl mb-20" data-aos="fade-up">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-600 font-semibold text-sm">
                     <ion-icon name="layers-outline"></ion-icon>
@@ -255,8 +258,8 @@ new class extends Component
             </div>
 
             <!-- Data Protection -->
-            <div class="grid lg:grid-cols-12 gap-12 items-center mb-24">
-                <div class="lg:col-span-5">
+            <div class="grid lg:grid-cols-12 gap-12 items-center mb-24" data-aos="fade-up">
+                <div class="lg:col-span-5" data-aos="fade-right">
                     <div
                         class="rounded-3xl bg-linear-to-br from-amber-400 to-yellow-600 p-10 min-h-105 relative overflow-hidden">
                         <div class="absolute right-0 bottom-0 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
@@ -270,7 +273,7 @@ new class extends Component
                         </div>
                     </div>
                 </div>
-                <div class="lg:col-span-7">
+                <div class="lg:col-span-7" data-aos="fade-left">
                     <h4 class="text-3xl font-bold dark:text-white">Protect Your Data. Stay Compliant.</h4>
                     <div class="mt-6 grid sm:grid-cols-2 gap-4">
                         <div class="service-item">Data Protection Officer as a Service</div>
@@ -279,14 +282,14 @@ new class extends Component
                         <div class="service-item">Privacy Audits</div>
                         <div class="service-item">Data Protection Impact Assessments</div>
                     </div>
-                    <button class="solution-btn">Explore Data Protection Solutions <ion-icon
-                            name="arrow-forward-outline"></ion-icon></button>
+                    <a href="/book" wire:navigate class="solution-btn">Explore Data Protection Solutions <ion-icon
+                            name="arrow-forward-outline"></ion-icon></a>
                 </div>
             </div>
 
             <!-- Cybersecurity -->
             <div class="grid lg:grid-cols-12 gap-12 items-center mb-24">
-                <div class="lg:col-span-7 lg:order-1">
+                <div class="lg:col-span-7 lg:order-1" data-aos="fade-right">
                     <h4 class="text-3xl font-bold dark:text-white">Defend Your Organization Against Evolving Cyber
                         Threats</h4>
                     <div class="mt-6 grid sm:grid-cols-2 gap-4">
@@ -297,10 +300,10 @@ new class extends Component
                         <div class="service-item">Network Security</div>
                         <div class="service-item">Backup & Disaster Recovery</div>
                     </div>
-                    <button class="solution-btn">Secure Your Business <ion-icon name="arrow-forward-outline">
-                        </ion-icon></button>
+                    <a href="/book" wire:navigate class="solution-btn">Secure Your Business <ion-icon name="arrow-forward-outline">
+                        </ion-icon></a>
                 </div>
-                <div class="lg:col-span-5 lg:order-2">
+                <div class="lg:col-span-5 lg:order-2" data-aos="fade-left">
                     <div
                         class="rounded-3xl bg-linear-to-br from-blue-950 to-blue-700 p-10 min-h-105 text-white relative overflow-hidden">
                         <div class="absolute top-0 right-0 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl"></div>
@@ -318,7 +321,7 @@ new class extends Component
 
             <!-- Data AI -->
             <div class="grid lg:grid-cols-12 gap-12 items-center mb-24">
-                <div class="lg:col-span-5">
+                <div class="lg:col-span-5" data-aos="fade-right">
                     <div class="rounded-3xl bg-linear-to-br from-amber-400 to-yellow-600 p-10 min-h-105 text-white">
                         <div class="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center mb-8">
                             <ion-icon name="analytics-outline" class="text-5xl"></ion-icon>
@@ -327,7 +330,7 @@ new class extends Component
                         <p class="mt-5 text-white/90">Turn your data into insights that drive better decisions.</p>
                     </div>
                 </div>
-                <div class="lg:col-span-7">
+                <div class="lg:col-span-7" data-aos="fade-left">
                     <h4 class="text-3xl font-bold dark:text-white">Unlock The Value Hidden In Your Data</h4>
                     <div class="mt-6 grid sm:grid-cols-2 gap-4">
                         <div class="service-item">Data Governance</div>
@@ -336,14 +339,14 @@ new class extends Component
                         <div class="service-item">AI Solutions</div>
                         <div class="service-item">Analytics Consulting</div>
                     </div>
-                    <button class="solution-btn">Unlock Your Data Potential <ion-icon name="arrow-forward-outline">
-                        </ion-icon></button>
+                    <a href="/book" wire:navigate class="solution-btn">Unlock Your Data Potential <ion-icon name="arrow-forward-outline">
+                        </ion-icon></a>
                 </div>
             </div>
 
             <!-- Digital Transformation -->
             <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7">
+                <div class="lg:col-span-7" data-aos="fade-right">
                     <h4 class="text-3xl font-bold dark:text-white">Modernize Operations Through Smart Technology
                     </h4>
                     <div class="mt-6 grid sm:grid-cols-2 gap-4">
@@ -353,10 +356,10 @@ new class extends Component
                         <div class="service-item">E-Government Solutions</div>
                         <div class="service-item">Software Development</div>
                     </div>
-                    <button class="solution-btn">Transform Your Business <ion-icon name="arrow-forward-outline">
-                        </ion-icon></button>
+                    <a href="/book" wire:navigate class="solution-btn">Transform Your Business <ion-icon name="arrow-forward-outline">
+                        </ion-icon></a>
                 </div>
-                <div class="lg:col-span-5">
+                <div class="lg:col-span-5" data-aos="fade-left">
                     <div class="rounded-3xl bg-linear-to-br from-blue-950 to-blue-700 p-10 min-h-105 text-white">
                         <div class="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center mb-8">
                             <ion-icon name="rocket-outline" class="text-5xl"></ion-icon>
@@ -376,7 +379,7 @@ new class extends Component
         <div class="absolute bottom-0 left-0 w-80 h-80 bg-blue-900/10 rounded-full blur-3xl"></div>
         <div class="relative max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-5">
+                <div class="lg:col-span-5" data-aos="fade-right">
                     <div
                         class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-600 font-semibold text-sm">
                         <ion-icon name="star-outline"></ion-icon>
@@ -399,16 +402,16 @@ new class extends Component
                         </div>
                     </div>
                 </div>
-                <div class="lg:col-span-7">
+                <div class="lg:col-span-7" data-aos="fade-left">
                     <div class="grid sm:grid-cols-2 gap-6">
-                        <div class="why-card">
+                        <div class="why-card" data-aos="fade-up">
                             <div class="why-icon bg-amber-100 dark:bg-amber-500/20">
                                 <ion-icon name="globe-outline" class="text-amber-600"></ion-icon>
                             </div>
                             <h3>Deep Local Expertise</h3>
                             <p>Understanding East Africa's technology, business, and compliance environment.</p>
                         </div>
-                        <div class="why-card">
+                        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
                             <div class="why-icon bg-blue-100 dark:bg-blue-900/40">
                                 <ion-icon name="shield-checkmark-outline" class="text-blue-900 dark:text-blue-400">
                                 </ion-icon>
@@ -416,14 +419,14 @@ new class extends Component
                             <h3>Security-First Approach</h3>
                             <p>Solutions designed to reduce risk and protect critical business assets.</p>
                         </div>
-                        <div class="why-card">
+                        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
                             <div class="why-icon bg-amber-100 dark:bg-amber-500/20">
                                 <ion-icon name="document-text-outline" class="text-amber-600"></ion-icon>
                             </div>
                             <h3>Regulatory Knowledge</h3>
                             <p>Helping organizations navigate Kenya's Data Protection Act and compliance needs.</p>
                         </div>
-                        <div class="why-card">
+                        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
                             <div class="why-icon bg-blue-100 dark:bg-blue-900/40">
                                 <ion-icon name="business-outline" class="text-blue-900 dark:text-blue-400">
                                 </ion-icon>
@@ -431,7 +434,7 @@ new class extends Component
                             <h3>Enterprise Solutions, Accessible Support</h3>
                             <p>Powerful technology solutions designed for organizations of every size.</p>
                         </div>
-                        <div class="why-card sm:col-span-2">
+                        <div class="why-card sm:col-span-2" data-aos="fade-up" data-aos-delay="400">
                             <div class="why-icon bg-amber-100 dark:bg-amber-500/20">
                                 <ion-icon name="people-outline" class="text-amber-600"></ion-icon>
                             </div>
@@ -450,7 +453,7 @@ new class extends Component
         <div class="absolute top-20 left-0 w-80 h-80 bg-amber-400/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
         <div class="relative max-w-7xl mx-auto px-6">
-            <div class="max-w-3xl mb-16">
+            <div class="max-w-3xl mb-16" data-aos="fade-up">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-600 font-semibold text-sm">
                     <ion-icon name="business-outline"></ion-icon>
@@ -466,7 +469,7 @@ new class extends Component
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Financial -->
-                <div class="industry-card">
+                <div class="industry-card" data-aos="fade-up">
                     <div class="industry-icon bg-amber-100 dark:bg-amber-500/20">
                         <ion-icon name="card-outline" class="text-amber-600"></ion-icon>
                     </div>
@@ -479,7 +482,7 @@ new class extends Component
                     </div>
                 </div>
                 <!-- NGOs -->
-                <div class="industry-card">
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="industry-icon bg-blue-100 dark:bg-blue-900/40">
                         <ion-icon name="people-outline" class="text-blue-900 dark:text-blue-400"></ion-icon>
                     </div>
@@ -492,7 +495,7 @@ new class extends Component
                     </div>
                 </div>
                 <!-- Healthcare -->
-                <div class="industry-card">
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="industry-icon bg-amber-100 dark:bg-amber-500/20">
                         <ion-icon name="medkit-outline" class="text-amber-600"></ion-icon>
                     </div>
@@ -505,7 +508,7 @@ new class extends Component
                     </div>
                 </div>
                 <!-- Government -->
-                <div class="industry-card">
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="industry-icon bg-blue-100 dark:bg-blue-900/40">
                         <ion-icon name="flag-outline" class="text-blue-900 dark:text-blue-400"></ion-icon>
                     </div>
@@ -518,7 +521,7 @@ new class extends Component
                     </div>
                 </div>
                 <!-- SMEs -->
-                <div class="industry-card">
+                <div class="industry-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="industry-icon bg-amber-100 dark:bg-amber-500/20">
                         <ion-icon name="storefront-outline" class="text-amber-600"></ion-icon>
                     </div>
@@ -531,17 +534,18 @@ new class extends Component
                     </div>
                 </div>
                 <!-- CTA Card -->
-                <div class="industry-card bg-blue-950 text-white border-blue-950">
+                <div class="industry-card bg-blue-950 text-white border-blue-950" data-aos="zoom-in" data-aos-delay="500">
                     <div class="industry-icon bg-amber-500">
                         <ion-icon name="arrow-forward-outline" class="text-white"></ion-icon>
                     </div>
                     <h3 class="!text-white">Need A Custom Solution?</h3>
                     <p class="!text-blue-100">Our specialists work with organizations across sectors to design
                         solutions aligned with their goals.</p>
-                    <button class="mt-5 inline-flex items-center gap-2 bg-amber-500 px-5 py-3 rounded-xl font-semibold">
+                    <a href="/contact" wire:navigate
+                        class="mt-5 inline-flex items-center gap-2 bg-amber-500 px-5 py-3 rounded-xl font-semibold">
                         Talk To Our Experts
                         <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -551,7 +555,7 @@ new class extends Component
     <section class="relative py-24 bg-slate-50 dark:bg-slate-900 overflow-hidden">
         <div class="absolute top-0 right-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl"></div>
         <div class="max-w-7xl mx-auto px-6 relative">
-            <div class="max-w-3xl mx-auto text-center mb-16">
+            <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-600 font-semibold text-sm">
                     <ion-icon name="git-branch-outline"></ion-icon>
@@ -569,23 +573,23 @@ new class extends Component
                 <div
                     class="absolute top-12 left-[12%] right-[12%] h-1 bg-linear-to-r from-amber-400 via-blue-900 to-amber-400">
                 </div>
-                <div class="process-card">
+                <div class="process-card" data-aos="zoom-in">
                     <div class="step-number">01</div>
                     <h3>Understand</h3>
                     <p>We assess your current technology, security, and compliance environment to understand your
                         challenges.</p>
                 </div>
-                <div class="process-card">
+                <div class="process-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="step-number">02</div>
                     <h3>Recommend</h3>
                     <p>We design practical solutions aligned with your business objectives, risks, and budget.</p>
                 </div>
-                <div class="process-card">
+                <div class="process-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="step-number">03</div>
                     <h3>Implement</h3>
                     <p>Our experts deploy, configure, and integrate the required technology solutions.</p>
                 </div>
-                <div class="process-card">
+                <div class="process-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="step-number">04</div>
                     <h3>Support</h3>
                     <p>We continuously monitor, improve, and protect your environment as your technology partner.
@@ -600,21 +604,21 @@ new class extends Component
                         <p>We assess your technology, security, and compliance environment.</p>
                     </div>
                 </div>
-                <div class="mobile-process">
+                <div class="mobile-process" data-aos="fade-up" data-aos-delay="100">
                     <div class="step-number">02</div>
                     <div>
                         <h3>Recommend</h3>
                         <p>We design solutions aligned with your business needs.</p>
                     </div>
                 </div>
-                <div class="mobile-process">
+                <div class="mobile-process" data-aos="fade-up" data-aos-delay="200">
                     <div class="step-number">03</div>
                     <div>
                         <h3>Implement</h3>
                         <p>Our experts deploy and integrate the required solutions.</p>
                     </div>
                 </div>
-                <div class="mobile-process">
+                <div class="mobile-process" data-aos="fade-up" data-aos-delay="300">
                     <div class="step-number">04</div>
                     <div>
                         <h3>Support</h3>
@@ -629,7 +633,7 @@ new class extends Component
     <section class="relative py-24 bg-white dark:bg-slate-950 overflow-hidden">
         <div class="absolute top-0 left-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl"></div>
         <div class="relative max-w-7xl mx-auto px-6">
-            <div class="max-w-3xl mb-16">
+            <div class="max-w-3xl mb-16" data-aos="fade-up">
                 <div
                     class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/30 text-amber-600 font-semibold text-sm">
                     <ion-icon name="ribbon-outline"></ion-icon>
@@ -644,7 +648,7 @@ new class extends Component
                     challenges.</p>
             </div>
             <div class="grid lg:grid-cols-3 gap-8">
-                <article class="testimonial-card">
+                <article class="testimonial-card" data-aos="fade-up">
                     <div class="flex items-center justify-between mb-8">
                         <div
                             class="w-14 h-14 rounded-xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center">
@@ -666,7 +670,7 @@ new class extends Component
                         <p class="text-sm text-slate-500">Data Protection Services</p>
                     </div>
                 </article>
-                <article class="testimonial-card">
+                <article class="testimonial-card" data-aos="fade-up" data-aos-delay="150">
                     <div class="flex items-center justify-between mb-8">
                         <div
                             class="w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center">
@@ -690,7 +694,7 @@ new class extends Component
                         <p class="text-sm text-slate-500">Data Protection Partner</p>
                     </div>
                 </article>
-                <article class="testimonial-card">
+                <article class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex items-center justify-between mb-8">
                         <div
                             class="w-14 h-14 rounded-xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center">
@@ -714,12 +718,12 @@ new class extends Component
                     </div>
                 </article>
             </div>
-            <div class="text-center mt-12">
-                <button
-                    class="inline-flex items-center gap-3 bg-blue-950 hover:bg-amber-500 text-white px-8 py-4 rounded-xl font-semibold transition">
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="/about" wire:navigate
+                    class="inline-flex items-center gap-3 bg-blue-950 hover:bg-accent-yellow text-white hover:text-slate-900 px-8 py-4 rounded-xl font-semibold transition">
                     View More Success Stories
                     <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -729,7 +733,7 @@ new class extends Component
         <div class="absolute top-0 right-0 w-80 h-80 bg-amber-400/10 rounded-full blur-3xl"></div>
         <div class="relative max-w-7xl mx-auto px-6">
             <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-14">
-                <div class="max-w-3xl">
+                <div class="max-w-3xl" data-aos="fade-up">
                     <div
                         class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-amber-600 font-semibold text-sm">
                         <ion-icon name="book-outline"></ion-icon>
@@ -742,14 +746,14 @@ new class extends Component
                         cybersecurity, compliance, artificial intelligence, and data protection to help your
                         organization make informed technology decisions.</p>
                 </div>
-                <button
+                <a href="/contact" wire:navigate
                     class="inline-flex items-center gap-2 bg-blue-950 hover:bg-amber-500 text-white px-7 py-3 rounded-xl font-semibold transition">
                     View All Resources
                     <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
+                </a>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="resource-card">
+                <div class="resource-card" data-aos="fade-up">
                     <div class="resource-icon bg-blue-100 dark:bg-blue-900/40">
                         <ion-icon name="shield-outline" class="text-blue-900 dark:text-blue-400"></ion-icon>
                     </div>
@@ -758,7 +762,7 @@ new class extends Component
                     <a href="#" class="resource-link">Explore Articles <ion-icon name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
-                <div class="resource-card">
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="resource-icon bg-amber-100 dark:bg-amber-500/20">
                         <ion-icon name="document-text-outline" class="text-amber-600"></ion-icon>
                     </div>
@@ -767,7 +771,7 @@ new class extends Component
                     <a href="#" class="resource-link">Explore Articles <ion-icon name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
-                <div class="resource-card">
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="resource-icon bg-blue-100 dark:bg-blue-900/40">
                         <ion-icon name="sparkles-outline" class="text-blue-900 dark:text-blue-400"></ion-icon>
                     </div>
@@ -776,7 +780,7 @@ new class extends Component
                     <a href="#" class="resource-link">Explore Articles <ion-icon name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
-                <div class="resource-card">
+                <div class="resource-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="resource-icon bg-amber-100 dark:bg-amber-500/20">
                         <ion-icon name="lock-closed-outline" class="text-amber-600"></ion-icon>
                     </div>
@@ -786,7 +790,8 @@ new class extends Component
                         </ion-icon></a>
                 </div>
             </div>
-            <div class="mt-16 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-8">
+            <div class="mt-16 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 p-8"
+                data-aos="fade-up">
                 <div class="flex items-center gap-3 mb-6">
                     <ion-icon name="newspaper-outline" class="text-amber-500 text-2xl"></ion-icon>
                     <h3 class="text-xl font-bold dark:text-white">Featured Insights</h3>
@@ -816,30 +821,33 @@ new class extends Component
         <div class="absolute top-0 right-0 w-125 h-125 bg-amber-500/20 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 w-87.5 h-87.5 bg-blue-500/20 rounded-full blur-3xl"></div>
         <div class="relative max-w-5xl mx-auto px-6 text-center">
-            <div class="mx-auto w-20 h-20 rounded-2xl bg-amber-500 flex items-center justify-center mb-8">
+            <div class="mx-auto w-20 h-20 rounded-2xl bg-amber-500 flex items-center justify-center mb-8"
+                data-aos="zoom-in">
                 <ion-icon name="rocket-outline" class="text-5xl text-white"></ion-icon>
             </div>
-            <h2 class="text-4xl lg:text-6xl font-extrabold text-white leading-tight">
+            <h2 data-aos="fade-up" class="text-4xl lg:text-6xl font-extrabold text-white leading-tight">
                 Ready to Secure and
                 <span class="text-amber-400">Transform</span>
                 Your Organization?
             </h2>
-            <p class="mt-6 max-w-3xl mx-auto text-lg lg:text-xl text-blue-100 leading-relaxed">Whether you need
+            <p data-aos="fade-up" data-aos-delay="100"
+                class="mt-6 max-w-3xl mx-auto text-lg lg:text-xl text-blue-100 leading-relaxed">Whether you need
                 cybersecurity protection, data compliance support, AI solutions, or digital transformation
                 consulting, our experts are ready to help you build a safer and smarter future.</p>
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <button
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="/book" wire:navigate
                     class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold transition shadow-lg shadow-amber-500/30">
                     Schedule a Consultation
                     <ion-icon name="calendar-outline"></ion-icon>
-                </button>
-                <button
+                </a>
+                <a href="/contact" wire:navigate
                     class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl border border-white/30 hover:bg-white/10 text-white font-semibold transition">
                     Contact Our Team
                     <ion-icon name="chatbubble-outline"></ion-icon>
-                </button>
+                </a>
             </div>
-            <div class="mt-14 pt-8 border-t border-white/10 grid sm:grid-cols-3 gap-6">
+            <div class="mt-14 pt-8 border-t border-white/10 grid sm:grid-cols-3 gap-6" data-aos="fade-up"
+                data-aos-delay="300">
                 <div>
                     <p class="text-3xl font-extrabold text-amber-400">100+</p>
                     <p class="text-sm text-blue-200">Organizations Supported</p>
