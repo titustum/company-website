@@ -7,6 +7,9 @@
 
     <title>{{ $title ?? config('app.name') }}</title>
 
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon1.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/favicon1.png') }}">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @livewireStyles
@@ -44,8 +47,8 @@
     <nav class="sticky top-0 z-30 bg-blue-600 dark:bg-blue-900 text-white shadow-lg transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center justify-between h-20">
-                <a href="#" class="flex items-center shrink-0">
-                    <img src="https://southendtech.co.ke/static/img/for-blue.png" alt="SouthEnd Tech"
+                <a href="/" wire:navigate class="flex items-center shrink-0" aria-label="SouthEnd Tech — Home">
+                    <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech"
                         class="h-12 w-auto">
                 </a>
                 <ul class="hidden xl:flex items-center gap-6 text-[15px] font-medium">
@@ -180,7 +183,9 @@
         <aside id="mobileDrawer"
             class="absolute left-0 top-0 h-full w-80 max-w-[85%] bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 shadow-2xl -translate-x-full transition-transform duration-300 overflow-y-auto">
             <div class="bg-blue-600 dark:bg-blue-900 text-white px-5 h-20 flex items-center justify-between">
-                <img src="https://southendtech.co.ke/static/img/for-blue.png" class="h-10">
+                <a href="/" wire:navigate class="flex items-center" aria-label="SouthEnd Tech — Home">
+                    <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-10">
+                </a>
                 <button id="closeDrawer"
                     class="w-10 h-10 rounded-lg hover:bg-blue-700 flex items-center justify-center">
                     <ion-icon name="close-outline" class="text-3xl"></ion-icon>
@@ -279,8 +284,8 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-10">
                 <!-- Brand -->
                 <div class="lg:col-span-4">
-                    <a href="#" class="flex items-center gap-3 mb-6">
-                        <img src="https://southendtech.co.ke/static/img/for-blue.png" alt="South-End Tech"
+                    <a href="/" wire:navigate class="flex items-center gap-3 mb-6" aria-label="SouthEnd Tech — Home">
+                        <img src="{{ asset('images/logo.png') }}" alt="South-End Tech"
                             class="h-12 w-auto">
                     </a>
                     <p class="text-blue-100 leading-relaxed max-w-sm">South-End Tech Limited is a technology consulting
