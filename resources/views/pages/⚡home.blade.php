@@ -15,12 +15,6 @@ new class extends Component
         <div class="relative max-w-7xl mx-auto px-6 py-20 lg:py-28">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
-                    <div data-aos="fade-down"
-                        class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white dark:bg-gray-800 border border-blue-100 dark:border-gray-700 shadow-sm">
-                        <span class="w-2.5 h-2.5 rounded-full bg-accent-yellow animate-pulse"></span>
-                        <span class="text-sm font-semibold text-blue-700 dark:text-blue-400">Trusted Technology
-                            Partner in East Africa</span>
-                    </div>
                     <h1 data-aos="fade-up"
                         class="mt-8 text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white">
                         Protect Your Data.
@@ -260,14 +254,17 @@ new class extends Component
             <!-- Data Protection -->
             <div class="grid lg:grid-cols-12 gap-12 items-center mb-24" data-aos="fade-up">
                 <div class="lg:col-span-5" data-aos="fade-right">
-                    <div
-                        class="rounded-3xl bg-linear-to-br from-amber-400 to-yellow-600 p-10 min-h-105 relative overflow-hidden">
-                        <div class="absolute right-0 bottom-0 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
-                        <div class="relative">
-                            <div class="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center mb-8">
-                                <ion-icon name="shield-checkmark-outline" class="text-5xl text-white"></ion-icon>
+                    <div class="group relative rounded-3xl overflow-hidden min-h-105">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80"
+                            alt="Data protection and privacy" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
+                        </div>
+                        <div class="relative min-h-105 p-10 flex flex-col justify-end text-white">
+                            <div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
+                                <ion-icon name="shield-checkmark-outline" class="text-5xl"></ion-icon>
                             </div>
-                            <h3 class="text-4xl font-extrabold text-white">Data Protection<br>& Privacy</h3>
+                            <h3 class="text-4xl font-extrabold">Data Protection<br>& Privacy</h3>
                             <p class="mt-5 text-white/90">Protect personal data and achieve regulatory compliance
                                 while building customer trust.</p>
                         </div>
@@ -300,15 +297,19 @@ new class extends Component
                         <div class="service-item">Network Security</div>
                         <div class="service-item">Backup & Disaster Recovery</div>
                     </div>
-                    <a href="/book" wire:navigate class="solution-btn">Secure Your Business <ion-icon name="arrow-forward-outline">
+                    <a href="/book" wire:navigate class="solution-btn">Secure Your Business <ion-icon
+                            name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
                 <div class="lg:col-span-5 lg:order-2" data-aos="fade-left">
-                    <div
-                        class="rounded-3xl bg-linear-to-br from-blue-950 to-blue-700 p-10 min-h-105 text-white relative overflow-hidden">
-                        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl"></div>
-                        <div class="relative">
-                            <div class="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center mb-8">
+                    <div class="group relative rounded-3xl overflow-hidden min-h-105">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+                            alt="Cybersecurity operations" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
+                        </div>
+                        <div class="relative min-h-105 p-10 flex flex-col justify-end text-white">
+                            <div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
                                 <ion-icon name="lock-closed-outline" class="text-5xl"></ion-icon>
                             </div>
                             <h3 class="text-4xl font-extrabold">Cybersecurity<br>Solutions</h3>
@@ -322,12 +323,19 @@ new class extends Component
             <!-- Data AI -->
             <div class="grid lg:grid-cols-12 gap-12 items-center mb-24">
                 <div class="lg:col-span-5" data-aos="fade-right">
-                    <div class="rounded-3xl bg-linear-to-br from-amber-400 to-yellow-600 p-10 min-h-105 text-white">
-                        <div class="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center mb-8">
-                            <ion-icon name="analytics-outline" class="text-5xl"></ion-icon>
+                    <div class="group relative rounded-3xl overflow-hidden min-h-105">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                            alt="Data analytics dashboard" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
                         </div>
-                        <h3 class="text-4xl font-extrabold">Data,<br>AI & Analytics</h3>
-                        <p class="mt-5 text-white/90">Turn your data into insights that drive better decisions.</p>
+                        <div class="relative min-h-105 p-10 flex flex-col justify-end text-white">
+                            <div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
+                                <ion-icon name="analytics-outline" class="text-5xl"></ion-icon>
+                            </div>
+                            <h3 class="text-4xl font-extrabold">Data,<br>AI & Analytics</h3>
+                            <p class="mt-5 text-white/90">Turn your data into insights that drive better decisions.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="lg:col-span-7" data-aos="fade-left">
@@ -339,7 +347,8 @@ new class extends Component
                         <div class="service-item">AI Solutions</div>
                         <div class="service-item">Analytics Consulting</div>
                     </div>
-                    <a href="/book" wire:navigate class="solution-btn">Unlock Your Data Potential <ion-icon name="arrow-forward-outline">
+                    <a href="/book" wire:navigate class="solution-btn">Unlock Your Data Potential <ion-icon
+                            name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
             </div>
@@ -356,17 +365,25 @@ new class extends Component
                         <div class="service-item">E-Government Solutions</div>
                         <div class="service-item">Software Development</div>
                     </div>
-                    <a href="/book" wire:navigate class="solution-btn">Transform Your Business <ion-icon name="arrow-forward-outline">
+                    <a href="/book" wire:navigate class="solution-btn">Transform Your Business <ion-icon
+                            name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
                 <div class="lg:col-span-5" data-aos="fade-left">
-                    <div class="rounded-3xl bg-linear-to-br from-blue-950 to-blue-700 p-10 min-h-105 text-white">
-                        <div class="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center mb-8">
-                            <ion-icon name="rocket-outline" class="text-5xl"></ion-icon>
+                    <div class="group relative rounded-3xl overflow-hidden min-h-105">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
+                            alt="Digital transformation network" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
                         </div>
-                        <h3 class="text-4xl font-extrabold">Digital<br>Transformation</h3>
-                        <p class="mt-5 text-blue-100">Modernize operations through innovative technology and digital
-                            solutions.</p>
+                        <div class="relative min-h-105 p-10 flex flex-col justify-end text-white">
+                            <div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
+                                <ion-icon name="rocket-outline" class="text-5xl"></ion-icon>
+                            </div>
+                            <h3 class="text-4xl font-extrabold">Digital<br>Transformation</h3>
+                            <p class="mt-5 text-blue-100">Modernize operations through innovative technology and digital
+                                solutions.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -534,7 +551,8 @@ new class extends Component
                     </div>
                 </div>
                 <!-- CTA Card -->
-                <div class="industry-card bg-blue-950 text-white border-blue-950" data-aos="zoom-in" data-aos-delay="500">
+                <div class="industry-card bg-blue-950 text-white border-blue-950" data-aos="zoom-in"
+                    data-aos-delay="500">
                     <div class="industry-icon bg-amber-500">
                         <ion-icon name="arrow-forward-outline" class="text-white"></ion-icon>
                     </div>
