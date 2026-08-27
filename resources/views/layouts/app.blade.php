@@ -34,11 +34,9 @@
                 </a>
             </div>
             <div class="hidden md:flex items-center gap-6 font-medium">
-                <a href="/about" wire:navigate class="hover:text-gray-900 transition-colors duration-300">About Us</a>
-                <a href="#" class="hover:text-gray-900 transition-colors duration-300">Our Team</a>
-                <a href="/contact" wire:navigate class="hover:text-gray-900 transition-colors duration-300">Contact</a>
+                <a href="/contact" wire:navigate class="hover:text-gray-900 transition-colors duration-300">Contact
+                    Us</a>
                 <a href="/careers" wire:navigate class="hover:text-gray-900 transition-colors duration-300">Careers</a>
-                <a href="#" class="hover:text-gray-900 transition-colors duration-300">Gallery</a>
             </div>
         </div>
     </div>
@@ -48,130 +46,243 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center justify-between h-20">
                 <a href="/" wire:navigate class="flex items-center shrink-0" aria-label="SouthEnd Tech — Home">
-                    <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech"
-                        class="h-12 w-auto">
+                    <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-12 w-auto">
                 </a>
-                <ul class="hidden xl:flex items-center gap-6 text-[15px] font-medium">
-                    <li><a href="#" class="hover:text-amber-300 transition">Home</a></li>
-                    <li><a href="#" class="hover:text-amber-300 transition">Webinars</a></li>
-                    <!-- Data Protection -->
+
+                <ul class="hidden lg:flex items-center gap-6 text-[15px] font-medium">
+
+                    <!-- HOME -->
+                    <li>
+                        <a href="/" wire:navigate class="hover:text-amber-300 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <!-- SOLUTIONS -->
                     <li class="relative group">
                         <button class="flex items-center gap-1 hover:text-amber-300 transition">
-                            Data Protection
+                            Solutions
                             <ion-icon name="chevron-down-outline"></ion-icon>
                         </button>
-                        <div
-                            class="absolute left-0 top-full pt-5 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-96 p-5 text-gray-700 dark:text-gray-200">
-                                <a href="#"
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Registration &
-                                    Compliance</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">DPO as
-                                    a Service</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Data
-                                    Management & Insights</a>
-                                <a href="#"
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Privacy
-                                    Checklist</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Data
-                                    Protection Training</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Data
-                                    Governance</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Breach
-                                    Management</a>
+
+                        <div class="absolute left-0 top-full pt-5 invisible opacity-0
+                   group-hover:visible group-hover:opacity-100
+                   transition-all duration-300">
+
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
+                       w-80 p-4 text-gray-700 dark:text-gray-200">
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Cybersecurity Solutions
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Data Protection & Privacy
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Data & AI Solutions
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Digital & IT Solutions
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    E-Government Solutions
+                                </a>
+
                             </div>
                         </div>
                     </li>
-                    <!-- Cyber Security -->
+
+
+                    <!-- SERVICES -->
                     <li class="relative group">
                         <button class="flex items-center gap-1 hover:text-amber-300 transition">
-                            Cyber Security
+                            Services
                             <ion-icon name="chevron-down-outline"></ion-icon>
                         </button>
-                        <div
-                            class="absolute left-0 top-full pt-5 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-300">
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-96 p-5 text-gray-700 dark:text-gray-200">
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">SME
-                                    Security</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Cloud
-                                    Security</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">SIEM &
-                                    SOAR</a>
-                                <a href="#"
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Endpoint
-                                    Security</a>
-                                <a href="#"
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Network
-                                    Security</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Email
-                                    Security</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Data
-                                    Security</a>
+
+                        <div class="absolute left-0 top-full pt-5 invisible opacity-0
+                   group-hover:visible group-hover:opacity-100
+                   transition-all duration-300">
+
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
+                       w-80 p-4 text-gray-700 dark:text-gray-200">
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Data Protection & Compliance
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Data Governance & Management
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Cybersecurity Services
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Data Science & Analytics
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Digital Consulting
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    IT Managed Services
+                                </a>
+
+                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Software & Website Development
+                                </a>
+
                             </div>
                         </div>
                     </li>
-                    <!-- AI -->
+
+
+                    <!-- INDUSTRIES -->
                     <li class="relative group">
                         <button class="flex items-center gap-1 hover:text-amber-300 transition">
-                            Data Science & AI
+                            Industries
                             <ion-icon name="chevron-down-outline"></ion-icon>
                         </button>
-                        <div
-                            class="absolute left-0 top-full pt-5 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition">
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-96 p-5 text-gray-700 dark:text-gray-200">
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Data
-                                    Science</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Data
-                                    Visualization</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Data
-                                    Annotation</a>
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">SETLAB
-                                    Developers</a>
-                                <a href="#"
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Artificial
-                                    Intelligence</a>
+
+                        <div class="absolute left-0 top-full pt-5 invisible opacity-0
+               group-hover:visible group-hover:opacity-100
+               transition-all duration-300">
+
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
+                   w-72 p-4 text-gray-700 dark:text-gray-200">
+
+                                <a href="/industries/financial-services" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Financial Services
+                                </a>
+
+                                <a href="/industries/healthcare" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Healthcare
+                                </a>
+
+                                <a href="/industries/government" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Government & Public Sector
+                                </a>
+
+                                <a href="/industries/ngos" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    NGOs & Development
+                                </a>
+
+                                <a href="/industries/education" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Education
+                                </a>
+
+                                <a href="/industries/smes" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    SMEs & Businesses
+                                </a>
+
                             </div>
                         </div>
                     </li>
-                    <!-- Consulting -->
+
+
+
+                    <!-- ABOUT US -->
                     <li class="relative group">
                         <button class="flex items-center gap-1 hover:text-amber-300 transition">
-                            Consulting
+                            About Us
                             <ion-icon name="chevron-down-outline"></ion-icon>
                         </button>
-                        <div
-                            class="absolute left-0 top-full pt-5 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition">
-                            <div
-                                class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-96 p-5 text-gray-700 dark:text-gray-200">
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">IT
-                                    Systems Audit</a>
-                                <a href="#"
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Specialized
-                                    Audits</a>
-                                <a href="#"
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">Website
-                                    Development</a>
+
+                        <div class="absolute left-0 top-full pt-5 invisible opacity-0
+                   group-hover:visible group-hover:opacity-100
+                   transition-all duration-300">
+
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
+                       w-64 p-4 text-gray-700 dark:text-gray-200">
+
+                                <a href="/about" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    About Us
+                                </a>
+
+                                <a href="/team" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Our Team
+                                </a>
+
+                                <a href="/about#why-us" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Why Choose Us
+                                </a>
+
+                                <a href="/about#clients" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Client Stories
+                                </a>
+
                             </div>
                         </div>
                     </li>
-                    <li><a href="#" class="hover:text-amber-300 transition">Blogs</a></li>
+
+
+                    <!-- INSIGHTS -->
+                    <li class="relative group">
+                        <button class="flex items-center gap-1 hover:text-amber-300 transition">
+                            Insights
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </button>
+
+                        <div class="absolute left-0 top-full pt-5 invisible opacity-0
+                   group-hover:visible group-hover:opacity-100
+                   transition-all duration-300">
+
+                            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
+                       w-64 p-4 text-gray-700 dark:text-gray-200">
+
+                                <a href="/blogs" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Blogs
+                                </a>
+
+                                <a href="/webinars" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Webinars
+                                </a>
+
+                                <a href="/case-studies" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Case Studies
+                                </a>
+
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
-                <div class="hidden xl:flex items-center gap-3">
+
+
+
+                <div class="hidden lg:flex items-center gap-3">
                     <button id="themeToggle"
                         class="w-10 h-10 rounded-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-800 dark:hover:bg-blue-700 transition flex items-center justify-center">
                         <ion-icon name="moon-outline" id="themeIcon" class="text-xl"></ion-icon>
                     </button>
                     <a href="/book" wire:navigate
                         class="bg-amber-500 hover:bg-amber-400 px-5 py-3 rounded-full text-black font-semibold flex items-center gap-2 transition">
-                        Book Consulatancy
+                        Book a Consultation
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                 </div>
                 <button id="menuBtn"
-                    class="xl:hidden w-11 h-11 rounded-lg hover:bg-blue-700 transition flex items-center justify-center">
+                    class="lg:hidden w-11 h-11 rounded-lg hover:bg-blue-700 transition flex items-center justify-center">
                     <ion-icon name="menu-outline" class="text-3xl"></ion-icon>
                 </button>
             </div>
@@ -285,8 +396,7 @@
                 <!-- Brand -->
                 <div class="lg:col-span-4">
                     <a href="/" wire:navigate class="flex items-center gap-3 mb-6" aria-label="SouthEnd Tech — Home">
-                        <img src="{{ asset('images/logo.png') }}" alt="South-End Tech"
-                            class="h-12 w-auto">
+                        <img src="{{ asset('images/logo.png') }}" alt="South-End Tech" class="h-12 w-auto">
                     </a>
                     <p class="text-blue-100 leading-relaxed max-w-sm">South-End Tech Limited is a technology consulting
                         company specializing in Data Protection, Cybersecurity, Data Governance, AI, and Digital

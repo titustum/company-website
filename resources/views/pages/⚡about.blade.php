@@ -121,9 +121,8 @@ class extends Component
                             </div>
                             <div>
                                 <h3 class="font-bold text-lg text-slate-900 dark:text-white">Our Mission</h3>
-                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">To empower organizations
-                                    across East Africa to operate securely, comply confidently, and grow through
-                                    practical, reliable, and innovative technology solutions.</p>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">Supporting your business
+                                    as a data solutions provider of choice for all in a safe digital world.</p>
                             </div>
                         </div>
                         <div data-aos="fade-left" data-aos-delay="100"
@@ -135,9 +134,8 @@ class extends Component
                             </div>
                             <div>
                                 <h3 class="font-bold text-lg text-slate-900 dark:text-white">Our Vision</h3>
-                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">A digitally transformed
-                                    Africa where every organization â€” of any size â€” can harness technology safely
-                                    and compete on the global stage.</p>
+                                <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">A Cyber safe Data-Centric
+                                    World ready for the future.</p>
                             </div>
                         </div>
                     </div>

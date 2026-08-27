@@ -21,14 +21,12 @@ new class extends Component
                         <br>
                         <span class="text-blue-600 dark:text-blue-400">Secure Your Business.</span>
                         <br>
-                        Transform Through Technology.
+                        Transform With Technology.
                     </h1>
                     <p data-aos="fade-up" data-aos-delay="100"
                         class="mt-8 text-lg text-slate-600 dark:text-gray-300 leading-8 max-w-2xl">
-                        South-End Tech helps organizations protect sensitive
-                        information, strengthen cybersecurity, comply with
-                        data protection regulations, and unlock business value
-                        through AI-powered digital solutions.
+                        South-End Tech helps organizations protect data, strengthen cybersecurity, meet data protection
+                        requirements, and turn technology and AI into measurable business value.
                     </p>
                     <div data-aos="fade-up" data-aos-delay="200"
                         class="mt-10 grid text-center items-center md:flex flex-wrap gap-4">
@@ -44,7 +42,7 @@ new class extends Component
                         </a>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="300"
-                        class="mt-10 flex flex-wrap gap-5 text-slate-700 dark:text-gray-300">
+                        class="mt-10 flex text-sm flex-wrap gap-5 text-slate-700 dark:text-gray-300">
                         <div class="flex items-center gap-2">
                             <ion-icon name="checkmark-circle" class="text-green-500 text-xl"></ion-icon>
                             <span>Data Protection</span>
@@ -55,7 +53,11 @@ new class extends Component
                         </div>
                         <div class="flex items-center gap-2">
                             <ion-icon name="checkmark-circle" class="text-green-500 text-xl"></ion-icon>
-                            <span>AI & Data Science</span>
+                            <span>Data & AI</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <ion-icon name="checkmark-circle" class="text-green-500 text-xl"></ion-icon>
+                            <span>Digital Transformation</span>
                         </div>
                     </div>
                 </div>
@@ -132,7 +134,8 @@ new class extends Component
     </section>
 
     <!-- ===== DIGITAL CHALLENGE ===== -->
-    <section class="relative py-24 border-y border-slate-200 bg-slate-50 dark:bg-slate-900 overflow-hidden">
+    <section
+        class="relative py-24 border-y border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 overflow-hidden">
         <div class="relative max-w-7xl mx-auto px-6">
             <div class="max-w-3xl mb-16" data-aos="fade-up">
                 <div
@@ -256,12 +259,13 @@ new class extends Component
                 <div class="lg:col-span-5" data-aos="fade-right">
                     <div class="group relative rounded-3xl overflow-hidden min-h-105">
                         <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80"
-                            alt="Data protection and privacy" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
-                        <div
-                            class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
+                            alt="Data protection and privacy"
+                            class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
                         </div>
                         <div class="relative min-h-105 p-10 flex flex-col justify-end text-white">
-                            <div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
+                            <div
+                                class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
                                 <ion-icon name="shield-checkmark-outline" class="text-5xl"></ion-icon>
                             </div>
                             <h3 class="text-4xl font-extrabold">Data Protection<br>& Privacy</h3>
@@ -304,12 +308,13 @@ new class extends Component
                 <div class="lg:col-span-5 lg:order-2" data-aos="fade-left">
                     <div class="group relative rounded-3xl overflow-hidden min-h-105">
                         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
-                            alt="Cybersecurity operations" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
-                        <div
-                            class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
+                            alt="Cybersecurity operations"
+                            class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
                         </div>
                         <div class="relative min-h-105 p-10 flex flex-col justify-end text-white">
-                            <div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
+                            <div
+                                class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
                                 <ion-icon name="lock-closed-outline" class="text-5xl"></ion-icon>
                             </div>
                             <h3 class="text-4xl font-extrabold">Cybersecurity<br>Solutions</h3>
@@ -325,12 +330,13 @@ new class extends Component
                 <div class="lg:col-span-5" data-aos="fade-right">
                     <div class="group relative rounded-3xl overflow-hidden min-h-105">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
-                            alt="Data analytics dashboard" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
-                        <div
-                            class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
+                            alt="Data analytics dashboard"
+                            class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
                         </div>
                         <div class="relative min-h-105 p-10 flex flex-col justify-end text-white">
-                            <div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
+                            <div
+                                class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
                                 <ion-icon name="analytics-outline" class="text-5xl"></ion-icon>
                             </div>
                             <h3 class="text-4xl font-extrabold">Data,<br>AI & Analytics</h3>
@@ -372,12 +378,13 @@ new class extends Component
                 <div class="lg:col-span-5" data-aos="fade-left">
                     <div class="group relative rounded-3xl overflow-hidden min-h-105">
                         <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
-                            alt="Digital transformation network" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
-                        <div
-                            class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
+                            alt="Digital transformation network"
+                            class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
                         </div>
                         <div class="relative min-h-105 p-10 flex flex-col justify-end text-white">
-                            <div class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
+                            <div
+                                class="w-20 h-20 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-8">
                                 <ion-icon name="rocket-outline" class="text-5xl"></ion-icon>
                             </div>
                             <h3 class="text-4xl font-extrabold">Digital<br>Transformation</h3>
