@@ -13,6 +13,31 @@ return new class extends Migration
     {
         Schema::create('industries', function (Blueprint $table) {
             $table->id();
+
+            $table->string('slug')->unique();
+            $table->string('title');
+            $table->string('subtitle')->nullable();
+
+            $table->text('short_description')->nullable();
+            $table->longText('description')->nullable();
+
+            // Flexible content managed through Filament
+            $table->json('challenges')->nullable();
+            $table->json('solutions')->nullable();
+            $table->json('benefits')->nullable();
+            $table->json('faqs')->nullable();
+
+            // Presentation
+            $table->string('icon')->nullable();
+            $table->string('hero_image')->nullable();
+
+            // SEO
+            $table->string('meta_title')->nullable();
+            $table->text('meta_description')->nullable();
+
+            $table->boolean('is_published')->default(true);
+            $table->unsignedInteger('sort_order')->default(0);
+
             $table->timestamps();
         });
     }

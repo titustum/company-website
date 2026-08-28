@@ -9,3 +9,5 @@ Route::livewire('/book', 'pages::book');
 Route::livewire('/careers', 'pages::careers');
 
 Route::livewire('/service/{slug}', 'pages::service');
+Route::livewire('/solution/{slug}', 'pages::solution');
+Route::livewire('/industry/{slug}', 'pages::industry');

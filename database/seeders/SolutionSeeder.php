@@ -176,7 +176,7 @@ class SolutionSeeder extends Seeder
                 'faqs' => [
                     [
                         'question' => 'What types of organizations need cybersecurity solutions?',
-                        'answer' => 'Organizations of every size can benefit from cybersecurity. The appropriate controls depend on the organization’s systems, data, users, regulatory obligations, and risk profile.',
+                        'answer' => 'Organizations of every size can benefit from cybersecurity. The appropriate controls depend on the organization\'s systems, data, users, regulatory obligations, and risk profile.',
                     ],
                     [
                         'question' => 'Can you secure Microsoft 365 environments?',
@@ -200,481 +200,465 @@ class SolutionSeeder extends Seeder
                 'sort_order' => 2,
             ],
 
+            [
+                'title' => 'Data, AI & Analytics',
+                'slug' => 'data-ai-analytics',
+                'subtitle' => 'Unlock The Value Hidden In Your Data.',
+                'short_description' => 'Turn your data into meaningful insights that support better decisions, improve operations, and create new opportunities.',
+                'description' => <<<'HTML'
+                    <p>Organizations generate more data than ever before, but having data does not automatically create value. Without proper governance, management, visualization, and analytics capabilities, valuable insights can remain hidden.</p>
 
+                    <p>South-End Tech helps organizations build practical data capabilities that turn information into actionable business intelligence.</p>
 
-            ///
-            [
-    [
-        'title' => 'Data, AI & Analytics',
-        'slug' => 'data-ai-analytics',
-        'subtitle' => 'Unlock The Value Hidden In Your Data.',
-        'short_description' => 'Turn your data into meaningful insights that support better decisions, improve operations, and create new opportunities.',
-        'description' => <<<'HTML'
-            <p>Organizations generate more data than ever before, but having data does not automatically create value. Without proper governance, management, visualization, and analytics capabilities, valuable insights can remain hidden.</p>
+                    <p>From data governance and management to visualization, analytics, and artificial intelligence, we help organizations make better use of their data while maintaining responsible and secure data practices.</p>
+                HTML,
 
-            <p>South-End Tech helps organizations build practical data capabilities that turn information into actionable business intelligence.</p>
+                'features' => [
+                    [
+                        'title' => 'Data Governance',
+                        'description' => 'Establish policies, processes, roles, and controls that ensure data is managed consistently and responsibly.',
+                        'icon' => 'shield-check-outline',
+                    ],
+                    [
+                        'title' => 'Data Management',
+                        'description' => 'Improve how organizational data is collected, organized, stored, maintained, and accessed.',
+                        'icon' => 'server-outline',
+                    ],
+                    [
+                        'title' => 'Data Visualization',
+                        'description' => 'Transform complex datasets into clear dashboards, reports, and visual insights that support decision-making.',
+                        'icon' => 'bar-chart-outline',
+                    ],
+                    [
+                        'title' => 'AI Solutions',
+                        'description' => 'Explore practical artificial intelligence solutions that automate processes and improve organizational capabilities.',
+                        'icon' => 'sparkles-outline',
+                    ],
+                    [
+                        'title' => 'Analytics Consulting',
+                        'description' => 'Use advanced analytics to identify trends, measure performance, understand risks, and uncover opportunities.',
+                        'icon' => 'analytics-outline',
+                    ],
+                ],
 
-            <p>From data governance and management to visualization, analytics, and artificial intelligence, we help organizations make better use of their data while maintaining responsible and secure data practices.</p>
-        HTML,
+                'benefits' => [
+                    [
+                        'title' => 'Better Decision Making',
+                        'description' => 'Give decision-makers reliable information and actionable insights when they need them.',
+                        'icon' => 'trending-up-outline',
+                    ],
+                    [
+                        'title' => 'Improved Data Quality',
+                        'description' => 'Establish processes and controls that improve the accuracy, consistency, and reliability of organizational data.',
+                        'icon' => 'checkmark-circle-outline',
+                    ],
+                    [
+                        'title' => 'Operational Efficiency',
+                        'description' => 'Identify opportunities to automate repetitive processes and improve how teams use information.',
+                        'icon' => 'speedometer-outline',
+                    ],
+                    [
+                        'title' => 'Discover New Opportunities',
+                        'description' => 'Use analytics and AI to uncover patterns, trends, risks, and opportunities hidden within your data.',
+                        'icon' => 'bulb-outline',
+                    ],
+                ],
 
-        'features' => [
-            [
-                'title' => 'Data Governance',
-                'description' => 'Establish policies, processes, roles, and controls that ensure data is managed consistently and responsibly.',
-                'icon' => 'shield-check-outline',
-            ],
-            [
-                'title' => 'Data Management',
-                'description' => 'Improve how organizational data is collected, organized, stored, maintained, and accessed.',
-                'icon' => 'server-outline',
-            ],
-            [
-                'title' => 'Data Visualization',
-                'description' => 'Transform complex datasets into clear dashboards, reports, and visual insights that support decision-making.',
-                'icon' => 'bar-chart-outline',
-            ],
-            [
-                'title' => 'AI Solutions',
-                'description' => 'Explore practical artificial intelligence solutions that automate processes and improve organizational capabilities.',
-                'icon' => 'sparkles-outline',
-            ],
-            [
-                'title' => 'Analytics Consulting',
-                'description' => 'Use advanced analytics to identify trends, measure performance, understand risks, and uncover opportunities.',
+                'faqs' => [
+                    [
+                        'question' => 'What can data analytics do for our organization?',
+                        'answer' => 'Data analytics can help organizations understand performance, identify trends, detect risks, improve operations, and make more informed strategic decisions.',
+                    ],
+                    [
+                        'question' => 'Do we need a large amount of data to benefit from analytics?',
+                        'answer' => 'Not necessarily. The right approach depends on the type, quality, availability, and business purpose of your data. We help organizations identify practical opportunities based on their existing environment.',
+                    ],
+                    [
+                        'question' => 'Can you help us build data dashboards?',
+                        'answer' => 'Yes. We can help organizations transform relevant data into dashboards and visual reports that provide useful insights for operational and management decision-making.',
+                    ],
+                    [
+                        'question' => 'How can AI improve our business?',
+                        'answer' => 'AI can support areas such as automation, analysis, forecasting, knowledge management, customer service, and decision support. We focus on practical use cases aligned with organizational goals.',
+                    ],
+                ],
+
                 'icon' => 'analytics-outline',
+                'hero_image' => null,
+                'meta_title' => 'Data, AI & Analytics Solutions | South-End Tech',
+                'meta_description' => 'Turn organizational data into actionable insights with data governance, analytics, visualization, and AI solutions from South-End Tech.',
+                'is_published' => true,
+                'sort_order' => 3,
             ],
-        ],
 
-        'benefits' => [
             [
-                'title' => 'Better Decision Making',
-                'description' => 'Give decision-makers reliable information and actionable insights when they need them.',
-                'icon' => 'trending-up-outline',
-            ],
-            [
-                'title' => 'Improved Data Quality',
-                'description' => 'Establish processes and controls that improve the accuracy, consistency, and reliability of organizational data.',
-                'icon' => 'checkmark-circle-outline',
-            ],
-            [
-                'title' => 'Operational Efficiency',
-                'description' => 'Identify opportunities to automate repetitive processes and improve how teams use information.',
-                'icon' => 'speedometer-outline',
-            ],
-            [
-                'title' => 'Discover New Opportunities',
-                'description' => 'Use analytics and AI to uncover patterns, trends, risks, and opportunities hidden within your data.',
-                'icon' => 'bulb-outline',
-            ],
-        ],
+                'title' => 'Digital Transformation',
+                'slug' => 'digital-transformation',
+                'subtitle' => 'Modernize Operations Through Smart Technology.',
+                'short_description' => 'Modernize your organization through practical technology, digital consulting, managed IT services, software development, and e-government solutions.',
+                'description' => <<<'HTML'
+                    <p>Digital transformation is more than adopting new technology. Organizations need technology that improves how people work, strengthens service delivery, reduces operational friction, and creates sustainable value.</p>
 
-        'faqs' => [
-            [
-                'question' => 'What can data analytics do for our organization?',
-                'answer' => 'Data analytics can help organizations understand performance, identify trends, detect risks, improve operations, and make more informed strategic decisions.',
-            ],
-            [
-                'question' => 'Do we need a large amount of data to benefit from analytics?',
-                'answer' => 'Not necessarily. The right approach depends on the type, quality, availability, and business purpose of your data. We help organizations identify practical opportunities based on their existing environment.',
-            ],
-            [
-                'question' => 'Can you help us build data dashboards?',
-                'answer' => 'Yes. We can help organizations transform relevant data into dashboards and visual reports that provide useful insights for operational and management decision-making.',
-            ],
-            [
-                'question' => 'How can AI improve our business?',
-                'answer' => 'AI can support areas such as automation, analysis, forecasting, knowledge management, customer service, and decision support. We focus on practical use cases aligned with organizational goals.',
-            ],
-        ],
+                    <p>South-End Tech helps organizations assess their technology environment, identify opportunities for improvement, and implement digital solutions aligned with their strategic objectives.</p>
 
-        'icon' => 'analytics-outline',
-        'hero_image' => null,
-        'meta_title' => 'Data, AI & Analytics Solutions | South-End Tech',
-        'meta_description' => 'Turn organizational data into actionable insights with data governance, analytics, visualization, and AI solutions from South-End Tech.',
-        'is_published' => true,
-        'sort_order' => 3,
-    ],
+                    <p>Whether you need IT consulting, managed services, software development, monitoring, or e-government solutions, we provide practical technology capabilities that help organizations operate more effectively.</p>
+                HTML,
 
-    [
-        'title' => 'Digital Transformation',
-        'slug' => 'digital-transformation',
-        'subtitle' => 'Modernize Operations Through Smart Technology.',
-        'short_description' => 'Modernize your organization through practical technology, digital consulting, managed IT services, software development, and e-government solutions.',
-        'description' => <<<'HTML'
-            <p>Digital transformation is more than adopting new technology. Organizations need technology that improves how people work, strengthens service delivery, reduces operational friction, and creates sustainable value.</p>
+                'features' => [
+                    [
+                        'title' => 'IT Consulting',
+                        'description' => 'Assess your technology environment and develop practical strategies aligned with business priorities and future growth.',
+                        'icon' => 'construct-outline',
+                    ],
+                    [
+                        'title' => 'Managed IT Services',
+                        'description' => 'Keep your technology environment reliable, secure, and supported through proactive IT management.',
+                        'icon' => 'settings-outline',
+                    ],
+                    [
+                        'title' => 'Website & Network Monitoring',
+                        'description' => 'Monitor critical websites, systems, and networks to identify availability and performance issues early.',
+                        'icon' => 'pulse-outline',
+                    ],
+                    [
+                        'title' => 'E-Government Solutions',
+                        'description' => 'Support public institutions with digital solutions that improve service delivery, accessibility, and operational efficiency.',
+                        'icon' => 'globe-outline',
+                    ],
+                    [
+                        'title' => 'Software Development',
+                        'description' => 'Design and develop tailored software applications that address specific organizational workflows and business requirements.',
+                        'icon' => 'code-slash-outline',
+                    ],
+                ],
 
-            <p>South-End Tech helps organizations assess their technology environment, identify opportunities for improvement, and implement digital solutions aligned with their strategic objectives.</p>
+                'benefits' => [
+                    [
+                        'title' => 'Modernized Operations',
+                        'description' => 'Replace inefficient manual processes with technology-enabled workflows that improve productivity and service delivery.',
+                        'icon' => 'rocket-outline',
+                    ],
+                    [
+                        'title' => 'Improved Efficiency',
+                        'description' => 'Use technology to reduce repetitive work, simplify processes, and help teams focus on higher-value activities.',
+                        'icon' => 'speedometer-outline',
+                    ],
+                    [
+                        'title' => 'Scalable Technology',
+                        'description' => 'Build technology capabilities that can evolve as your organization grows and its requirements change.',
+                        'icon' => 'expand-outline',
+                    ],
+                    [
+                        'title' => 'Better Digital Experiences',
+                        'description' => 'Create more accessible, reliable, and user-friendly digital experiences for employees, customers, and citizens.',
+                        'icon' => 'phone-portrait-outline',
+                    ],
+                ],
 
-            <p>Whether you need IT consulting, managed services, software development, monitoring, or e-government solutions, we provide practical technology capabilities that help organizations operate more effectively.</p>
-        HTML,
+                'faqs' => [
+                    [
+                        'question' => 'What is digital transformation?',
+                        'answer' => 'Digital transformation is the process of using technology to improve how an organization operates, delivers services, engages users, and creates value.',
+                    ],
+                    [
+                        'question' => 'Can you help us develop custom software?',
+                        'answer' => 'Yes. We can design and develop software solutions around your organization\'s specific workflows, requirements, users, and operational goals.',
+                    ],
+                    [
+                        'question' => 'Do you provide ongoing IT support?',
+                        'answer' => 'Yes. Our managed IT services can provide ongoing technical support, monitoring, maintenance, and technology management based on your organization\'s needs.',
+                    ],
+                    [
+                        'question' => 'Can you support government digital transformation?',
+                        'answer' => 'Yes. We provide technology solutions designed to help public institutions modernize operations, improve service delivery, and responsibly manage digital information.',
+                    ],
+                ],
 
-        'features' => [
-            [
-                'title' => 'IT Consulting',
-                'description' => 'Assess your technology environment and develop practical strategies aligned with business priorities and future growth.',
-                'icon' => 'construct-outline',
-            ],
-            [
-                'title' => 'Managed IT Services',
-                'description' => 'Keep your technology environment reliable, secure, and supported through proactive IT management.',
-                'icon' => 'settings-outline',
-            ],
-            [
-                'title' => 'Website & Network Monitoring',
-                'description' => 'Monitor critical websites, systems, and networks to identify availability and performance issues early.',
-                'icon' => 'pulse-outline',
-            ],
-            [
-                'title' => 'E-Government Solutions',
-                'description' => 'Support public institutions with digital solutions that improve service delivery, accessibility, and operational efficiency.',
-                'icon' => 'globe-outline',
-            ],
-            [
-                'title' => 'Software Development',
-                'description' => 'Design and develop tailored software applications that address specific organizational workflows and business requirements.',
-                'icon' => 'code-slash-outline',
-            ],
-        ],
-
-        'benefits' => [
-            [
-                'title' => 'Modernized Operations',
-                'description' => 'Replace inefficient manual processes with technology-enabled workflows that improve productivity and service delivery.',
                 'icon' => 'rocket-outline',
+                'hero_image' => null,
+                'meta_title' => 'Digital Transformation Solutions | South-End Tech',
+                'meta_description' => 'Modernize operations with IT consulting, managed IT services, software development, monitoring, and e-government solutions from South-End Tech.',
+                'is_published' => true,
+                'sort_order' => 4,
             ],
-            [
-                'title' => 'Improved Efficiency',
-                'description' => 'Use technology to reduce repetitive work, simplify processes, and help teams focus on higher-value activities.',
-                'icon' => 'speedometer-outline',
-            ],
-            [
-                'title' => 'Scalable Technology',
-                'description' => 'Build technology capabilities that can evolve as your organization grows and its requirements change.',
-                'icon' => 'expand-outline',
-            ],
-            [
-                'title' => 'Better Digital Experiences',
-                'description' => 'Create more accessible, reliable, and user-friendly digital experiences for employees, customers, and citizens.',
-                'icon' => 'phone-portrait-outline',
-            ],
-        ],
 
-        'faqs' => [
             [
-                'question' => 'What is digital transformation?',
-                'answer' => 'Digital transformation is the process of using technology to improve how an organization operates, delivers services, engages users, and creates value.',
-            ],
-            [
-                'question' => 'Can you help us develop custom software?',
-                'answer' => 'Yes. We can design and develop software solutions around your organization’s specific workflows, requirements, users, and operational goals.',
-            ],
-            [
-                'question' => 'Do you provide ongoing IT support?',
-                'answer' => 'Yes. Our managed IT services can provide ongoing technical support, monitoring, maintenance, and technology management based on your organization’s needs.',
-            ],
-            [
-                'question' => 'Can you support government digital transformation?',
-                'answer' => 'Yes. We provide technology solutions designed to help public institutions modernize operations, improve service delivery, and responsibly manage digital information.',
-            ],
-        ],
+                'title' => 'Data Protection & Compliance',
+                'slug' => 'data-protection-compliance',
+                'subtitle' => 'Build Trust Through Responsible Data Practices.',
+                'short_description' => 'Help your organization understand, manage, and meet its data protection and privacy obligations.',
+                'description' => <<<'HTML'
+                    <p>Responsible data handling is essential for organizations that collect and process personal information. Effective compliance requires more than policies — it requires practical processes, accountability, awareness, and continuous improvement.</p>
 
-        'icon' => 'rocket-outline',
-        'hero_image' => null,
-        'meta_title' => 'Digital Transformation Solutions | South-End Tech',
-        'meta_description' => 'Modernize operations with IT consulting, managed IT services, software development, monitoring, and e-government solutions from South-End Tech.',
-        'is_published' => true,
-        'sort_order' => 4,
-    ],
-]
+                    <p>South-End Tech helps organizations establish and maintain data protection programs aligned with their operational needs and applicable regulatory requirements.</p>
 
+                    <p>We work with organizations to identify compliance gaps, improve privacy practices, strengthen accountability, and establish sustainable data protection processes.</p>
+                HTML,
 
+                'features' => [
+                    [
+                        'title' => 'Data Protection Compliance',
+                        'description' => 'Assess your current practices and establish controls that support compliance with applicable data protection requirements.',
+                        'icon' => 'shield-check-outline',
+                    ],
+                    [
+                        'title' => 'Privacy Compliance Audits',
+                        'description' => 'Review policies, processes, systems, and practices to identify privacy and compliance gaps.',
+                        'icon' => 'clipboard-outline',
+                    ],
+                    [
+                        'title' => 'Privacy Policies & Documentation',
+                        'description' => 'Develop practical privacy documentation and governance materials suited to your organization.',
+                        'icon' => 'document-text-outline',
+                    ],
+                    [
+                        'title' => 'Data Protection Training',
+                        'description' => 'Equip employees and teams with practical knowledge for handling personal and sensitive information responsibly.',
+                        'icon' => 'school-outline',
+                    ],
+                    [
+                        'title' => 'Breach Management',
+                        'description' => 'Establish processes for identifying, assessing, managing, and responding to personal data breaches.',
+                        'icon' => 'warning-outline',
+                    ],
+                ],
 
-///
+                'benefits' => [
+                    [
+                        'title' => 'Stronger Compliance',
+                        'description' => 'Build structured processes that help your organization meet its data protection obligations.',
+                        'icon' => 'checkmark-done-outline',
+                    ],
+                    [
+                        'title' => 'Reduced Regulatory Exposure',
+                        'description' => 'Identify and address compliance gaps before they result in significant operational or regulatory consequences.',
+                        'icon' => 'shield-outline',
+                    ],
+                    [
+                        'title' => 'Employee Awareness',
+                        'description' => 'Help employees understand their responsibilities when collecting, using, storing, and sharing personal information.',
+                        'icon' => 'people-outline',
+                    ],
+                    [
+                        'title' => 'Responsible Data Culture',
+                        'description' => 'Create organizational practices that treat privacy and responsible data handling as ongoing priorities.',
+                        'icon' => 'heart-outline',
+                    ],
+                ],
 
+                'faqs' => [
+                    [
+                        'question' => 'Why is data protection compliance important?',
+                        'answer' => 'Data protection compliance helps organizations manage personal information responsibly, reduce risk, meet legal obligations, and maintain the trust of customers, employees, partners, and other stakeholders.',
+                    ],
+                    [
+                        'question' => 'Can you review our existing privacy policies?',
+                        'answer' => 'Yes. We can review existing policies and documentation, identify gaps, and recommend practical improvements based on your organization\'s activities and requirements.',
+                    ],
+                    [
+                        'question' => 'Do you provide staff data protection training?',
+                        'answer' => 'Yes. We provide practical awareness and training programs designed to help employees understand privacy responsibilities and secure data-handling practices.',
+                    ],
+                    [
+                        'question' => 'What happens if our organization experiences a data breach?',
+                        'answer' => 'We can help organizations establish and improve breach response procedures, including assessment, documentation, response coordination, and appropriate regulatory and stakeholder processes.',
+                    ],
+                ],
 
-[
-    [
-        'title' => 'Data Protection & Compliance',
-        'slug' => 'data-protection-compliance',
-        'subtitle' => 'Build Trust Through Responsible Data Practices.',
-        'short_description' => 'Help your organization understand, manage, and meet its data protection and privacy obligations.',
-        'description' => <<<'HTML'
-            <p>Responsible data handling is essential for organizations that collect and process personal information. Effective compliance requires more than policies — it requires practical processes, accountability, awareness, and continuous improvement.</p>
+                'icon' => 'document-lock-outline',
+                'hero_image' => null,
+                'meta_title' => 'Data Protection & Compliance Services | South-End Tech',
+                'meta_description' => 'Strengthen data protection compliance, privacy governance, employee awareness, and breach management with South-End Tech.',
+                'is_published' => true,
+                'sort_order' => 5,
+            ],
 
-            <p>South-End Tech helps organizations establish and maintain data protection programs aligned with their operational needs and applicable regulatory requirements.</p>
+            [
+                'title' => 'Data Governance & Management',
+                'slug' => 'data-governance-management',
+                'subtitle' => 'Turn Data Into A Trusted Organizational Asset.',
+                'short_description' => 'Establish the governance, processes, and controls needed to manage organizational data effectively.',
+                'description' => <<<'HTML'
+                    <p>Data is one of an organization\'s most valuable assets, but poor data management can create inefficiencies, unreliable reporting, security risks, and poor decision-making.</p>
 
-            <p>We work with organizations to identify compliance gaps, improve privacy practices, strengthen accountability, and establish sustainable data protection processes.</p>
-        HTML,
+                    <p>South-End Tech helps organizations establish clear frameworks for managing data throughout its lifecycle.</p>
 
-        'features' => [
-            [
-                'title' => 'Data Protection Compliance',
-                'description' => 'Assess your current practices and establish controls that support compliance with applicable data protection requirements.',
-                'icon' => 'shield-check-outline',
-            ],
-            [
-                'title' => 'Privacy Compliance Audits',
-                'description' => 'Review policies, processes, systems, and practices to identify privacy and compliance gaps.',
-                'icon' => 'clipboard-outline',
-            ],
-            [
-                'title' => 'Privacy Policies & Documentation',
-                'description' => 'Develop practical privacy documentation and governance materials suited to your organization.',
-                'icon' => 'document-text-outline',
-            ],
-            [
-                'title' => 'Data Protection Training',
-                'description' => 'Equip employees and teams with practical knowledge for handling personal and sensitive information responsibly.',
-                'icon' => 'school-outline',
-            ],
-            [
-                'title' => 'Breach Management',
-                'description' => 'Establish processes for identifying, assessing, managing, and responding to personal data breaches.',
-                'icon' => 'warning-outline',
-            ],
-        ],
+                    <p>Our approach combines governance, data management, quality, security, accountability, and practical processes to help organizations make their information more reliable and useful.</p>
+                HTML,
 
-        'benefits' => [
-            [
-                'title' => 'Stronger Compliance',
-                'description' => 'Build structured processes that help your organization meet its data protection obligations.',
-                'icon' => 'checkmark-done-outline',
-            ],
-            [
-                'title' => 'Reduced Regulatory Exposure',
-                'description' => 'Identify and address compliance gaps before they result in significant operational or regulatory consequences.',
-                'icon' => 'shield-outline',
-            ],
-            [
-                'title' => 'Employee Awareness',
-                'description' => 'Help employees understand their responsibilities when collecting, using, storing, and sharing personal information.',
-                'icon' => 'people-outline',
-            ],
-            [
-                'title' => 'Responsible Data Culture',
-                'description' => 'Create organizational practices that treat privacy and responsible data handling as ongoing priorities.',
-                'icon' => 'heart-outline',
-            ],
-        ],
+                'features' => [
+                    [
+                        'title' => 'Data Governance Frameworks',
+                        'description' => 'Define the policies, roles, responsibilities, and processes required to manage organizational data effectively.',
+                        'icon' => 'git-network-outline',
+                    ],
+                    [
+                        'title' => 'Data Quality Management',
+                        'description' => 'Identify and address issues affecting the accuracy, completeness, consistency, and reliability of organizational data.',
+                        'icon' => 'checkmark-circle-outline',
+                    ],
+                    [
+                        'title' => 'Data Lifecycle Management',
+                        'description' => 'Establish processes for managing data from creation and collection through use, retention, archiving, and disposal.',
+                        'icon' => 'sync-outline',
+                    ],
+                    [
+                        'title' => 'Data Classification',
+                        'description' => 'Categorize organizational information according to sensitivity, business value, regulatory requirements, and risk.',
+                        'icon' => 'layers-outline',
+                    ],
+                    [
+                        'title' => 'Data Management Strategy',
+                        'description' => 'Develop practical strategies that align data capabilities with organizational objectives and decision-making needs.',
+                        'icon' => 'map-outline',
+                    ],
+                ],
 
-        'faqs' => [
-            [
-                'question' => 'Why is data protection compliance important?',
-                'answer' => 'Data protection compliance helps organizations manage personal information responsibly, reduce risk, meet legal obligations, and maintain the trust of customers, employees, partners, and other stakeholders.',
-            ],
-            [
-                'question' => 'Can you review our existing privacy policies?',
-                'answer' => 'Yes. We can review existing policies and documentation, identify gaps, and recommend practical improvements based on your organization’s activities and requirements.',
-            ],
-            [
-                'question' => 'Do you provide staff data protection training?',
-                'answer' => 'Yes. We provide practical awareness and training programs designed to help employees understand privacy responsibilities and secure data-handling practices.',
-            ],
-            [
-                'question' => 'What happens if our organization experiences a data breach?',
-                'answer' => 'We can help organizations establish and improve breach response procedures, including assessment, documentation, response coordination, and appropriate regulatory and stakeholder processes.',
-            ],
-        ],
+                'benefits' => [
+                    [
+                        'title' => 'Reliable Information',
+                        'description' => 'Improve the quality and consistency of the information used across your organization.',
+                        'icon' => 'checkmark-done-outline',
+                    ],
+                    [
+                        'title' => 'Clear Accountability',
+                        'description' => 'Define ownership and responsibilities for critical organizational data and information assets.',
+                        'icon' => 'person-outline',
+                    ],
+                    [
+                        'title' => 'Improved Decision Making',
+                        'description' => 'Give teams greater confidence in the data used for reporting, analysis, and strategic decisions.',
+                        'icon' => 'analytics-outline',
+                    ],
+                    [
+                        'title' => 'Reduced Data Risk',
+                        'description' => 'Improve control over sensitive and critical information throughout its lifecycle.',
+                        'icon' => 'shield-check-outline',
+                    ],
+                ],
 
-        'icon' => 'document-lock-outline',
-        'hero_image' => null,
-        'meta_title' => 'Data Protection & Compliance Services | South-End Tech',
-        'meta_description' => 'Strengthen data protection compliance, privacy governance, employee awareness, and breach management with South-End Tech.',
-        'is_published' => true,
-        'sort_order' => 5,
-    ],
+                'faqs' => [
+                    [
+                        'question' => 'What is data governance?',
+                        'answer' => 'Data governance is the framework of policies, roles, responsibilities, standards, and processes used to ensure that organizational data is managed effectively and responsibly.',
+                    ],
+                    [
+                        'question' => 'Why does data quality matter?',
+                        'answer' => 'Poor-quality data can result in inaccurate reports, inefficient operations, poor decisions, and increased business risk. Data quality management helps ensure information is reliable and fit for purpose.',
+                    ],
+                    [
+                        'question' => 'Can you help us create a data governance framework?',
+                        'answer' => 'Yes. We can help assess your current environment and establish practical governance structures, policies, responsibilities, processes, and controls.',
+                    ],
+                    [
+                        'question' => 'Does data governance support data protection?',
+                        'answer' => 'Yes. Effective governance provides greater visibility and accountability around organizational data and can support privacy, security, retention, access, and compliance requirements.',
+                    ],
+                ],
 
-    [
-        'title' => 'Data Governance & Management',
-        'slug' => 'data-governance-management',
-        'subtitle' => 'Turn Data Into A Trusted Organizational Asset.',
-        'short_description' => 'Establish the governance, processes, and controls needed to manage organizational data effectively.',
-        'description' => <<<'HTML'
-            <p>Data is one of an organization’s most valuable assets, but poor data management can create inefficiencies, unreliable reporting, security risks, and poor decision-making.</p>
+                'icon' => 'server-outline',
+                'hero_image' => null,
+                'meta_title' => 'Data Governance & Management | South-End Tech',
+                'meta_description' => 'Improve data quality, accountability, governance, and management with practical data solutions from South-End Tech.',
+                'is_published' => true,
+                'sort_order' => 6,
+            ],
 
-            <p>South-End Tech helps organizations establish clear frameworks for managing data throughout its lifecycle.</p>
+            [
+                'title' => 'Cybersecurity Services',
+                'slug' => 'cybersecurity-services',
+                'subtitle' => 'Strengthen Your Security. Reduce Your Risk.',
+                'short_description' => 'Practical cybersecurity services that help organizations identify weaknesses, strengthen defenses, and respond to evolving threats.',
+                'description' => <<<'HTML'
+                    <p>Cybersecurity requires continuous attention. New vulnerabilities, evolving attack techniques, changing technology environments, and increasingly sophisticated threat actors mean that organizations must continually assess and improve their defenses.</p>
 
-            <p>Our approach combines governance, data management, quality, security, accountability, and practical processes to help organizations make their information more reliable and useful.</p>
-        HTML,
+                    <p>South-End Tech provides practical cybersecurity services designed to help organizations understand their security risks and implement appropriate controls.</p>
 
-        'features' => [
-            [
-                'title' => 'Data Governance Frameworks',
-                'description' => 'Define the policies, roles, responsibilities, and processes required to manage organizational data effectively.',
-                'icon' => 'git-network-outline',
-            ],
-            [
-                'title' => 'Data Quality Management',
-                'description' => 'Identify and address issues affecting the accuracy, completeness, consistency, and reliability of organizational data.',
-                'icon' => 'checkmark-circle-outline',
-            ],
-            [
-                'title' => 'Data Lifecycle Management',
-                'description' => 'Establish processes for managing data from creation and collection through use, retention, archiving, and disposal.',
-                'icon' => 'sync-outline',
-            ],
-            [
-                'title' => 'Data Classification',
-                'description' => 'Categorize organizational information according to sensitivity, business value, regulatory requirements, and risk.',
-                'icon' => 'layers-outline',
-            ],
-            [
-                'title' => 'Data Management Strategy',
-                'description' => 'Develop practical strategies that align data capabilities with organizational objectives and decision-making needs.',
-                'icon' => 'map-outline',
-            ],
-        ],
+                    <p>From security assessments and vulnerability management to incident readiness and security advisory services, we help organizations build a stronger and more resilient security posture.</p>
+                HTML,
 
-        'benefits' => [
-            [
-                'title' => 'Reliable Information',
-                'description' => 'Improve the quality and consistency of the information used across your organization.',
-                'icon' => 'checkmark-done-outline',
-            ],
-            [
-                'title' => 'Clear Accountability',
-                'description' => 'Define ownership and responsibilities for critical organizational data and information assets.',
-                'icon' => 'person-outline',
-            ],
-            [
-                'title' => 'Improved Decision Making',
-                'description' => 'Give teams greater confidence in the data used for reporting, analysis, and strategic decisions.',
-                'icon' => 'analytics-outline',
-            ],
-            [
-                'title' => 'Reduced Data Risk',
-                'description' => 'Improve control over sensitive and critical information throughout its lifecycle.',
-                'icon' => 'shield-check-outline',
-            ],
-        ],
+                'features' => [
+                    [
+                        'title' => 'Cybersecurity Assessments',
+                        'description' => 'Evaluate your security environment, identify weaknesses, and prioritize improvements based on risk.',
+                        'icon' => 'search-outline',
+                    ],
+                    [
+                        'title' => 'Vulnerability Management',
+                        'description' => 'Identify, assess, prioritize, and address vulnerabilities across systems and technology environments.',
+                        'icon' => 'bug-outline',
+                    ],
+                    [
+                        'title' => 'Security Advisory',
+                        'description' => 'Receive practical guidance on security architecture, controls, policies, technologies, and risk management.',
+                        'icon' => 'chatbubbles-outline',
+                    ],
+                    [
+                        'title' => 'Incident Readiness',
+                        'description' => 'Prepare your organization to detect, contain, respond to, and recover from cybersecurity incidents.',
+                        'icon' => 'alert-circle-outline',
+                    ],
+                    [
+                        'title' => 'Security Awareness',
+                        'description' => 'Help employees recognize common threats and adopt safer technology and information-handling practices.',
+                        'icon' => 'people-outline',
+                    ],
+                    [
+                        'title' => 'Security Monitoring',
+                        'description' => 'Improve visibility into security events and suspicious activity across critical technology environments.',
+                        'icon' => 'pulse-outline',
+                    ],
+                ],
 
-        'faqs' => [
-            [
-                'question' => 'What is data governance?',
-                'answer' => 'Data governance is the framework of policies, roles, responsibilities, standards, and processes used to ensure that organizational data is managed effectively and responsibly.',
-            ],
-            [
-                'question' => 'Why does data quality matter?',
-                'answer' => 'Poor-quality data can result in inaccurate reports, inefficient operations, poor decisions, and increased business risk. Data quality management helps ensure information is reliable and fit for purpose.',
-            ],
-            [
-                'question' => 'Can you help us create a data governance framework?',
-                'answer' => 'Yes. We can help assess your current environment and establish practical governance structures, policies, responsibilities, processes, and controls.',
-            ],
-            [
-                'question' => 'Does data governance support data protection?',
-                'answer' => 'Yes. Effective governance provides greater visibility and accountability around organizational data and can support privacy, security, retention, access, and compliance requirements.',
-            ],
-        ],
+                'benefits' => [
+                    [
+                        'title' => 'Identify Security Weaknesses',
+                        'description' => 'Gain a clearer understanding of vulnerabilities and weaknesses that could expose your organization to cyber threats.',
+                        'icon' => 'search-outline',
+                    ],
+                    [
+                        'title' => 'Proactive Risk Reduction',
+                        'description' => 'Prioritize security improvements before weaknesses become costly incidents.',
+                        'icon' => 'shield-check-outline',
+                    ],
+                    [
+                        'title' => 'Faster Incident Response',
+                        'description' => 'Improve organizational readiness and establish processes for responding effectively to security incidents.',
+                        'icon' => 'flash-outline',
+                    ],
+                    [
+                        'title' => 'Security-Aware Teams',
+                        'description' => 'Build employee awareness and reduce risks associated with phishing, social engineering, and unsafe technology practices.',
+                        'icon' => 'people-circle-outline',
+                    ],
+                ],
 
-        'icon' => 'server-outline',
-        'hero_image' => null,
-        'meta_title' => 'Data Governance & Management | South-End Tech',
-        'meta_description' => 'Improve data quality, accountability, governance, and management with practical data solutions from South-End Tech.',
-        'is_published' => true,
-        'sort_order' => 6,
-    ],
+                'faqs' => [
+                    [
+                        'question' => 'What is the difference between cybersecurity solutions and cybersecurity services?',
+                        'answer' => 'Cybersecurity solutions typically involve technology platforms and controls, while cybersecurity services focus on the expertise, assessment, advisory, implementation, monitoring, and ongoing support required to manage security effectively.',
+                    ],
+                    [
+                        'question' => 'How often should an organization perform a cybersecurity assessment?',
+                        'answer' => 'The appropriate frequency depends on the organization\'s risk profile, technology environment, regulatory requirements, and rate of change. Regular assessments combined with ongoing monitoring provide stronger protection.',
+                    ],
+                    [
+                        'question' => 'Can you help us prepare for a cyber incident?',
+                        'answer' => 'Yes. We can help organizations improve incident readiness through risk assessments, response planning, security controls, awareness, and recovery planning.',
+                    ],
+                    [
+                        'question' => 'Do cybersecurity services work for small businesses?',
+                        'answer' => 'Yes. Cybersecurity services can be scaled according to the size, technology environment, risk profile, and budget of an organization.',
+                    ],
+                ],
 
-    [
-        'title' => 'Cybersecurity Services',
-        'slug' => 'cybersecurity-services',
-        'subtitle' => 'Strengthen Your Security. Reduce Your Risk.',
-        'short_description' => 'Practical cybersecurity services that help organizations identify weaknesses, strengthen defenses, and respond to evolving threats.',
-        'description' => <<<'HTML'
-            <p>Cybersecurity requires continuous attention. New vulnerabilities, evolving attack techniques, changing technology environments, and increasingly sophisticated threat actors mean that organizations must continually assess and improve their defenses.</p>
-
-            <p>South-End Tech provides practical cybersecurity services designed to help organizations understand their security risks and implement appropriate controls.</p>
-
-            <p>From security assessments and vulnerability management to incident readiness and security advisory services, we help organizations build a stronger and more resilient security posture.</p>
-        HTML,
-
-        'features' => [
-            [
-                'title' => 'Cybersecurity Assessments',
-                'description' => 'Evaluate your security environment, identify weaknesses, and prioritize improvements based on risk.',
-                'icon' => 'search-outline',
+                'icon' => 'shield-half-outline',
+                'hero_image' => null,
+                'meta_title' => 'Cybersecurity Services | South-End Tech',
+                'meta_description' => 'Strengthen your organization\'s security posture with cybersecurity assessments, advisory, vulnerability management, monitoring, and incident readiness services.',
+                'is_published' => true,
+                'sort_order' => 7,
             ],
-            [
-                'title' => 'Vulnerability Management',
-                'description' => 'Identify, assess, prioritize, and address vulnerabilities across systems and technology environments.',
-                'icon' => 'bug-outline',
-            ],
-            [
-                'title' => 'Security Advisory',
-                'description' => 'Receive practical guidance on security architecture, controls, policies, technologies, and risk management.',
-                'icon' => 'chatbubbles-outline',
-            ],
-            [
-                'title' => 'Incident Readiness',
-                'description' => 'Prepare your organization to detect, contain, respond to, and recover from cybersecurity incidents.',
-                'icon' => 'alert-circle-outline',
-            ],
-            [
-                'title' => 'Security Awareness',
-                'description' => 'Help employees recognize common threats and adopt safer technology and information-handling practices.',
-                'icon' => 'people-outline',
-            ],
-            [
-                'title' => 'Security Monitoring',
-                'description' => 'Improve visibility into security events and suspicious activity across critical technology environments.',
-                'icon' => 'pulse-outline',
-            ],
-        ],
-
-        'benefits' => [
-            [
-                'title' => 'Identify Security Weaknesses',
-                'description' => 'Gain a clearer understanding of vulnerabilities and weaknesses that could expose your organization to cyber threats.',
-                'icon' => 'search-outline',
-            ],
-            [
-                'title' => 'Proactive Risk Reduction',
-                'description' => 'Prioritize security improvements before weaknesses become costly incidents.',
-                'icon' => 'shield-check-outline',
-            ],
-            [
-                'title' => 'Faster Incident Response',
-                'description' => 'Improve organizational readiness and establish processes for responding effectively to security incidents.',
-                'icon' => 'flash-outline',
-            ],
-            [
-                'title' => 'Security-Aware Teams',
-                'description' => 'Build employee awareness and reduce risks associated with phishing, social engineering, and unsafe technology practices.',
-                'icon' => 'people-circle-outline',
-            ],
-        ],
-
-        'faqs' => [
-            [
-                'question' => 'What is the difference between cybersecurity solutions and cybersecurity services?',
-                'answer' => 'Cybersecurity solutions typically involve technology platforms and controls, while cybersecurity services focus on the expertise, assessment, advisory, implementation, monitoring, and ongoing support required to manage security effectively.',
-            ],
-            [
-                'question' => 'How often should an organization perform a cybersecurity assessment?',
-                'answer' => 'The appropriate frequency depends on the organization’s risk profile, technology environment, regulatory requirements, and rate of change. Regular assessments combined with ongoing monitoring provide stronger protection.',
-            ],
-            [
-                'question' => 'Can you help us prepare for a cyber incident?',
-                'answer' => 'Yes. We can help organizations improve incident readiness through risk assessments, response planning, security controls, awareness, and recovery planning.',
-            ],
-            [
-                'question' => 'Do cybersecurity services work for small businesses?',
-                'answer' => 'Yes. Cybersecurity services can be scaled according to the size, technology environment, risk profile, and budget of an organization.',
-            ],
-        ],
-
-        'icon' => 'shield-half-outline',
-        'hero_image' => null,
-        'meta_title' => 'Cybersecurity Services | South-End Tech',
-        'meta_description' => 'Strengthen your organization’s security posture with cybersecurity assessments, advisory, vulnerability management, monitoring, and incident readiness services.',
-        'is_published' => true,
-        'sort_order' => 7,
-    ],
-]
-
-
-
-
         ];
 
         foreach ($solutions as $solution) {
