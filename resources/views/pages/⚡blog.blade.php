@@ -34,13 +34,13 @@ new class extends Component
 
             {{-- Breadcrumb --}}
             <nav class="flex flex-wrap items-center gap-2 text-sm text-blue-200 mb-8">
-                <a href="/" wire:navigate class="hover:text-white transition">
+                <a href="{{ route('home') }}" wire:navigate class="hover:text-white transition">
                     Home
                 </a>
 
                 <ion-icon name="chevron-forward-outline" class="text-sm"></ion-icon>
 
-                <a href="/blogs" wire:navigate class="hover:text-white transition">
+                <a href="{{ route('blogs.index') }}" wire:navigate class="hover:text-white transition">
                     Insights
                 </a>
 
@@ -242,7 +242,7 @@ new class extends Component
                                     compliance, AI, and digital transformation.
                                 </p>
 
-                                <a href="/book" wire:navigate class="mt-6 inline-flex items-center justify-center
+                                <a href="{{ route('book') }}" wire:navigate class="mt-6 inline-flex items-center justify-center
                                         gap-2 w-full bg-amber-500 hover:bg-amber-400
                                         text-slate-950 px-5 py-3 rounded-xl
                                         font-bold transition">
@@ -258,7 +258,7 @@ new class extends Component
 
 
                         {{-- Back to insights --}}
-                        <a href="/blogs" wire:navigate class="mt-4 flex items-center justify-center gap-2
+                        <a href="{{ route('blogs.index') }}" wire:navigate class="mt-4 flex items-center justify-center gap-2
                                 w-full px-5 py-3 rounded-xl
                                 border border-slate-200 dark:border-slate-800
                                 bg-white dark:bg-slate-900
@@ -307,7 +307,7 @@ new class extends Component
                 compliance, artificial intelligence, and digital transformation.
             </p>
 
-            <a href="/contact" wire:navigate class="mt-7 inline-flex items-center gap-2
+            <a href="{{ route('contact') }}" wire:navigate class="mt-7 inline-flex items-center gap-2
                     px-6 py-3 rounded-xl
                     bg-blue-600 hover:bg-blue-700
                     text-white font-semibold transition">

@@ -2,12 +2,16 @@
 
 namespace Tests\Feature;
 
+use Database\Seeders\JobOpeningSeeder;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Livewire\Livewire;
 use PHPUnit\Framework\Attributes\DataProvider;
 use Tests\TestCase;
 
 class PagesTest extends TestCase
 {
+    use RefreshDatabase;
+
     public static function pageProvider(): array
     {
         return [
@@ -60,6 +64,8 @@ class PagesTest extends TestCase
 
     public function test_careers_filter_narrows_job_listings(): void
     {
+        $this->seed(JobOpeningSeeder::class);
+
         $component = Livewire::test('pages::careers');
 
         $component->assertSee('Cybersecurity Analyst')

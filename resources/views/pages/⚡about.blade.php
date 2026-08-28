@@ -300,12 +300,12 @@ class extends Component
                 class="mt-6 max-w-2xl mx-auto text-lg text-blue-100 leading-relaxed">Whether you want to work with us
                 or join us, we would love to hear from you.</p>
             <div data-aos="fade-up" data-aos-delay="200" class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="/book" wire:navigate
+                <a href="{{ route('book') }}" wire:navigate
                     class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold transition shadow-lg shadow-amber-500/30">
                     Book a Consultation
                     <ion-icon name="calendar-outline"></ion-icon>
                 </a>
-                <a href="/careers" wire:navigate
+                <a href="{{ route('careers') }}" wire:navigate
                     class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl border border-white/30 hover:bg-white/10 text-white font-semibold transition">
                     Explore Careers
                     <ion-icon name="arrow-forward-outline"></ion-icon>

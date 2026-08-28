@@ -35,13 +35,13 @@ new class extends Component
 
             {{-- Breadcrumb --}}
             <div class="flex items-center gap-2 text-sm text-blue-200 mb-8" data-aos="fade-up">
-                <a href="/" wire:navigate class="hover:text-amber-400 transition">
+                <a href="{{ route('home') }}" wire:navigate class="hover:text-amber-400 transition">
                     Home
                 </a>
 
                 <ion-icon name="chevron-forward-outline"></ion-icon>
 
-                <a href="/case-studies" wire:navigate class="hover:text-amber-400 transition">
+                <a href="{{ route('case-studies.index') }}" wire:navigate class="hover:text-amber-400 transition">
                     Case Studies
                 </a>
 
@@ -389,7 +389,7 @@ new class extends Component
                                 technology solution for your organization.
                             </p>
 
-                            <a href="/book" wire:navigate class="mt-6 inline-flex items-center justify-center
+                            <a href="{{ route('book') }}" wire:navigate class="mt-6 inline-flex items-center justify-center
                                        gap-2 w-full px-5 py-3 rounded-xl
                                        bg-blue-950 hover:bg-blue-900
                                        text-white font-bold transition">
@@ -435,7 +435,7 @@ new class extends Component
                     </h2>
                 </div>
 
-                <a href="/case-studies" wire:navigate class="inline-flex items-center gap-2
+                <a href="{{ route('case-studies.index') }}" wire:navigate class="inline-flex items-center gap-2
                            px-6 py-3 rounded-xl
                            bg-blue-950 hover:bg-amber-500
                            text-white hover:text-slate-900

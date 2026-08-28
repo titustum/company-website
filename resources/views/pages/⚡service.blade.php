@@ -37,7 +37,7 @@ new class extends Component
 
             {{-- Breadcrumb --}}
             <nav class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-10">
-                <a href="/" wire:navigate class="hover:text-blue-600 dark:hover:text-blue-400 transition">
+                <a href="{{ route('home') }}" wire:navigate class="hover:text-blue-600 dark:hover:text-blue-400 transition">
                     Home
                 </a>
 
@@ -89,7 +89,7 @@ new class extends Component
 
                     <div class="mt-9 flex flex-wrap gap-4">
 
-                        <a href="/book" wire:navigate class="inline-flex items-center justify-center gap-2
+                        <a href="{{ route('book') }}" wire:navigate class="inline-flex items-center justify-center gap-2
                                    px-7 py-4 rounded-xl
                                    bg-amber-500 hover:bg-amber-400
                                    text-slate-950 font-bold
@@ -101,7 +101,7 @@ new class extends Component
                             Book a Consultation
                         </a>
 
-                        <a href="/contact" wire:navigate class="inline-flex items-center justify-center gap-2
+                        <a href="{{ route('contact') }}" wire:navigate class="inline-flex items-center justify-center gap-2
                                    px-7 py-4 rounded-xl
                                    border border-slate-300 dark:border-slate-700
                                    bg-white dark:bg-slate-800
@@ -413,7 +413,7 @@ new class extends Component
 
             <div class="mt-9 flex flex-wrap justify-center gap-4">
 
-                <a href="/book" wire:navigate class="inline-flex items-center gap-2
+                <a href="{{ route('book') }}" wire:navigate class="inline-flex items-center gap-2
                            px-7 py-4 rounded-xl
                            bg-amber-500 hover:bg-amber-400
                            text-slate-950 font-bold
@@ -424,7 +424,7 @@ new class extends Component
                     Book a Consultation
                 </a>
 
-                <a href="/contact" wire:navigate class="inline-flex items-center gap-2
+                <a href="{{ route('contact') }}" wire:navigate class="inline-flex items-center gap-2
                            px-7 py-4 rounded-xl
                            border border-blue-700
                            hover:bg-blue-900

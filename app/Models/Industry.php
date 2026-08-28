@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Industry extends Model
@@ -32,6 +33,20 @@ class Industry extends Model
             'benefits' => 'array',
             'faqs' => 'array',
             'is_published' => 'boolean',
+            'sort_order' => 'integer',
         ];
+    }
+
+    /**
+     * Scope a query to only include published industries.
+     */
+    public function scopePublished(Builder $query): Builder
+    {
+        return $query->where('is_published', true);
+    }
+
+    public function getRouteKeyName(): string
+    {
+        return 'slug';
     }
 }

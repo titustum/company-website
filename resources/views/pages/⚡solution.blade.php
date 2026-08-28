@@ -47,13 +47,13 @@ new class extends Component
 
             {{-- Breadcrumb --}}
             <div class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-8">
-                <a href="/" wire:navigate class="hover:text-blue-600 transition">
+                <a href="{{ route('home') }}" wire:navigate class="hover:text-blue-600 transition">
                     Home
                 </a>
 
                 <ion-icon name="chevron-forward-outline"></ion-icon>
 
-                <a href="/#solutions" class="hover:text-blue-600 transition">
+                <a href="{{ route('home') }}#solutions" class="hover:text-blue-600 transition">
                     Solutions
                 </a>
 
@@ -103,7 +103,7 @@ new class extends Component
 
                     <div class="mt-9 flex flex-wrap gap-4">
 
-                        <a href="/book" wire:navigate class="inline-flex items-center justify-center gap-2
+                        <a href="{{ route('book') }}" wire:navigate class="inline-flex items-center justify-center gap-2
                             px-7 py-4 rounded-xl
                             bg-amber-500 hover:bg-amber-400
                             text-slate-950 font-bold
@@ -115,7 +115,7 @@ new class extends Component
                             Book a Consultation
                         </a>
 
-                        <a href="/contact" wire:navigate class="inline-flex items-center justify-center gap-2
+                        <a href="{{ route('contact') }}" wire:navigate class="inline-flex items-center justify-center gap-2
                             px-7 py-4 rounded-xl
                             border border-slate-300 dark:border-slate-700
                             bg-white dark:bg-slate-900
@@ -329,7 +329,7 @@ new class extends Component
                         reduce risk, improve efficiency, and create long-term value.
                     </p>
 
-                    <a href="/contact" wire:navigate class="mt-8 inline-flex items-center gap-2
+                    <a href="{{ route('contact') }}" wire:navigate class="mt-8 inline-flex items-center gap-2
                             text-blue-600 dark:text-blue-400
                             font-bold hover:gap-3 transition-all">
 
@@ -614,7 +614,7 @@ new class extends Component
 
             <div class="mt-9 flex flex-wrap justify-center gap-4">
 
-                <a href="/book" wire:navigate class="inline-flex items-center gap-2
+                <a href="{{ route('book') }}" wire:navigate class="inline-flex items-center gap-2
                     px-8 py-4 rounded-xl
                     bg-amber-500 hover:bg-amber-400
                     text-slate-950 font-bold
@@ -626,7 +626,7 @@ new class extends Component
 
                 </a>
 
-                <a href="/contact" wire:navigate class="inline-flex items-center gap-2
+                <a href="{{ route('contact') }}" wire:navigate class="inline-flex items-center gap-2
                     px-8 py-4 rounded-xl
                     border border-white/20
                     bg-white/10 hover:bg-white/20

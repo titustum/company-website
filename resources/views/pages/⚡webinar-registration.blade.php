@@ -86,13 +86,13 @@ new class extends Component
             {{-- Breadcrumb --}}
             <div class="flex items-center gap-2 text-sm text-blue-200 mb-8">
 
-                <a href="/" wire:navigate class="hover:text-amber-400 transition">
+                <a href="{{ route('home') }}" wire:navigate class="hover:text-amber-400 transition">
                     Home
                 </a>
 
                 <ion-icon name="chevron-forward-outline"></ion-icon>
 
-                <a href="/webinars" wire:navigate class="hover:text-amber-400 transition">
+                <a href="{{ route('webinars.index') }}" wire:navigate class="hover:text-amber-400 transition">
                     Webinars
                 </a>
 
@@ -218,7 +218,7 @@ new class extends Component
 
                     <div class="mt-8 flex flex-wrap justify-center gap-3">
 
-                        <a href="/webinars" wire:navigate class="inline-flex items-center gap-2
+                        <a href="{{ route('webinars.index') }}" wire:navigate class="inline-flex items-center gap-2
                                       px-6 py-3 rounded-xl
                                       bg-blue-600 hover:bg-blue-700
                                       text-white font-semibold transition">
@@ -229,7 +229,7 @@ new class extends Component
 
                         </a>
 
-                        <a href="/" wire:navigate class="inline-flex items-center gap-2
+                        <a href="{{ route('home') }}" wire:navigate class="inline-flex items-center gap-2
                                       px-6 py-3 rounded-xl
                                       border border-slate-300
                                       dark:border-slate-700

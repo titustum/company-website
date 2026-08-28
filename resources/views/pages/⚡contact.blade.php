@@ -287,7 +287,7 @@ new #[\Livewire\Attributes\Title('Contact Us | South-End Tech Limited')] class e
                 class="mt-6 max-w-2xl mx-auto text-lg text-blue-100 leading-relaxed">Schedule a free consultation with
                 one of our specialists and get practical guidance for your organization.</p>
             <div data-aos="fade-up" data-aos-delay="200" class="mt-10">
-                <a href="/book" wire:navigate
+                <a href="{{ route('book') }}" wire:navigate
                     class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold transition shadow-lg shadow-amber-500/30">
                     Book a Consultation
                     <ion-icon name="arrow-forward-outline"></ion-icon>

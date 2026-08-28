@@ -546,7 +546,7 @@ new class extends Component
             <div class="mt-8 flex flex-col sm:flex-row
                 justify-center gap-3">
 
-                <a href="/book" wire:navigate class="inline-flex items-center
+                <a href="{{ route('book') }}" wire:navigate class="inline-flex items-center
                         justify-center gap-2
                         px-7 py-3.5 rounded-xl
                         bg-amber-500 hover:bg-amber-400
@@ -558,7 +558,7 @@ new class extends Component
 
                 </a>
 
-                <a href="/contact" wire:navigate class="inline-flex items-center
+                <a href="{{ route('contact') }}" wire:navigate class="inline-flex items-center
                         justify-center gap-2
                         px-7 py-3.5 rounded-xl
                         border border-white/20

@@ -76,7 +76,7 @@ new class extends Component
 
                     <div class="mt-8 flex flex-wrap gap-4">
 
-                        <a href="/book" wire:navigate class="inline-flex items-center justify-center gap-2
+                        <a href="{{ route('book') }}" wire:navigate class="inline-flex items-center justify-center gap-2
                                px-7 py-4 rounded-xl
                                bg-amber-500 hover:bg-amber-400
                                text-slate-950 font-bold
@@ -85,7 +85,7 @@ new class extends Component
                             Book a Consultation
                         </a>
 
-                        <a href="/contact" wire:navigate class="inline-flex items-center justify-center gap-2
+                        <a href="{{ route('contact') }}" wire:navigate class="inline-flex items-center justify-center gap-2
                                px-7 py-4 rounded-xl
                                bg-white dark:bg-slate-900
                                border border-slate-300 dark:border-slate-700
@@ -497,7 +497,7 @@ new class extends Component
 
             <div class="mt-9 flex flex-wrap justify-center gap-4">
 
-                <a href="/book" wire:navigate class="inline-flex items-center gap-2
+                <a href="{{ route('book') }}" wire:navigate class="inline-flex items-center gap-2
                        px-8 py-4 rounded-xl
                        bg-amber-500 hover:bg-amber-400
                        text-slate-950 font-bold
@@ -506,7 +506,7 @@ new class extends Component
                     Schedule a Consultation
                 </a>
 
-                <a href="/contact" wire:navigate class="inline-flex items-center gap-2
+                <a href="{{ route('contact') }}" wire:navigate class="inline-flex items-center gap-2
                        px-8 py-4 rounded-xl
                        bg-blue-600 hover:bg-blue-700
                        text-white font-bold

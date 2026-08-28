@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
+use Database\Factories\SolutionFactory;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Solution extends Model
 {
-    /** @use HasFactory<\Database\Factories\SolutionFactory> */
+    /** @use HasFactory<SolutionFactory> */
     use HasFactory;
 
     protected $fillable = [
@@ -34,7 +36,20 @@ class Solution extends Model
             'benefits' => 'array',
             'faqs' => 'array',
             'is_published' => 'boolean',
+            'sort_order' => 'integer',
         ];
     }
-    
+
+    /**
+     * Scope a query to only include published solutions.
+     */
+    public function scopePublished(Builder $query): Builder
+    {
+        return $query->where('is_published', true);
+    }
+
+    public function getRouteKeyName(): string
+    {
+        return 'slug';
+    }
 }

@@ -49,7 +49,7 @@
     <nav class="sticky top-0 z-30 bg-blue-600 dark:bg-blue-900 text-white shadow-lg transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center justify-between h-20">
-                <a href="/" wire:navigate class="flex items-center shrink-0" aria-label="SouthEnd Tech — Home">
+                <a href="{{ route('home') }}" wire:navigate class="flex items-center shrink-0" aria-label="SouthEnd Tech — Home">
                     <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-12 w-auto">
                 </a>
 
@@ -57,7 +57,7 @@
 
                     <!-- HOME -->
                     <li>
-                        <a href="/" wire:navigate class="hover:text-amber-300 transition">
+                        <a href="{{ route('home') }}" wire:navigate class="hover:text-amber-300 transition">
                             Home
                         </a>
                     </li>
@@ -76,25 +76,12 @@
                             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
                        w-80 p-4 text-gray-700 dark:text-gray-200">
 
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Cybersecurity Solutions
+                                @foreach ($navigationSolutions as $solution)
+                                <a href="{{ route('solution.show', $solution) }}" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    {{ $solution->title }}
                                 </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Data Protection & Privacy
-                                </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Data & AI Solutions
-                                </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Digital & IT Solutions
-                                </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    E-Government Solutions
-                                </a>
+                                @endforeach
 
                             </div>
                         </div>
@@ -115,33 +102,12 @@
                             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
                        w-80 p-4 text-gray-700 dark:text-gray-200">
 
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Data Protection & Compliance
+                                @foreach ($navigationServices as $service)
+                                <a href="{{ route('service.show', $service) }}" wire:navigate
+                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    {{ $service->title }}
                                 </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Data Governance & Management
-                                </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Cybersecurity Services
-                                </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Data Science & Analytics
-                                </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Digital Consulting
-                                </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    IT Managed Services
-                                </a>
-
-                                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Software & Website Development
-                                </a>
+                                @endforeach
 
                             </div>
                         </div>
@@ -162,35 +128,12 @@
                             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
                    w-72 p-4 text-gray-700 dark:text-gray-200">
 
-                                <a href="/industries/financial-services" wire:navigate
+                                @foreach ($navigationIndustries as $industry)
+                                <a href="{{ route('industry.show', $industry) }}" wire:navigate
                                     class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Financial Services
+                                    {{ $industry->title }}
                                 </a>
-
-                                <a href="/industries/healthcare" wire:navigate
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Healthcare
-                                </a>
-
-                                <a href="/industries/government" wire:navigate
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Government & Public Sector
-                                </a>
-
-                                <a href="/industries/ngos" wire:navigate
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    NGOs & Development
-                                </a>
-
-                                <a href="/industries/education" wire:navigate
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    Education
-                                </a>
-
-                                <a href="/industries/smes" wire:navigate
-                                    class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                                    SMEs & Businesses
-                                </a>
+                                @endforeach
 
                             </div>
                         </div>
@@ -212,12 +155,12 @@
                             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
                        w-64 p-4 text-gray-700 dark:text-gray-200">
 
-                                <a href="/about" wire:navigate
+                                <a href="{{ route('about') }}" wire:navigate
                                     class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                                     About Us
                                 </a>
 
-                                <a href="/team" wire:navigate
+                                <a href="{{ route('team') }}" wire:navigate
                                     class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                                     Our Team
                                 </a>
@@ -279,7 +222,7 @@
                         class="w-10 h-10 rounded-full bg-blue-700 hover:bg-blue-800 dark:bg-blue-800 dark:hover:bg-blue-700 transition flex items-center justify-center">
                         <ion-icon name="moon-outline" id="themeIcon" class="text-xl"></ion-icon>
                     </button>
-                    <a href="/book" wire:navigate
+                    <a href="{{ route('book') }}" wire:navigate
                         class="bg-amber-500 hover:bg-amber-400 px-5 py-3 rounded-full text-black font-semibold flex items-center gap-2 transition">
                         Book a Consultation
                         <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -301,7 +244,7 @@
 
             <!-- Drawer Header -->
             <div class="bg-blue-600 dark:bg-blue-900 text-white px-5 h-20 flex items-center justify-between">
-                <a href="/" wire:navigate class="flex items-center shrink-0" aria-label="SouthEnd Tech — Home">
+                <a href="{{ route('home') }}" wire:navigate class="flex items-center shrink-0" aria-label="SouthEnd Tech — Home">
                     <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-10 w-auto">
                 </a>
 
@@ -315,7 +258,7 @@
             <div class="p-5">
 
                 <!-- HOME -->
-                <a href="/" wire:navigate
+                <a href="{{ route('home') }}" wire:navigate
                     class="flex items-center gap-3 py-3 font-medium border-b border-gray-200 dark:border-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition">
                     <ion-icon name="home-outline" class="text-lg"></ion-icon>
                     Home
@@ -338,25 +281,12 @@
 
                     <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
 
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Cybersecurity Solutions
+                        @foreach ($navigationSolutions as $solution)
+                        <a href="{{ route('solution.show', $solution) }}" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            {{ $solution->title }}
                         </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Data Protection & Privacy
-                        </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Data & AI Solutions
-                        </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Digital & IT Solutions
-                        </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            E-Government Solutions
-                        </a>
+                        @endforeach
 
                     </div>
                 </details>
@@ -379,33 +309,12 @@
 
                     <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
 
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Data Protection & Compliance
+                        @foreach ($navigationServices as $service)
+                        <a href="{{ route('service.show', $service) }}" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            {{ $service->title }}
                         </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Data Governance & Management
-                        </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Cybersecurity Services
-                        </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Data Science & Analytics
-                        </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Digital Consulting
-                        </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            IT Managed Services
-                        </a>
-
-                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Software & Website Development
-                        </a>
+                        @endforeach
 
                     </div>
                 </details>
@@ -428,35 +337,12 @@
 
                     <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
 
-                        <a href="/industries/financial-services" wire:navigate
+                        @foreach ($navigationIndustries as $industry)
+                        <a href="{{ route('industry.show', $industry) }}" wire:navigate
                             class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Financial Services
+                            {{ $industry->title }}
                         </a>
-
-                        <a href="/industries/healthcare" wire:navigate
-                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Healthcare
-                        </a>
-
-                        <a href="/industries/government" wire:navigate
-                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Government & Public Sector
-                        </a>
-
-                        <a href="/industries/ngos" wire:navigate
-                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            NGOs & Development
-                        </a>
-
-                        <a href="/industries/education" wire:navigate
-                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            Education
-                        </a>
-
-                        <a href="/industries/smes" wire:navigate
-                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                            SMEs & Businesses
-                        </a>
+                        @endforeach
 
                     </div>
                 </details>
@@ -479,12 +365,12 @@
 
                     <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
 
-                        <a href="/about" wire:navigate
+                        <a href="{{ route('about') }}" wire:navigate
                             class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
                             About Us
                         </a>
 
-                        <a href="/team" wire:navigate
+                        <a href="{{ route('team') }}" wire:navigate
                             class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
                             Our Team
                         </a>
@@ -520,7 +406,7 @@
 
                     <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
 
-                        <a href="/blogs" wire:navigate
+                        <a href="{{ route('blogs.index') }}" wire:navigate
                             class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
                             Blogs
                         </a>
@@ -540,7 +426,7 @@
 
 
                 <!-- CONTACT -->
-                <a href="/contact" wire:navigate
+                <a href="{{ route('contact') }}" wire:navigate
                     class="flex items-center gap-3 py-3 font-medium border-b border-gray-200 dark:border-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition">
                     <ion-icon name="mail-outline" class="text-lg"></ion-icon>
                     Contact Us
@@ -548,7 +434,7 @@
 
 
                 <!-- CAREERS -->
-                <a href="/careers" wire:navigate
+                <a href="{{ route('careers') }}" wire:navigate
                     class="flex items-center gap-3 py-3 font-medium border-b border-gray-200 dark:border-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition">
                     <ion-icon name="briefcase-outline" class="text-lg"></ion-icon>
                     Careers
@@ -569,7 +455,7 @@
 
 
                     <!-- Consultation -->
-                    <a href="/book" wire:navigate
+                    <a href="{{ route('book') }}" wire:navigate
                         class="flex items-center justify-center gap-2 text-black bg-amber-500 hover:bg-amber-400 py-3 rounded-lg font-semibold transition">
 
                         Book a Consultation
@@ -598,7 +484,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-10">
                 <!-- Brand -->
                 <div class="lg:col-span-4">
-                    <a href="/" wire:navigate class="flex items-center gap-3 mb-6" aria-label="SouthEnd Tech — Home">
+                    <a href="{{ route('home') }}" wire:navigate class="flex items-center gap-3 mb-6" aria-label="SouthEnd Tech — Home">
                         <img src="{{ asset('images/logo.png') }}" alt="South-End Tech" class="h-12 w-auto">
                     </a>
                     <p class="text-blue-100 leading-relaxed max-w-sm">South-End Tech Limited is a technology consulting
@@ -630,11 +516,11 @@
                 <div class="lg:col-span-2">
                     <h3 class="footer-title">Company</h3>
                     <ul class="footer-links">
-                        <li><a href="/about" wire:navigate>About Us</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="/careers" wire:navigate>Careers</a></li>
-                        <li><a href="#">Insights</a></li>
-                        <li><a href="/contact" wire:navigate>Contact</a></li>
+                        <li><a href="{{ route('about') }}" wire:navigate>About Us</a></li>
+                        <li><a href="{{ route('team') }}" wire:navigate>Our Team</a></li>
+                        <li><a href="{{ route('careers') }}" wire:navigate>Careers</a></li>
+                        <li><a href="{{ route('blogs.index') }}" wire:navigate>Insights</a></li>
+                        <li><a href="{{ route('contact') }}" wire:navigate>Contact</a></li>
                     </ul>
                 </div>
                 <!-- Contact -->

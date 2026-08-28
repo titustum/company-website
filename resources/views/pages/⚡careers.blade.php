@@ -707,7 +707,7 @@ class extends Component
 
                 </a>
 
-                <a href="/contact" wire:navigate
+                <a href="{{ route('contact') }}" wire:navigate
                     class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl border border-white/30 hover:bg-white/10 text-white font-semibold transition">
 
                     Get In Touch

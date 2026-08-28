@@ -521,7 +521,7 @@ new class extends Component
 
                 </div>
 
-                <a href="/contact" wire:navigate class="shrink-0 inline-flex items-center justify-center
+                <a href="{{ route('contact') }}" wire:navigate class="shrink-0 inline-flex items-center justify-center
                            gap-2 px-7 py-3.5 rounded-xl
                            bg-amber-500 hover:bg-amber-400
                            text-slate-900 font-bold transition">

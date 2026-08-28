@@ -396,7 +396,7 @@ new class extends Component
 
 
                     {{-- Back to webinars --}}
-                    <a href="/webinars" wire:navigate class="flex items-center justify-center gap-2
+                    <a href="{{ route('webinars.index') }}" wire:navigate class="flex items-center justify-center gap-2
                               w-full px-5 py-3.5 rounded-xl
                               border border-slate-300
                               dark:border-slate-700
@@ -462,7 +462,7 @@ new class extends Component
 
                     <div class="mt-8 flex flex-wrap justify-center gap-4">
 
-                        <a href="/contact" wire:navigate class="inline-flex items-center gap-2
+                        <a href="{{ route('contact') }}" wire:navigate class="inline-flex items-center gap-2
                                   px-6 py-3.5 rounded-xl
                                   bg-amber-500 hover:bg-amber-400
                                   text-slate-950 font-bold transition">
@@ -473,7 +473,7 @@ new class extends Component
 
                         </a>
 
-                        <a href="/webinars" wire:navigate class="inline-flex items-center gap-2
+                        <a href="{{ route('webinars.index') }}" wire:navigate class="inline-flex items-center gap-2
                                   px-6 py-3.5 rounded-xl
                                   border border-white/20
                                   hover:bg-white/10

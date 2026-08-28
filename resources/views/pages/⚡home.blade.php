@@ -30,7 +30,7 @@ new class extends Component
                     </p>
                     <div data-aos="fade-up" data-aos-delay="200"
                         class="mt-10 grid text-center items-center md:flex flex-wrap gap-4">
-                        <a href="/book" wire:navigate
+                        <a href="{{ route('book') }}" wire:navigate
                             class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent-yellow hover:bg-amber-400 text-slate-900 font-bold shadow-lg transition">
                             <ion-icon name="calendar-outline" class="text-xl"></ion-icon>
                             Book a Consultation
@@ -225,7 +225,7 @@ new class extends Component
                                 <span>Scalable technology solutions</span>
                             </div>
                         </div>
-                        <a href="/about" wire:navigate
+                        <a href="{{ route('about') }}" wire:navigate
                             class="mt-10 bg-amber-500 hover:bg-amber-600 px-7 py-3 rounded-xl font-semibold flex items-center gap-2 transition w-fit">
                             Discover How We Help
                             <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -283,7 +283,7 @@ new class extends Component
                         <div class="service-item">Privacy Audits</div>
                         <div class="service-item">Data Protection Impact Assessments</div>
                     </div>
-                    <a href="/book" wire:navigate class="solution-btn">Explore Data Protection Solutions <ion-icon
+                    <a href="{{ route('book') }}" wire:navigate class="solution-btn">Explore Data Protection Solutions <ion-icon
                             name="arrow-forward-outline"></ion-icon></a>
                 </div>
             </div>
@@ -301,7 +301,7 @@ new class extends Component
                         <div class="service-item">Network Security</div>
                         <div class="service-item">Backup & Disaster Recovery</div>
                     </div>
-                    <a href="/book" wire:navigate class="solution-btn">Secure Your Business <ion-icon
+                    <a href="{{ route('book') }}" wire:navigate class="solution-btn">Secure Your Business <ion-icon
                             name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
@@ -352,7 +352,7 @@ new class extends Component
                         <div class="service-item">AI Solutions</div>
                         <div class="service-item">Analytics Consulting</div>
                     </div>
-                    <a href="/book" wire:navigate class="solution-btn">Unlock Your Data Potential <ion-icon
+                    <a href="{{ route('book') }}" wire:navigate class="solution-btn">Unlock Your Data Potential <ion-icon
                             name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
@@ -370,7 +370,7 @@ new class extends Component
                         <div class="service-item">E-Government Solutions</div>
                         <div class="service-item">Software Development</div>
                     </div>
-                    <a href="/book" wire:navigate class="solution-btn">Transform Your Business <ion-icon
+                    <a href="{{ route('book') }}" wire:navigate class="solution-btn">Transform Your Business <ion-icon
                             name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
@@ -675,7 +675,7 @@ new class extends Component
                         solutions aligned with their goals.
                     </p>
 
-                    <a href="/contact" wire:navigate
+                    <a href="{{ route('contact') }}" wire:navigate
                         class="mt-5 inline-flex items-center gap-2 bg-amber-500 px-5 py-3 rounded-xl font-semibold text-slate-950 hover:bg-amber-400 transition">
                         Talk To Our Experts
                         <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -882,7 +882,7 @@ new class extends Component
                         cybersecurity, compliance, artificial intelligence, and data protection to help your
                         organization make informed technology decisions.</p>
                 </div>
-                <a href="/contact" wire:navigate
+                <a href="{{ route('contact') }}" wire:navigate
                     class="inline-flex items-center gap-2 bg-blue-950 hover:bg-amber-500 text-white px-7 py-3 rounded-xl font-semibold transition">
                     View All Resources
                     <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -971,12 +971,12 @@ new class extends Component
                 cybersecurity protection, data compliance support, AI solutions, or digital transformation
                 consulting, our experts are ready to help you build a safer and smarter future.</p>
             <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
-                <a href="/book" wire:navigate
+                <a href="{{ route('book') }}" wire:navigate
                     class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-blue-950 font-bold transition shadow-lg shadow-amber-500/30">
                     Schedule a Consultation
                     <ion-icon name="calendar-outline"></ion-icon>
                 </a>
-                <a href="/contact" wire:navigate
+                <a href="{{ route('contact') }}" wire:navigate
                     class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl border border-white/30 hover:bg-white/10 text-white font-semibold transition">
                     Contact Our Team
                     <ion-icon name="chatbubble-outline"></ion-icon>
