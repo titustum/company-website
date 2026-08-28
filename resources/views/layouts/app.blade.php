@@ -7,10 +7,10 @@
 
     <title>{{ $title ?? config('app.name') }}</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -562,7 +562,7 @@
                         <p class="mt-3 flex items-start gap-1.5 text-xs text-blue-200 leading-5">
                             <ion-icon name="lock-closed-outline" class="mt-0.5 shrink-0 text-amber-400"></ion-icon>
                             <span>
-We respect your privacy. Your data is protected in accordance with the Kenya Data Protection Act.
+                                We respect your privacy. Your data is protected in accordance with the Kenya Data Protection Act.
                             </span>
                         </p>
                     </div>

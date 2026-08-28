@@ -1,10 +1,15 @@
 <?php
 
+use App\Models\Partner;
 use Livewire\Component;
 
 new class extends Component
 {
-    //
+    public function render()
+    {
+        return $this->view()
+            ->with('partners', Partner::published()->get());
+    }
 };
 ?>
 
@@ -96,38 +101,17 @@ new class extends Component
             </div>
             <div class="marquee">
                 <div class="marquee-content">
-                    <div class="partner" title="ICT Authority"><img
-                            src="https://southendtech.co.ke/media/partner/ictalogo3_xaEKsaX.png" alt="ICT Authority">
-                    </div>
-                    <div class="partner" title="Kaspersky"><img
-                            src="https://southendtech.co.ke/media/partner/kasperky-managed_PTWyPIQ.png" alt="Kaspersky">
-                    </div>
-                    <div class="partner" title="Bitdefender"><img
-                            src="https://southendtech.co.ke/media/partner/bitdefender-blue-logo-png_5sOzGcb.webp"
-                            alt="Bitdefender"></div>
-                    <div class="partner" title="K7 Security"><img
-                            src="https://southendtech.co.ke/media/partner/K7_Security_Rectangle_Logo_boxpQoP.png"
-                            alt="K7 Security"></div>
-                    <div class="partner" title="Ndovu"><img
-                            src="https://southendtech.co.ke/media/partner/ndovu-logo_0CsMugn.png" alt="Ndovu"></div>
-                    <div class="partner" title="Fortinet"><img
-                            src="https://southendtech.co.ke/media/partner/fortigate-firewall_YZ6tSWN.webp"
-                            alt="Fortinet"></div>
+                    @foreach ($partners as $partner)
+                        <div class="partner" title="{{ $partner->name }}"><img
+                                src="{{ $partner->image_url }}" alt="{{ $partner->name }}">
+                        </div>
+                    @endforeach
                     <!-- duplicate for seamless scroll -->
-                    <div class="partner" title="ICT Authority"><img
-                            src="https://southendtech.co.ke/media/partner/ictalogo3_xaEKsaX.png"></div>
-                    <div class="partner" title="Kaspersky"><img
-                            src="https://southendtech.co.ke/media/partner/kasperky-managed_PTWyPIQ.png"></div>
-                    <div class="partner" title="Bitdefender"><img
-                            src="https://southendtech.co.ke/media/partner/bitdefender-blue-logo-png_5sOzGcb.webp">
-                    </div>
-                    <div class="partner" title="K7 Security"><img
-                            src="https://southendtech.co.ke/media/partner/K7_Security_Rectangle_Logo_boxpQoP.png">
-                    </div>
-                    <div class="partner" title="Ndovu"><img
-                            src="https://southendtech.co.ke/media/partner/ndovu-logo_0CsMugn.png"></div>
-                    <div class="partner" title="Fortinet"><img
-                            src="https://southendtech.co.ke/media/partner/fortigate-firewall_YZ6tSWN.webp"></div>
+                    @foreach ($partners as $partner)
+                        <div class="partner" title="{{ $partner->name }}"><img
+                                src="{{ $partner->image_url }}" alt="{{ $partner->name }}">
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -283,8 +267,9 @@ new class extends Component
                         <div class="service-item">Privacy Audits</div>
                         <div class="service-item">Data Protection Impact Assessments</div>
                     </div>
-                    <a href="{{ route('book') }}" wire:navigate class="solution-btn">Explore Data Protection Solutions <ion-icon
-                            name="arrow-forward-outline"></ion-icon></a>
+                    <a href="{{ route('book') }}" wire:navigate class="solution-btn">Explore Data Protection Solutions
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
                 </div>
             </div>
 
@@ -352,9 +337,10 @@ new class extends Component
                         <div class="service-item">AI Solutions</div>
                         <div class="service-item">Analytics Consulting</div>
                     </div>
-                    <a href="{{ route('book') }}" wire:navigate class="solution-btn">Unlock Your Data Potential <ion-icon
-                            name="arrow-forward-outline">
-                        </ion-icon></a>
+                    <a href="{{ route('book') }}" wire:navigate class="solution-btn">Unlock Your Data Potential
+                        <ion-icon name="arrow-forward-outline">
+                        </ion-icon>
+                    </a>
                 </div>
             </div>
 

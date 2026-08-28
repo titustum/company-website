@@ -33,6 +33,7 @@ class DatabaseSeeder extends Seeder
             CaseStudySeeder::class,
             JobOpeningSeeder::class,
             ConsultationSeeder::class,
+            PartnerSeeder::class,
         ]);
     }
 }

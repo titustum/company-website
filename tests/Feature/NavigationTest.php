@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Industry;
+use App\Models\Partner;
 use App\Models\Service;
 use App\Models\Solution;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -105,6 +106,29 @@ class NavigationTest extends TestCase
             ->assertSee(route('solution.show', $this->solution['slug']))
             ->assertSee('Published Solution')
             ->assertDontSee('Draft Solution');
+    }
+
+    public function test_home_lists_published_partners(): void
+    {
+        Partner::create([
+            'name' => 'Test Partner',
+            'image' => 'https://example.com/test-partner.png',
+            'sort_order' => 1,
+            'is_published' => true,
+        ]);
+
+        Partner::create([
+            'name' => 'Draft Partner',
+            'image' => 'partners/draft-partner.png',
+            'sort_order' => 2,
+            'is_published' => false,
+        ]);
+
+        $this->get('/')
+            ->assertOk()
+            ->assertSee('Test Partner')
+            ->assertSee('https://example.com/test-partner.png')
+            ->assertDontSee('Draft Partner');
     }
 
     public function test_signup_boxes_use_security_focused_copy(): void
