@@ -116,7 +116,7 @@ class extends Component
                         <div data-aos="fade-left"
                             class="flex gap-5 items-start p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
                             <div
-                                class="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-500/20 flex items-center justify-center">
+                                class="shrink-0 w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-500/20 flex items-center justify-center">
                                 <ion-icon name="flag-outline" class="text-2xl text-amber-600"></ion-icon>
                             </div>
                             <div>
@@ -128,7 +128,7 @@ class extends Component
                         <div data-aos="fade-left" data-aos-delay="100"
                             class="flex gap-5 items-start p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
                             <div
-                                class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center">
+                                class="shrink-0 w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center">
                                 <ion-icon name="eye-outline" class="text-2xl text-blue-900 dark:text-blue-400">
                                 </ion-icon>
                             </div>
@@ -195,7 +195,7 @@ class extends Component
                 </div>
                 <div class="why-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="why-icon bg-amber-100 dark:bg-amber-500/20">
-                        <ion-icon name="handshake-outline" class="text-amber-600"></ion-icon>
+                        <x-icon-handshake class="w-10 h-10 text-amber-600" />
                     </div>
                     <h3>Long-Term Partnership</h3>
                     <p>We measure success by our clients' growth, not by project sign-offs. We stay for the long
@@ -235,7 +235,7 @@ class extends Component
                     @foreach ($this->milestones() as $milestone)
                     <div class="flex gap-6 items-start relative" data-aos="fade-left">
                         <div
-                            class="hidden sm:flex flex-shrink-0 w-12 h-12 rounded-full bg-amber-500 text-white font-bold items-center justify-center text-[10px] z-10 shadow-lg shadow-amber-500/30">
+                            class="hidden sm:flex shrink-0 w-12 h-12 rounded-full bg-amber-500 text-white font-bold items-center justify-center text-[10px] z-10 shadow-lg shadow-amber-500/30">
                             {{ $milestone['year'] }}
                         </div>
                         <div

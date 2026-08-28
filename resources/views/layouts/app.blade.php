@@ -290,96 +290,296 @@
     </nav>
 
     <!-- ===== MOBILE DRAWER ===== -->
+    <!-- ===== MOBILE DRAWER ===== -->
     <div id="drawerOverlay" class="fixed inset-0 bg-black/50 z-40 hidden opacity-0 transition-opacity duration-300">
+
         <aside id="mobileDrawer"
             class="absolute left-0 top-0 h-full w-80 max-w-[85%] bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 shadow-2xl -translate-x-full transition-transform duration-300 overflow-y-auto">
+
+            <!-- Drawer Header -->
             <div class="bg-blue-600 dark:bg-blue-900 text-white px-5 h-20 flex items-center justify-between">
-                <a href="/" wire:navigate class="flex items-center" aria-label="SouthEnd Tech — Home">
-                    <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-10">
+                <a href="/" wire:navigate class="flex items-center shrink-0" aria-label="SouthEnd Tech — Home">
+                    <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-10 w-auto">
                 </a>
+
                 <button id="closeDrawer"
-                    class="w-10 h-10 rounded-lg hover:bg-blue-700 flex items-center justify-center">
+                    class="w-10 h-10 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-800 transition flex items-center justify-center">
                     <ion-icon name="close-outline" class="text-3xl"></ion-icon>
                 </button>
             </div>
+
+            <!-- Drawer Navigation -->
             <div class="p-5">
-                <a href="/" wire:navigate class="block py-3 font-medium border-b dark:border-gray-800">Home</a>
-                <a href="#" class="block py-3 font-medium border-b dark:border-gray-800">Webinars</a>
-                <!-- Data Protection -->
-                <details class="border-b dark:border-gray-800 group">
-                    <summary class="flex justify-between items-center py-3 cursor-pointer font-medium list-none">
-                        Data Protection
-                        <ion-icon name="chevron-down-outline" class="text-lg transition group-open:rotate-180">
+
+                <!-- HOME -->
+                <a href="/" wire:navigate
+                    class="flex items-center gap-3 py-3 font-medium border-b border-gray-200 dark:border-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                    <ion-icon name="home-outline" class="text-lg"></ion-icon>
+                    Home
+                </a>
+
+
+                <!-- SOLUTIONS -->
+                <details class="border-b border-gray-200 dark:border-gray-800 group">
+                    <summary
+                        class="flex justify-between items-center py-3 cursor-pointer font-medium list-none hover:text-blue-600 dark:hover:text-blue-400 transition">
+                        <span class="flex items-center gap-3">
+                            <ion-icon name="layers-outline" class="text-lg"></ion-icon>
+                            Solutions
+                        </span>
+
+                        <ion-icon name="chevron-down-outline"
+                            class="text-lg transition-transform duration-200 group-open:rotate-180">
                         </ion-icon>
                     </summary>
-                    <div class="pb-3 pl-4 text-gray-600 dark:text-gray-400">
-                        <a href="#" class="block py-2">Registration & Compliance</a>
-                        <a href="#" class="block py-2">DPO as a Service</a>
-                        <a href="#" class="block py-2">Data Management & Insights</a>
-                        <a href="#" class="block py-2">Privacy Checklist</a>
-                        <a href="#" class="block py-2">Training</a>
-                        <a href="#" class="block py-2">Data Governance</a>
-                        <a href="#" class="block py-2">Breach Management</a>
+
+                    <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Cybersecurity Solutions
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Data Protection & Privacy
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Data & AI Solutions
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Digital & IT Solutions
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            E-Government Solutions
+                        </a>
+
                     </div>
                 </details>
-                <!-- Cyber Security -->
-                <details class="border-b dark:border-gray-800 group">
-                    <summary class="flex justify-between items-center py-3 cursor-pointer font-medium list-none">
-                        Cyber Security
-                        <ion-icon name="chevron-down-outline" class="transition group-open:rotate-180"></ion-icon>
+
+
+                <!-- SERVICES -->
+                <details class="border-b border-gray-200 dark:border-gray-800 group">
+                    <summary
+                        class="flex justify-between items-center py-3 cursor-pointer font-medium list-none hover:text-blue-600 dark:hover:text-blue-400 transition">
+
+                        <span class="flex items-center gap-3">
+                            <ion-icon name="construct-outline" class="text-lg"></ion-icon>
+                            Services
+                        </span>
+
+                        <ion-icon name="chevron-down-outline"
+                            class="text-lg transition-transform duration-200 group-open:rotate-180">
+                        </ion-icon>
                     </summary>
-                    <div class="pb-3 pl-4 text-gray-600 dark:text-gray-400">
-                        <a href="#" class="block py-2">SME Security</a>
-                        <a href="#" class="block py-2">Cloud Security</a>
-                        <a href="#" class="block py-2">SIEM & SOAR</a>
-                        <a href="#" class="block py-2">Endpoint Security</a>
-                        <a href="#" class="block py-2">Network Security</a>
-                        <a href="#" class="block py-2">Email Security</a>
-                        <a href="#" class="block py-2">Data Security</a>
+
+                    <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Data Protection & Compliance
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Data Governance & Management
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Cybersecurity Services
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Data Science & Analytics
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Digital Consulting
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            IT Managed Services
+                        </a>
+
+                        <a href="#" class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Software & Website Development
+                        </a>
+
                     </div>
                 </details>
-                <!-- Data Science -->
-                <details class="border-b dark:border-gray-800 group">
-                    <summary class="flex justify-between items-center py-3 cursor-pointer font-medium list-none">
-                        Data Science & AI
-                        <ion-icon name="chevron-down-outline" class="transition group-open:rotate-180"></ion-icon>
+
+
+                <!-- INDUSTRIES -->
+                <details class="border-b border-gray-200 dark:border-gray-800 group">
+                    <summary
+                        class="flex justify-between items-center py-3 cursor-pointer font-medium list-none hover:text-blue-600 dark:hover:text-blue-400 transition">
+
+                        <span class="flex items-center gap-3">
+                            <ion-icon name="business-outline" class="text-lg"></ion-icon>
+                            Industries
+                        </span>
+
+                        <ion-icon name="chevron-down-outline"
+                            class="text-lg transition-transform duration-200 group-open:rotate-180">
+                        </ion-icon>
                     </summary>
-                    <div class="pb-3 pl-4 text-gray-600 dark:text-gray-400">
-                        <a href="#" class="block py-2">Data Science</a>
-                        <a href="#" class="block py-2">Data Visualization</a>
-                        <a href="#" class="block py-2">Data Annotation</a>
-                        <a href="#" class="block py-2">SETLAB Developers</a>
-                        <a href="#" class="block py-2">Artificial Intelligence</a>
+
+                    <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
+
+                        <a href="/industries/financial-services" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Financial Services
+                        </a>
+
+                        <a href="/industries/healthcare" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Healthcare
+                        </a>
+
+                        <a href="/industries/government" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Government & Public Sector
+                        </a>
+
+                        <a href="/industries/ngos" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            NGOs & Development
+                        </a>
+
+                        <a href="/industries/education" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Education
+                        </a>
+
+                        <a href="/industries/smes" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            SMEs & Businesses
+                        </a>
+
                     </div>
                 </details>
-                <!-- Consulting -->
-                <details class="border-b dark:border-gray-800 group">
-                    <summary class="flex justify-between items-center py-3 cursor-pointer font-medium list-none">
-                        Digital Consulting
-                        <ion-icon name="chevron-down-outline" class="transition group-open:rotate-180"></ion-icon>
+
+
+                <!-- ABOUT US -->
+                <details class="border-b border-gray-200 dark:border-gray-800 group">
+                    <summary
+                        class="flex justify-between items-center py-3 cursor-pointer font-medium list-none hover:text-blue-600 dark:hover:text-blue-400 transition">
+
+                        <span class="flex items-center gap-3">
+                            <ion-icon name="information-circle-outline" class="text-lg"></ion-icon>
+                            About Us
+                        </span>
+
+                        <ion-icon name="chevron-down-outline"
+                            class="text-lg transition-transform duration-200 group-open:rotate-180">
+                        </ion-icon>
                     </summary>
-                    <div class="pb-3 pl-4 text-gray-600 dark:text-gray-400">
-                        <a href="#" class="block py-2">IT Systems Audit</a>
-                        <a href="#" class="block py-2">Specialized Audits</a>
-                        <a href="#" class="block py-2">Website Development</a>
+
+                    <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
+
+                        <a href="/about" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            About Us
+                        </a>
+
+                        <a href="/team" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Our Team
+                        </a>
+
+                        <a href="/about#why-us" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Why Choose Us
+                        </a>
+
+                        <a href="/about#clients" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Client Stories
+                        </a>
+
                     </div>
                 </details>
-                <a href="#" class="block py-3 font-medium border-b dark:border-gray-800">Blogs</a>
+
+
+                <!-- INSIGHTS -->
+                <details class="border-b border-gray-200 dark:border-gray-800 group">
+                    <summary
+                        class="flex justify-between items-center py-3 cursor-pointer font-medium list-none hover:text-blue-600 dark:hover:text-blue-400 transition">
+
+                        <span class="flex items-center gap-3">
+                            <ion-icon name="bulb-outline" class="text-lg"></ion-icon>
+                            Insights
+                        </span>
+
+                        <ion-icon name="chevron-down-outline"
+                            class="text-lg transition-transform duration-200 group-open:rotate-180">
+                        </ion-icon>
+                    </summary>
+
+                    <div class="pb-3 pl-8 text-gray-600 dark:text-gray-400">
+
+                        <a href="/blogs" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Blogs
+                        </a>
+
+                        <a href="/webinars" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Webinars
+                        </a>
+
+                        <a href="/case-studies" wire:navigate
+                            class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                            Case Studies
+                        </a>
+
+                    </div>
+                </details>
+
+
+                <!-- CONTACT -->
+                <a href="/contact" wire:navigate
+                    class="flex items-center gap-3 py-3 font-medium border-b border-gray-200 dark:border-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                    <ion-icon name="mail-outline" class="text-lg"></ion-icon>
+                    Contact Us
+                </a>
+
+
+                <!-- CAREERS -->
+                <a href="/careers" wire:navigate
+                    class="flex items-center gap-3 py-3 font-medium border-b border-gray-200 dark:border-gray-800 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                    <ion-icon name="briefcase-outline" class="text-lg"></ion-icon>
+                    Careers
+                </a>
+
+
+                <!-- ACTIONS -->
                 <div class="mt-8 space-y-3">
+
+                    <!-- Theme Toggle -->
                     <button id="mobileThemeToggle"
-                        class="w-full flex items-center justify-center gap-2 border dark:border-gray-700 rounded-lg py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                        class="w-full flex items-center justify-center gap-2 border border-gray-300 dark:border-gray-700 rounded-lg py-3 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+
                         <ion-icon name="moon-outline" id="mobileThemeIcon"></ion-icon>
+
                         <span>Dark Mode</span>
                     </button>
+
+
+                    <!-- Consultation -->
                     <a href="/book" wire:navigate
                         class="flex items-center justify-center gap-2 text-black bg-amber-500 hover:bg-amber-400 py-3 rounded-lg font-semibold transition">
-                        Book Consultancy
+
+                        Book a Consultation
+
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
+
                 </div>
+
             </div>
         </aside>
     </div>
+
 
     <!-- ===== MAIN CONTENT ===== -->
     <main class="min-h-screen">

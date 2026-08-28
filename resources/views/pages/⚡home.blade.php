@@ -64,8 +64,8 @@ new class extends Component
                 <div class="relative" data-aos="zoom-in" data-aos-duration="1000">
                     <div
                         class="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-gray-700 shadow-2xl bg-white dark:bg-gray-800">
-                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
-                            alt="Digital Transformation" class="w-full h-140 object-cover">
+                        <img src="{{ asset('images/heropic.webp') }}" alt="Digital Transformation"
+                            class="w-full h-140 object-cover">
                         <div class="absolute inset-0 bg-linear-to-t from-blue-900/20 via-transparent to-transparent">
                         </div>
                     </div>
@@ -258,7 +258,7 @@ new class extends Component
             <div class="grid lg:grid-cols-12 gap-12 items-center mb-24" data-aos="fade-up">
                 <div class="lg:col-span-5" data-aos="fade-right">
                     <div class="group relative rounded-3xl overflow-hidden min-h-105">
-                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=80"
+                        <img src="{{ asset('images/solutions/data-protection.webp') }}"
                             alt="Data protection and privacy"
                             class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
@@ -307,7 +307,7 @@ new class extends Component
                 </div>
                 <div class="lg:col-span-5 lg:order-2" data-aos="fade-left">
                     <div class="group relative rounded-3xl overflow-hidden min-h-105">
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+                        <img src="{{ asset('images/solutions/cybersecurity-solutions.webp') }}"
                             alt="Cybersecurity operations"
                             class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
@@ -329,8 +329,7 @@ new class extends Component
             <div class="grid lg:grid-cols-12 gap-12 items-center mb-24">
                 <div class="lg:col-span-5" data-aos="fade-right">
                     <div class="group relative rounded-3xl overflow-hidden min-h-105">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
-                            alt="Data analytics dashboard"
+                        <img src="{{ asset('images/solutions/data-and-ai.webp') }}" alt="Data analytics dashboard"
                             class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
                         </div>
@@ -375,10 +374,10 @@ new class extends Component
                             name="arrow-forward-outline">
                         </ion-icon></a>
                 </div>
+
                 <div class="lg:col-span-5" data-aos="fade-left">
                     <div class="group relative rounded-3xl overflow-hidden min-h-105">
-                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
-                            alt="Digital transformation network"
+                        <img src="{{ asset('images/heropic.webp') }}" alt="Digital transformation network"
                             class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-linear-to-t from-blue-950 via-blue-950/70 to-blue-950/10">
                         </div>
@@ -417,8 +416,8 @@ new class extends Component
                         do more than provide technology solutions. We partner with organizations to strengthen
                         security, achieve compliance, and confidently navigate digital transformation.</p>
                     <div class="mt-8 flex items-center gap-4">
-                        <div class="w-14 h-14 rounded-xl bg-amber-500 flex items-center justify-center">
-                            <ion-icon name="handshake-outline" class="text-3xl text-white"></ion-icon>
+                        <div class="w-14 h-14 px- rounded-xl bg-amber-500 flex items-center justify-center">
+                            <x-icon-handshake class="w-10 h-10 text-white" />
                         </div>
                         <div>
                             <p class="font-bold text-xl dark:text-white">Trusted Technology Partner</p>
@@ -476,6 +475,7 @@ new class extends Component
     <section class="relative py-24 bg-white dark:bg-slate-950 overflow-hidden">
         <div class="absolute top-20 left-0 w-80 h-80 bg-amber-400/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
+
         <div class="relative max-w-7xl mx-auto px-6">
             <div class="max-w-3xl mb-16" data-aos="fade-up">
                 <div
@@ -483,98 +483,209 @@ new class extends Component
                     <ion-icon name="business-outline"></ion-icon>
                     Industry Solutions
                 </div>
+
                 <h2 class="mt-6 text-4xl lg:text-5xl font-extrabold leading-tight dark:text-white">
                     Solutions Designed For
                     <span class="text-amber-500">Your Industry</span>
                 </h2>
-                <p class="mt-6 text-lg text-slate-600 dark:text-slate-300">Every industry faces unique technology,
-                    security, and compliance challenges. South-End Tech delivers solutions tailored to the realities
-                    of your organization.</p>
+
+                <p class="mt-6 text-lg text-slate-600 dark:text-slate-300">
+                    Every industry faces unique technology, security, and compliance challenges.
+                    South-End Tech delivers solutions tailored to the realities of your organization.
+                </p>
             </div>
+
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
                 <!-- Financial -->
-                <div class="industry-card" data-aos="fade-up">
-                    <div class="industry-icon bg-amber-100 dark:bg-amber-500/20">
+                <div class="p-8 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 transition duration-300 hover:border-amber-500 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(245,158,11,0.12)]"
+                    data-aos="fade-up">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 bg-amber-100 dark:bg-amber-500/20">
                         <ion-icon name="card-outline" class="text-amber-600"></ion-icon>
                     </div>
-                    <h3>Financial Services</h3>
-                    <p>Protect customer information, strengthen security controls, and maintain compliance.</p>
-                    <div class="tags">
-                        <span>Cybersecurity</span>
-                        <span>Compliance</span>
-                        <span>Fraud Prevention</span>
+
+                    <h3 class="text-[1.35rem] font-bold mb-3 text-slate-900 dark:text-white">
+                        Financial Services
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        Protect customer information, strengthen security controls, and maintain compliance.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Cybersecurity
+                        </span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Compliance
+                        </span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Fraud Prevention
+                        </span>
                     </div>
                 </div>
+
                 <!-- NGOs -->
-                <div class="industry-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="industry-icon bg-blue-100 dark:bg-blue-900/40">
+                <div class="p-8 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 transition duration-300 hover:border-amber-500 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(245,158,11,0.12)]"
+                    data-aos="fade-up" data-aos-delay="100">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 bg-blue-100 dark:bg-blue-900/40">
                         <ion-icon name="people-outline" class="text-blue-900 dark:text-blue-400"></ion-icon>
                     </div>
-                    <h3>NGOs & Development Organizations</h3>
-                    <p>Secure sensitive program data while improving governance and operational efficiency.</p>
-                    <div class="tags">
-                        <span>Data Privacy</span>
-                        <span>Governance</span>
-                        <span>Secure Operations</span>
+
+                    <h3 class="text-[1.35rem] font-bold mb-3 text-slate-900 dark:text-white">
+                        NGOs & Development Organizations
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        Secure sensitive program data while improving governance and operational efficiency.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Data Privacy
+                        </span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Governance
+                        </span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Secure Operations
+                        </span>
                     </div>
                 </div>
+
                 <!-- Healthcare -->
-                <div class="industry-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="industry-icon bg-amber-100 dark:bg-amber-500/20">
+                <div class="p-8 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 transition duration-300 hover:border-amber-500 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(245,158,11,0.12)]"
+                    data-aos="fade-up" data-aos-delay="200">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 bg-amber-100 dark:bg-amber-500/20">
                         <ion-icon name="medkit-outline" class="text-amber-600"></ion-icon>
                     </div>
-                    <h3>Healthcare</h3>
-                    <p>Protect patient information and enable secure digital healthcare transformation.</p>
-                    <div class="tags">
-                        <span>Patient Data Protection</span>
-                        <span>Compliance</span>
-                        <span>Digital Health</span>
+
+                    <h3 class="text-[1.35rem] font-bold mb-3 text-slate-900 dark:text-white">
+                        Healthcare
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        Protect patient information and enable secure digital healthcare transformation.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Patient Data Protection
+                        </span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Compliance
+                        </span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Digital Health
+                        </span>
                     </div>
                 </div>
+
                 <!-- Government -->
-                <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="industry-icon bg-blue-100 dark:bg-blue-900/40">
+                <div class="p-8 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 transition duration-300 hover:border-amber-500 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(245,158,11,0.12)]"
+                    data-aos="fade-up" data-aos-delay="300">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 bg-blue-100 dark:bg-blue-900/40">
                         <ion-icon name="flag-outline" class="text-blue-900 dark:text-blue-400"></ion-icon>
                     </div>
-                    <h3>Government</h3>
-                    <p>Support secure public services through responsible data management and digital innovation.
+
+                    <h3 class="text-[1.35rem] font-bold mb-3 text-slate-900 dark:text-white">
+                        Government
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        Support secure public services through responsible data management and digital innovation.
                     </p>
-                    <div class="tags">
-                        <span>Citizen Data Protection</span>
-                        <span>Digital Transformation</span>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Citizen Data Protection
+                        </span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Digital Transformation
+                        </span>
                     </div>
                 </div>
+
                 <!-- SMEs -->
-                <div class="industry-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="industry-icon bg-amber-100 dark:bg-amber-500/20">
+                <div class="p-8 rounded-3xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 transition duration-300 hover:border-amber-500 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(245,158,11,0.12)]"
+                    data-aos="fade-up" data-aos-delay="400">
+
+                    <div
+                        class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 bg-amber-100 dark:bg-amber-500/20">
                         <ion-icon name="storefront-outline" class="text-amber-600"></ion-icon>
                     </div>
-                    <h3>Small & Medium Businesses</h3>
-                    <p>Access practical technology solutions that protect your business and support growth.</p>
-                    <div class="tags">
-                        <span>Affordable Security</span>
-                        <span>IT Support</span>
-                        <span>Business Continuity</span>
+
+                    <h3 class="text-[1.35rem] font-bold mb-3 text-slate-900 dark:text-white">
+                        Small & Medium Businesses
+                    </h3>
+
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        Access practical technology solutions that protect your business and support growth.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Affordable Security
+                        </span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            IT Support
+                        </span>
+                        <span
+                            class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                            Business Continuity
+                        </span>
                     </div>
                 </div>
+
                 <!-- CTA Card -->
-                <div class="industry-card bg-blue-950 text-white border-blue-950" data-aos="zoom-in"
-                    data-aos-delay="500">
-                    <div class="industry-icon bg-amber-500">
+                <div class="p-8 rounded-3xl bg-blue-950 text-white border border-blue-950 transition duration-300 hover:border-amber-500 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(245,158,11,0.12)]"
+                    data-aos="zoom-in" data-aos-delay="500">
+
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 bg-amber-500">
                         <ion-icon name="arrow-forward-outline" class="text-white"></ion-icon>
                     </div>
-                    <h3 class="!text-white">Need A Custom Solution?</h3>
-                    <p class="!text-blue-100">Our specialists work with organizations across sectors to design
-                        solutions aligned with their goals.</p>
+
+                    <h3 class="text-[1.35rem] font-bold mb-3 !text-white">
+                        Need A Custom Solution?
+                    </h3>
+
+                    <p class="text-blue-100 leading-relaxed mb-6">
+                        Our specialists work with organizations across sectors to design
+                        solutions aligned with their goals.
+                    </p>
+
                     <a href="/contact" wire:navigate
-                        class="mt-5 inline-flex items-center gap-2 bg-amber-500 px-5 py-3 rounded-xl font-semibold">
+                        class="mt-5 inline-flex items-center gap-2 bg-amber-500 px-5 py-3 rounded-xl font-semibold text-slate-950 hover:bg-amber-400 transition">
                         Talk To Our Experts
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- ===== APPROACH ===== -->
     <section class="relative py-24 bg-slate-50 dark:bg-slate-900 overflow-hidden">
