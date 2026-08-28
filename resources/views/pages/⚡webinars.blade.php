@@ -514,22 +514,48 @@ new class extends Component
 
                     <p class="mt-3 text-blue-200 leading-7">
 
-                        Follow South-End Tech for practical insights on
+                        Get monthly, practical insights on
                         cybersecurity, data protection, AI, and digital transformation.
 
                     </p>
 
                 </div>
 
-                <a href="{{ route('contact') }}" wire:navigate class="shrink-0 inline-flex items-center justify-center
-                           gap-2 px-7 py-3.5 rounded-xl
-                           bg-amber-500 hover:bg-amber-400
-                           text-slate-900 font-bold transition">
+                <div class="w-full lg:max-w-md shrink-0">
 
-                    Contact Our Team
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                    <div class="flex bg-white/10 rounded-xl overflow-hidden
+                               border border-white/20
+                               focus-within:border-amber-400 transition">
 
-                </a>
+                        <input type="email" placeholder="Your business email"
+                            class="flex-1 bg-transparent px-4 py-3.5
+                                outline-none text-white
+                                placeholder:text-blue-200">
+
+                        <button type="submit" class="bg-amber-500
+                            hover:bg-amber-400
+                            px-5 text-blue-950 font-bold
+                            whitespace-nowrap transition">
+
+                            Get Tech Insights
+                        </button>
+
+                    </div>
+
+                    <p class="mt-3 flex items-start gap-1.5
+                        text-xs text-blue-200 leading-5">
+
+                        <ion-icon name="lock-closed-outline"
+                            class="mt-0.5 shrink-0 text-amber-400"></ion-icon>
+
+                        <span>
+                            We respect your privacy. Your data is protected
+                            in accordance with the Kenya Data Protection Act.
+                        </span>
+
+                    </p>
+
+                </div>
 
             </div>
 

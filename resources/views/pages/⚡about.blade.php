@@ -159,7 +159,7 @@ class extends Component
                     <span class="text-amber-500">Everything We Do</span>
                 </h2>
                 <p class="mt-6 text-lg text-slate-600 dark:text-slate-300">Our values shape how we work with our
-                    clients, our partners, and each other â€” every single day.</p>
+                    clients, our partners, and each other — every single day.</p>
             </div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="why-card" data-aos="fade-up">
@@ -167,7 +167,7 @@ class extends Component
                         <ion-icon name="shield-checkmark-outline" class="text-amber-600"></ion-icon>
                     </div>
                     <h3>Integrity First</h3>
-                    <p>We do the right thing even when no one is watching â€” especially when handling your most
+                    <p>We do the right thing even when no one is watching — especially when handling your most
                         sensitive information.</p>
                 </div>
                 <div class="why-card" data-aos="fade-up" data-aos-delay="100">
@@ -206,7 +206,7 @@ class extends Component
                         <ion-icon name="school-outline" class="text-blue-900 dark:text-blue-400"></ion-icon>
                     </div>
                     <h3>Continuous Learning</h3>
-                    <p>Technology never stands still â€” and neither do we. Our team trains, certifies, and evolves
+                    <p>Technology never stands still — and neither do we. Our team trains, certifies, and evolves
                         constantly.</p>
                 </div>
             </div>

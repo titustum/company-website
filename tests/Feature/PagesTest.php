@@ -2,8 +2,13 @@
 
 namespace Tests\Feature;
 
+use App\Models\Consultation;
+use App\Models\Solution;
+use App\Notifications\ConsultationRequestReceived;
+use App\Notifications\NewConsultationRequest;
 use Database\Seeders\JobOpeningSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Notification;
 use Livewire\Livewire;
 use PHPUnit\Framework\Attributes\DataProvider;
 use Tests\TestCase;
@@ -46,20 +51,84 @@ class PagesTest extends TestCase
 
     public function test_booking_form_validates_and_books(): void
     {
+        Notification::fake();
+
+        $solution = Solution::create([
+            'title' => 'Cybersecurity Solutions',
+            'slug' => 'cybersecurity-solutions',
+            'is_published' => true,
+            'sort_order' => 1,
+        ]);
+
         Livewire::test('pages::book')
-            ->set('service', '')
-            ->set('date', now()->subDay()->toDateString())
+            ->set('solutionId', '')
+            ->set('date', now()->toDateString())
             ->call('book')
-            ->assertHasErrors(['name', 'email', 'phone', 'service', 'date', 'slot'])
+            ->assertHasErrors(['name', 'email', 'phone', 'solutionId', 'date', 'slot'])
+            ->set('name', 'Jane Wanjiku')
+            ->set('email', 'jane@example.co.ke')
+            ->set('phone', '+254 728 223 333')
+            ->set('solutionId', (string) $solution->id)
+            ->set('date', now()->addWeek()->toDateString())
+            ->set('slot', 'Morning (9:00am – 12:00pm)')
+            ->set('notes', 'Interested in a security assessment.')
+            ->call('book')
+            ->assertHasNoErrors()
+            ->assertSet('lastConsultationName', 'Jane Wanjiku')
+            ->assertSet('lastSolutionTitle', 'Cybersecurity Solutions');
+
+        $consultation = Consultation::query()->firstOrFail();
+
+        $this->assertSame($solution->id, $consultation->solution_id);
+        $this->assertSame('pending', $consultation->status->value);
+        $this->assertSame('+254728223333', $consultation->phone);
+        $this->assertSame('CST-2026-0001', $consultation->reference);
+        $this->assertSame('Morning (9:00am – 12:00pm)', $consultation->preferred_slot);
+
+        Notification::assertSentTo($consultation, ConsultationRequestReceived::class);
+        Notification::assertSentOnDemand(NewConsultationRequest::class);
+    }
+
+    public function test_booking_rejects_same_day_dates(): void
+    {
+        $solution = Solution::create([
+            'title' => 'Data Protection & Privacy',
+            'slug' => 'data-protection-privacy',
+            'is_published' => true,
+            'sort_order' => 1,
+        ]);
+
+        Livewire::test('pages::book')
             ->set('name', 'Jane Wanjiku')
             ->set('email', 'jane@example.co.ke')
             ->set('phone', '+254728223333')
-            ->set('service', 'Cybersecurity — Security Assessment')
-            ->set('date', now()->addWeek()->toDateString())
+            ->set('solutionId', (string) $solution->id)
+            ->set('date', now()->toDateString())
             ->set('slot', 'Morning (9:00am – 12:00pm)')
             ->call('book')
-            ->assertHasNoErrors()
-            ->assertSet('booked', true);
+            ->assertHasErrors(['date']);
+    }
+
+    public function test_book_page_lists_solutions_from_database(): void
+    {
+        Solution::create([
+            'title' => 'Data Protection & Privacy',
+            'slug' => 'data-protection-privacy',
+            'is_published' => true,
+            'sort_order' => 1,
+        ]);
+
+        Solution::create([
+            'title' => 'Draft Solution',
+            'slug' => 'draft-solution',
+            'is_published' => false,
+            'sort_order' => 2,
+        ]);
+
+        $this->get('/book')
+            ->assertOk()
+            ->assertSee('Data Protection & Privacy')
+            ->assertDontSee('Draft Solution');
     }
 
     public function test_careers_filter_narrows_job_listings(): void

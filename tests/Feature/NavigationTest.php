@@ -106,4 +106,25 @@ class NavigationTest extends TestCase
             ->assertSee('Published Solution')
             ->assertDontSee('Draft Solution');
     }
+
+    public function test_signup_boxes_use_security_focused_copy(): void
+    {
+        $this->get('/')
+            ->assertOk()
+            ->assertSee('Stay Ahead of Digital Threats')
+            ->assertSee('Get Tech Insights')
+            ->assertSee('Kenya Data Protection Act');
+
+        $this->get('/blogs')
+            ->assertOk()
+            ->assertSee('Stay Ahead of Digital Threats')
+            ->assertSee('Get Tech Insights')
+            ->assertSee('Kenya Data Protection Act');
+
+        $this->get('/webinars')
+            ->assertOk()
+            ->assertSee("Don't Miss Our Next Webinar", false)
+            ->assertSee('Get Tech Insights')
+            ->assertSee('Kenya Data Protection Act');
+    }
 }

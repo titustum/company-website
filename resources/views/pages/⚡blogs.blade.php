@@ -527,6 +527,98 @@ new class extends Component
 
 
     {{-- =========================================================
+    SUBSCRIBE
+    ========================================================== --}}
+    <section class="pb-16 lg:pb-20">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="relative overflow-hidden rounded-3xl
+                bg-blue-950 text-white
+                p-8 lg:p-12">
+
+                <div class="absolute -top-20 -right-20
+                    w-80 h-80 rounded-full
+                    bg-blue-600/20 blur-3xl"></div>
+
+                <div class="absolute bottom-0 left-1/3
+                    w-40 h-40 rounded-full
+                    bg-amber-500/10 blur-3xl"></div>
+
+                <div class="relative grid
+                    lg:grid-cols-2 gap-8 lg:items-center">
+
+                    <div>
+
+                        <div class="inline-flex items-center gap-2
+                            text-amber-400 font-semibold text-sm">
+
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+
+                            Monthly Security Brief
+                        </div>
+
+                        <h2 class="mt-3 text-3xl lg:text-4xl
+                            font-extrabold">
+
+                            Stay Ahead of Digital Threats
+                        </h2>
+
+                        <p class="mt-3 text-blue-100 leading-7">
+                            Get monthly, practical insights to protect your
+                            business data and navigate compliance changes.
+                        </p>
+
+                    </div>
+
+                    <div class="w-full lg:justify-self-end
+                        lg:max-w-md">
+
+                        <div class="flex bg-white/10 rounded-xl
+                            overflow-hidden border border-white/20
+                            focus-within:border-amber-400
+                            transition">
+
+                            <input type="email" placeholder="Your business email"
+                                class="flex-1 bg-transparent px-4 py-3.5
+                                    outline-none text-white
+                                    placeholder:text-blue-200">
+
+                            <button type="submit" class="bg-amber-500
+                                hover:bg-amber-400
+                                px-5 text-blue-950 font-bold
+                                whitespace-nowrap transition">
+
+                                Get Tech Insights
+                            </button>
+
+                        </div>
+
+                        <p class="mt-3 flex items-start gap-1.5
+                            text-xs text-blue-200 leading-5">
+
+                            <ion-icon name="lock-closed-outline"
+                                class="mt-0.5 shrink-0 text-amber-400"></ion-icon>
+
+                            <span>
+                                We respect your privacy. Your data is protected
+                                in accordance with the Kenya Data Protection Act.
+                            </span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    {{-- =========================================================
     BOTTOM CTA
     ========================================================== --}}
     <section class="relative overflow-hidden

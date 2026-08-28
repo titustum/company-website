@@ -7,8 +7,10 @@
 
     <title>{{ $title ?? config('app.name') }}</title>
 
-    <link rel="icon" type="image/png" href="{{ asset('images/favicon1.png') }}">
-    <link rel="apple-touch-icon" href="{{ asset('images/favicon1.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -49,7 +51,8 @@
     <nav class="sticky top-0 z-30 bg-blue-600 dark:bg-blue-900 text-white shadow-lg transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex items-center justify-between h-20">
-                <a href="{{ route('home') }}" wire:navigate class="flex items-center shrink-0" aria-label="SouthEnd Tech — Home">
+                <a href="{{ route('home') }}" wire:navigate class="flex items-center shrink-0"
+                    aria-label="SouthEnd Tech — Home">
                     <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-12 w-auto">
                 </a>
 
@@ -244,7 +247,8 @@
 
             <!-- Drawer Header -->
             <div class="bg-blue-600 dark:bg-blue-900 text-white px-5 h-20 flex items-center justify-between">
-                <a href="{{ route('home') }}" wire:navigate class="flex items-center shrink-0" aria-label="SouthEnd Tech — Home">
+                <a href="{{ route('home') }}" wire:navigate class="flex items-center shrink-0"
+                    aria-label="SouthEnd Tech — Home">
                     <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-10 w-auto">
                 </a>
 
@@ -484,7 +488,8 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-12 gap-10">
                 <!-- Brand -->
                 <div class="lg:col-span-4">
-                    <a href="{{ route('home') }}" wire:navigate class="flex items-center gap-3 mb-6" aria-label="SouthEnd Tech — Home">
+                    <a href="{{ route('home') }}" wire:navigate class="flex items-center gap-3 mb-6"
+                        aria-label="SouthEnd Tech — Home">
                         <img src="{{ asset('images/logo.png') }}" alt="South-End Tech" class="h-12 w-auto">
                     </a>
                     <p class="text-blue-100 leading-relaxed max-w-sm">South-End Tech Limited is a technology consulting
@@ -507,7 +512,8 @@
                     <h3 class="footer-title">Solutions</h3>
                     <ul class="footer-links">
                         @foreach ($navigationSolutions as $solution)
-                        <li><a href="{{ route('solution.show', $solution) }}" wire:navigate>{{ $solution->title }}</a></li>
+                        <li><a href="{{ route('solution.show', $solution) }}" wire:navigate>{{ $solution->title }}</a>
+                        </li>
                         @endforeach
                     </ul>
                 </div>
@@ -540,14 +546,25 @@
                         </li>
                     </ul>
                     <div class="mt-8">
-                        <h4 class="font-semibold mb-3">Subscribe To Our Newsletter</h4>
-                        <div class="flex bg-white/10 rounded-xl overflow-hidden border border-white/10">
-                            <input type="email" placeholder="Your email address"
+                        <h4 class="font-semibold mb-1">Stay Ahead of Digital Threats</h4>
+                        <p class="text-sm text-blue-200 leading-6 mb-3">
+                            Get monthly, practical insights to protect your business data
+                            and navigate compliance.
+                        </p>
+                        <div
+                            class="flex bg-white/10 rounded-xl overflow-hidden border border-white/10 focus-within:border-amber-400 transition">
+                            <input type="email" placeholder="Your business email"
                                 class="flex-1 bg-transparent px-4 py-3 outline-none text-white placeholder:text-blue-200">
-                            <button class="bg-amber-500 px-5 text-blue-950 font-bold">
-                                <ion-icon name="send-outline"></ion-icon>
+                            <button class="bg-amber-500 px-4 text-blue-950 font-bold text-sm whitespace-nowrap">
+                                Get Tech Insights
                             </button>
                         </div>
+                        <p class="mt-3 flex items-start gap-1.5 text-xs text-blue-200 leading-5">
+                            <ion-icon name="lock-closed-outline" class="mt-0.5 shrink-0 text-amber-400"></ion-icon>
+                            <span>
+We respect your privacy. Your data is protected in accordance with the Kenya Data Protection Act.
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>

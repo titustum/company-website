@@ -18,7 +18,13 @@ class SolutionFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'title' => fake()->unique()->sentence(3),
+            'slug' => fake()->unique()->slug(3),
+            'subtitle' => fake()->sentence(),
+            'short_description' => fake()->paragraph(),
+            'description' => '<p>'.fake()->paragraph().'</p>',
+            'is_published' => true,
+            'sort_order' => fake()->numberBetween(1, 100),
         ];
     }
 }

@@ -115,4 +115,8 @@ return [
         'name' => env('MAIL_FROM_NAME', env('APP_NAME', 'Laravel')),
     ],
 
+    'notifications' => [
+        'consultations' => env('CONSULTATION_REQUEST_EMAIL', 'info@southendtech.co.ke'),
+    ],
+
 ];
