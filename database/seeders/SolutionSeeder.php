@@ -382,283 +382,283 @@ class SolutionSeeder extends Seeder
                 'sort_order' => 4,
             ],
 
-            [
-                'title' => 'Data Protection & Compliance',
-                'slug' => 'data-protection-compliance',
-                'subtitle' => 'Build Trust Through Responsible Data Practices.',
-                'short_description' => 'Help your organization understand, manage, and meet its data protection and privacy obligations.',
-                'description' => <<<'HTML'
-                    <p>Responsible data handling is essential for organizations that collect and process personal information. Effective compliance requires more than policies — it requires practical processes, accountability, awareness, and continuous improvement.</p>
+            // [
+            //     'title' => 'Data Protection & Compliance',
+            //     'slug' => 'data-protection-compliance',
+            //     'subtitle' => 'Build Trust Through Responsible Data Practices.',
+            //     'short_description' => 'Help your organization understand, manage, and meet its data protection and privacy obligations.',
+            //     'description' => <<<'HTML'
+            //         <p>Responsible data handling is essential for organizations that collect and process personal information. Effective compliance requires more than policies — it requires practical processes, accountability, awareness, and continuous improvement.</p>
 
-                    <p>South-End Tech helps organizations establish and maintain data protection programs aligned with their operational needs and applicable regulatory requirements.</p>
+            //         <p>South-End Tech helps organizations establish and maintain data protection programs aligned with their operational needs and applicable regulatory requirements.</p>
 
-                    <p>We work with organizations to identify compliance gaps, improve privacy practices, strengthen accountability, and establish sustainable data protection processes.</p>
-                HTML,
+            //         <p>We work with organizations to identify compliance gaps, improve privacy practices, strengthen accountability, and establish sustainable data protection processes.</p>
+            //     HTML,
 
-                'features' => [
-                    [
-                        'title' => 'Data Protection Compliance',
-                        'description' => 'Assess your current practices and establish controls that support compliance with applicable data protection requirements.',
-                        'icon' => 'shield-check-outline',
-                    ],
-                    [
-                        'title' => 'Privacy Compliance Audits',
-                        'description' => 'Review policies, processes, systems, and practices to identify privacy and compliance gaps.',
-                        'icon' => 'clipboard-outline',
-                    ],
-                    [
-                        'title' => 'Privacy Policies & Documentation',
-                        'description' => 'Develop practical privacy documentation and governance materials suited to your organization.',
-                        'icon' => 'document-text-outline',
-                    ],
-                    [
-                        'title' => 'Data Protection Training',
-                        'description' => 'Equip employees and teams with practical knowledge for handling personal and sensitive information responsibly.',
-                        'icon' => 'school-outline',
-                    ],
-                    [
-                        'title' => 'Breach Management',
-                        'description' => 'Establish processes for identifying, assessing, managing, and responding to personal data breaches.',
-                        'icon' => 'warning-outline',
-                    ],
-                ],
+            //     'features' => [
+            //         [
+            //             'title' => 'Data Protection Compliance',
+            //             'description' => 'Assess your current practices and establish controls that support compliance with applicable data protection requirements.',
+            //             'icon' => 'shield-check-outline',
+            //         ],
+            //         [
+            //             'title' => 'Privacy Compliance Audits',
+            //             'description' => 'Review policies, processes, systems, and practices to identify privacy and compliance gaps.',
+            //             'icon' => 'clipboard-outline',
+            //         ],
+            //         [
+            //             'title' => 'Privacy Policies & Documentation',
+            //             'description' => 'Develop practical privacy documentation and governance materials suited to your organization.',
+            //             'icon' => 'document-text-outline',
+            //         ],
+            //         [
+            //             'title' => 'Data Protection Training',
+            //             'description' => 'Equip employees and teams with practical knowledge for handling personal and sensitive information responsibly.',
+            //             'icon' => 'school-outline',
+            //         ],
+            //         [
+            //             'title' => 'Breach Management',
+            //             'description' => 'Establish processes for identifying, assessing, managing, and responding to personal data breaches.',
+            //             'icon' => 'warning-outline',
+            //         ],
+            //     ],
 
-                'benefits' => [
-                    [
-                        'title' => 'Stronger Compliance',
-                        'description' => 'Build structured processes that help your organization meet its data protection obligations.',
-                        'icon' => 'checkmark-done-outline',
-                    ],
-                    [
-                        'title' => 'Reduced Regulatory Exposure',
-                        'description' => 'Identify and address compliance gaps before they result in significant operational or regulatory consequences.',
-                        'icon' => 'shield-outline',
-                    ],
-                    [
-                        'title' => 'Employee Awareness',
-                        'description' => 'Help employees understand their responsibilities when collecting, using, storing, and sharing personal information.',
-                        'icon' => 'people-outline',
-                    ],
-                    [
-                        'title' => 'Responsible Data Culture',
-                        'description' => 'Create organizational practices that treat privacy and responsible data handling as ongoing priorities.',
-                        'icon' => 'heart-outline',
-                    ],
-                ],
+            //     'benefits' => [
+            //         [
+            //             'title' => 'Stronger Compliance',
+            //             'description' => 'Build structured processes that help your organization meet its data protection obligations.',
+            //             'icon' => 'checkmark-done-outline',
+            //         ],
+            //         [
+            //             'title' => 'Reduced Regulatory Exposure',
+            //             'description' => 'Identify and address compliance gaps before they result in significant operational or regulatory consequences.',
+            //             'icon' => 'shield-outline',
+            //         ],
+            //         [
+            //             'title' => 'Employee Awareness',
+            //             'description' => 'Help employees understand their responsibilities when collecting, using, storing, and sharing personal information.',
+            //             'icon' => 'people-outline',
+            //         ],
+            //         [
+            //             'title' => 'Responsible Data Culture',
+            //             'description' => 'Create organizational practices that treat privacy and responsible data handling as ongoing priorities.',
+            //             'icon' => 'heart-outline',
+            //         ],
+            //     ],
 
-                'faqs' => [
-                    [
-                        'question' => 'Why is data protection compliance important?',
-                        'answer' => 'Data protection compliance helps organizations manage personal information responsibly, reduce risk, meet legal obligations, and maintain the trust of customers, employees, partners, and other stakeholders.',
-                    ],
-                    [
-                        'question' => 'Can you review our existing privacy policies?',
-                        'answer' => 'Yes. We can review existing policies and documentation, identify gaps, and recommend practical improvements based on your organization\'s activities and requirements.',
-                    ],
-                    [
-                        'question' => 'Do you provide staff data protection training?',
-                        'answer' => 'Yes. We provide practical awareness and training programs designed to help employees understand privacy responsibilities and secure data-handling practices.',
-                    ],
-                    [
-                        'question' => 'What happens if our organization experiences a data breach?',
-                        'answer' => 'We can help organizations establish and improve breach response procedures, including assessment, documentation, response coordination, and appropriate regulatory and stakeholder processes.',
-                    ],
-                ],
+            //     'faqs' => [
+            //         [
+            //             'question' => 'Why is data protection compliance important?',
+            //             'answer' => 'Data protection compliance helps organizations manage personal information responsibly, reduce risk, meet legal obligations, and maintain the trust of customers, employees, partners, and other stakeholders.',
+            //         ],
+            //         [
+            //             'question' => 'Can you review our existing privacy policies?',
+            //             'answer' => 'Yes. We can review existing policies and documentation, identify gaps, and recommend practical improvements based on your organization\'s activities and requirements.',
+            //         ],
+            //         [
+            //             'question' => 'Do you provide staff data protection training?',
+            //             'answer' => 'Yes. We provide practical awareness and training programs designed to help employees understand privacy responsibilities and secure data-handling practices.',
+            //         ],
+            //         [
+            //             'question' => 'What happens if our organization experiences a data breach?',
+            //             'answer' => 'We can help organizations establish and improve breach response procedures, including assessment, documentation, response coordination, and appropriate regulatory and stakeholder processes.',
+            //         ],
+            //     ],
 
-                'icon' => 'document-lock-outline',
-                'hero_image' => null,
-                'meta_title' => 'Data Protection & Compliance Services | South-End Tech',
-                'meta_description' => 'Strengthen data protection compliance, privacy governance, employee awareness, and breach management with South-End Tech.',
-                'is_published' => true,
-                'sort_order' => 5,
-            ],
+            //     'icon' => 'document-lock-outline',
+            //     'hero_image' => null,
+            //     'meta_title' => 'Data Protection & Compliance Services | South-End Tech',
+            //     'meta_description' => 'Strengthen data protection compliance, privacy governance, employee awareness, and breach management with South-End Tech.',
+            //     'is_published' => true,
+            //     'sort_order' => 5,
+            // ],
 
-            [
-                'title' => 'Data Governance & Management',
-                'slug' => 'data-governance-management',
-                'subtitle' => 'Turn Data Into A Trusted Organizational Asset.',
-                'short_description' => 'Establish the governance, processes, and controls needed to manage organizational data effectively.',
-                'description' => <<<'HTML'
-                    <p>Data is one of an organization\'s most valuable assets, but poor data management can create inefficiencies, unreliable reporting, security risks, and poor decision-making.</p>
+            // [
+            //     'title' => 'Data Governance & Management',
+            //     'slug' => 'data-governance-management',
+            //     'subtitle' => 'Turn Data Into A Trusted Organizational Asset.',
+            //     'short_description' => 'Establish the governance, processes, and controls needed to manage organizational data effectively.',
+            //     'description' => <<<'HTML'
+            //         <p>Data is one of an organization\'s most valuable assets, but poor data management can create inefficiencies, unreliable reporting, security risks, and poor decision-making.</p>
 
-                    <p>South-End Tech helps organizations establish clear frameworks for managing data throughout its lifecycle.</p>
+            //         <p>South-End Tech helps organizations establish clear frameworks for managing data throughout its lifecycle.</p>
 
-                    <p>Our approach combines governance, data management, quality, security, accountability, and practical processes to help organizations make their information more reliable and useful.</p>
-                HTML,
+            //         <p>Our approach combines governance, data management, quality, security, accountability, and practical processes to help organizations make their information more reliable and useful.</p>
+            //     HTML,
 
-                'features' => [
-                    [
-                        'title' => 'Data Governance Frameworks',
-                        'description' => 'Define the policies, roles, responsibilities, and processes required to manage organizational data effectively.',
-                        'icon' => 'git-network-outline',
-                    ],
-                    [
-                        'title' => 'Data Quality Management',
-                        'description' => 'Identify and address issues affecting the accuracy, completeness, consistency, and reliability of organizational data.',
-                        'icon' => 'checkmark-circle-outline',
-                    ],
-                    [
-                        'title' => 'Data Lifecycle Management',
-                        'description' => 'Establish processes for managing data from creation and collection through use, retention, archiving, and disposal.',
-                        'icon' => 'sync-outline',
-                    ],
-                    [
-                        'title' => 'Data Classification',
-                        'description' => 'Categorize organizational information according to sensitivity, business value, regulatory requirements, and risk.',
-                        'icon' => 'layers-outline',
-                    ],
-                    [
-                        'title' => 'Data Management Strategy',
-                        'description' => 'Develop practical strategies that align data capabilities with organizational objectives and decision-making needs.',
-                        'icon' => 'map-outline',
-                    ],
-                ],
+            //     'features' => [
+            //         [
+            //             'title' => 'Data Governance Frameworks',
+            //             'description' => 'Define the policies, roles, responsibilities, and processes required to manage organizational data effectively.',
+            //             'icon' => 'git-network-outline',
+            //         ],
+            //         [
+            //             'title' => 'Data Quality Management',
+            //             'description' => 'Identify and address issues affecting the accuracy, completeness, consistency, and reliability of organizational data.',
+            //             'icon' => 'checkmark-circle-outline',
+            //         ],
+            //         [
+            //             'title' => 'Data Lifecycle Management',
+            //             'description' => 'Establish processes for managing data from creation and collection through use, retention, archiving, and disposal.',
+            //             'icon' => 'sync-outline',
+            //         ],
+            //         [
+            //             'title' => 'Data Classification',
+            //             'description' => 'Categorize organizational information according to sensitivity, business value, regulatory requirements, and risk.',
+            //             'icon' => 'layers-outline',
+            //         ],
+            //         [
+            //             'title' => 'Data Management Strategy',
+            //             'description' => 'Develop practical strategies that align data capabilities with organizational objectives and decision-making needs.',
+            //             'icon' => 'map-outline',
+            //         ],
+            //     ],
 
-                'benefits' => [
-                    [
-                        'title' => 'Reliable Information',
-                        'description' => 'Improve the quality and consistency of the information used across your organization.',
-                        'icon' => 'checkmark-done-outline',
-                    ],
-                    [
-                        'title' => 'Clear Accountability',
-                        'description' => 'Define ownership and responsibilities for critical organizational data and information assets.',
-                        'icon' => 'person-outline',
-                    ],
-                    [
-                        'title' => 'Improved Decision Making',
-                        'description' => 'Give teams greater confidence in the data used for reporting, analysis, and strategic decisions.',
-                        'icon' => 'analytics-outline',
-                    ],
-                    [
-                        'title' => 'Reduced Data Risk',
-                        'description' => 'Improve control over sensitive and critical information throughout its lifecycle.',
-                        'icon' => 'shield-check-outline',
-                    ],
-                ],
+            //     'benefits' => [
+            //         [
+            //             'title' => 'Reliable Information',
+            //             'description' => 'Improve the quality and consistency of the information used across your organization.',
+            //             'icon' => 'checkmark-done-outline',
+            //         ],
+            //         [
+            //             'title' => 'Clear Accountability',
+            //             'description' => 'Define ownership and responsibilities for critical organizational data and information assets.',
+            //             'icon' => 'person-outline',
+            //         ],
+            //         [
+            //             'title' => 'Improved Decision Making',
+            //             'description' => 'Give teams greater confidence in the data used for reporting, analysis, and strategic decisions.',
+            //             'icon' => 'analytics-outline',
+            //         ],
+            //         [
+            //             'title' => 'Reduced Data Risk',
+            //             'description' => 'Improve control over sensitive and critical information throughout its lifecycle.',
+            //             'icon' => 'shield-check-outline',
+            //         ],
+            //     ],
 
-                'faqs' => [
-                    [
-                        'question' => 'What is data governance?',
-                        'answer' => 'Data governance is the framework of policies, roles, responsibilities, standards, and processes used to ensure that organizational data is managed effectively and responsibly.',
-                    ],
-                    [
-                        'question' => 'Why does data quality matter?',
-                        'answer' => 'Poor-quality data can result in inaccurate reports, inefficient operations, poor decisions, and increased business risk. Data quality management helps ensure information is reliable and fit for purpose.',
-                    ],
-                    [
-                        'question' => 'Can you help us create a data governance framework?',
-                        'answer' => 'Yes. We can help assess your current environment and establish practical governance structures, policies, responsibilities, processes, and controls.',
-                    ],
-                    [
-                        'question' => 'Does data governance support data protection?',
-                        'answer' => 'Yes. Effective governance provides greater visibility and accountability around organizational data and can support privacy, security, retention, access, and compliance requirements.',
-                    ],
-                ],
+            //     'faqs' => [
+            //         [
+            //             'question' => 'What is data governance?',
+            //             'answer' => 'Data governance is the framework of policies, roles, responsibilities, standards, and processes used to ensure that organizational data is managed effectively and responsibly.',
+            //         ],
+            //         [
+            //             'question' => 'Why does data quality matter?',
+            //             'answer' => 'Poor-quality data can result in inaccurate reports, inefficient operations, poor decisions, and increased business risk. Data quality management helps ensure information is reliable and fit for purpose.',
+            //         ],
+            //         [
+            //             'question' => 'Can you help us create a data governance framework?',
+            //             'answer' => 'Yes. We can help assess your current environment and establish practical governance structures, policies, responsibilities, processes, and controls.',
+            //         ],
+            //         [
+            //             'question' => 'Does data governance support data protection?',
+            //             'answer' => 'Yes. Effective governance provides greater visibility and accountability around organizational data and can support privacy, security, retention, access, and compliance requirements.',
+            //         ],
+            //     ],
 
-                'icon' => 'server-outline',
-                'hero_image' => null,
-                'meta_title' => 'Data Governance & Management | South-End Tech',
-                'meta_description' => 'Improve data quality, accountability, governance, and management with practical data solutions from South-End Tech.',
-                'is_published' => true,
-                'sort_order' => 6,
-            ],
+            //     'icon' => 'server-outline',
+            //     'hero_image' => null,
+            //     'meta_title' => 'Data Governance & Management | South-End Tech',
+            //     'meta_description' => 'Improve data quality, accountability, governance, and management with practical data solutions from South-End Tech.',
+            //     'is_published' => true,
+            //     'sort_order' => 6,
+            // ],
 
-            [
-                'title' => 'Cybersecurity Services',
-                'slug' => 'cybersecurity-services',
-                'subtitle' => 'Strengthen Your Security. Reduce Your Risk.',
-                'short_description' => 'Practical cybersecurity services that help organizations identify weaknesses, strengthen defenses, and respond to evolving threats.',
-                'description' => <<<'HTML'
-                    <p>Cybersecurity requires continuous attention. New vulnerabilities, evolving attack techniques, changing technology environments, and increasingly sophisticated threat actors mean that organizations must continually assess and improve their defenses.</p>
+            // [
+            //     'title' => 'Cybersecurity Services',
+            //     'slug' => 'cybersecurity-services',
+            //     'subtitle' => 'Strengthen Your Security. Reduce Your Risk.',
+            //     'short_description' => 'Practical cybersecurity services that help organizations identify weaknesses, strengthen defenses, and respond to evolving threats.',
+            //     'description' => <<<'HTML'
+            //         <p>Cybersecurity requires continuous attention. New vulnerabilities, evolving attack techniques, changing technology environments, and increasingly sophisticated threat actors mean that organizations must continually assess and improve their defenses.</p>
 
-                    <p>South-End Tech provides practical cybersecurity services designed to help organizations understand their security risks and implement appropriate controls.</p>
+            //         <p>South-End Tech provides practical cybersecurity services designed to help organizations understand their security risks and implement appropriate controls.</p>
 
-                    <p>From security assessments and vulnerability management to incident readiness and security advisory services, we help organizations build a stronger and more resilient security posture.</p>
-                HTML,
+            //         <p>From security assessments and vulnerability management to incident readiness and security advisory services, we help organizations build a stronger and more resilient security posture.</p>
+            //     HTML,
 
-                'features' => [
-                    [
-                        'title' => 'Cybersecurity Assessments',
-                        'description' => 'Evaluate your security environment, identify weaknesses, and prioritize improvements based on risk.',
-                        'icon' => 'search-outline',
-                    ],
-                    [
-                        'title' => 'Vulnerability Management',
-                        'description' => 'Identify, assess, prioritize, and address vulnerabilities across systems and technology environments.',
-                        'icon' => 'bug-outline',
-                    ],
-                    [
-                        'title' => 'Security Advisory',
-                        'description' => 'Receive practical guidance on security architecture, controls, policies, technologies, and risk management.',
-                        'icon' => 'chatbubbles-outline',
-                    ],
-                    [
-                        'title' => 'Incident Readiness',
-                        'description' => 'Prepare your organization to detect, contain, respond to, and recover from cybersecurity incidents.',
-                        'icon' => 'alert-circle-outline',
-                    ],
-                    [
-                        'title' => 'Security Awareness',
-                        'description' => 'Help employees recognize common threats and adopt safer technology and information-handling practices.',
-                        'icon' => 'people-outline',
-                    ],
-                    [
-                        'title' => 'Security Monitoring',
-                        'description' => 'Improve visibility into security events and suspicious activity across critical technology environments.',
-                        'icon' => 'pulse-outline',
-                    ],
-                ],
+            //     'features' => [
+            //         [
+            //             'title' => 'Cybersecurity Assessments',
+            //             'description' => 'Evaluate your security environment, identify weaknesses, and prioritize improvements based on risk.',
+            //             'icon' => 'search-outline',
+            //         ],
+            //         [
+            //             'title' => 'Vulnerability Management',
+            //             'description' => 'Identify, assess, prioritize, and address vulnerabilities across systems and technology environments.',
+            //             'icon' => 'bug-outline',
+            //         ],
+            //         [
+            //             'title' => 'Security Advisory',
+            //             'description' => 'Receive practical guidance on security architecture, controls, policies, technologies, and risk management.',
+            //             'icon' => 'chatbubbles-outline',
+            //         ],
+            //         [
+            //             'title' => 'Incident Readiness',
+            //             'description' => 'Prepare your organization to detect, contain, respond to, and recover from cybersecurity incidents.',
+            //             'icon' => 'alert-circle-outline',
+            //         ],
+            //         [
+            //             'title' => 'Security Awareness',
+            //             'description' => 'Help employees recognize common threats and adopt safer technology and information-handling practices.',
+            //             'icon' => 'people-outline',
+            //         ],
+            //         [
+            //             'title' => 'Security Monitoring',
+            //             'description' => 'Improve visibility into security events and suspicious activity across critical technology environments.',
+            //             'icon' => 'pulse-outline',
+            //         ],
+            //     ],
 
-                'benefits' => [
-                    [
-                        'title' => 'Identify Security Weaknesses',
-                        'description' => 'Gain a clearer understanding of vulnerabilities and weaknesses that could expose your organization to cyber threats.',
-                        'icon' => 'search-outline',
-                    ],
-                    [
-                        'title' => 'Proactive Risk Reduction',
-                        'description' => 'Prioritize security improvements before weaknesses become costly incidents.',
-                        'icon' => 'shield-check-outline',
-                    ],
-                    [
-                        'title' => 'Faster Incident Response',
-                        'description' => 'Improve organizational readiness and establish processes for responding effectively to security incidents.',
-                        'icon' => 'flash-outline',
-                    ],
-                    [
-                        'title' => 'Security-Aware Teams',
-                        'description' => 'Build employee awareness and reduce risks associated with phishing, social engineering, and unsafe technology practices.',
-                        'icon' => 'people-circle-outline',
-                    ],
-                ],
+            //     'benefits' => [
+            //         [
+            //             'title' => 'Identify Security Weaknesses',
+            //             'description' => 'Gain a clearer understanding of vulnerabilities and weaknesses that could expose your organization to cyber threats.',
+            //             'icon' => 'search-outline',
+            //         ],
+            //         [
+            //             'title' => 'Proactive Risk Reduction',
+            //             'description' => 'Prioritize security improvements before weaknesses become costly incidents.',
+            //             'icon' => 'shield-check-outline',
+            //         ],
+            //         [
+            //             'title' => 'Faster Incident Response',
+            //             'description' => 'Improve organizational readiness and establish processes for responding effectively to security incidents.',
+            //             'icon' => 'flash-outline',
+            //         ],
+            //         [
+            //             'title' => 'Security-Aware Teams',
+            //             'description' => 'Build employee awareness and reduce risks associated with phishing, social engineering, and unsafe technology practices.',
+            //             'icon' => 'people-circle-outline',
+            //         ],
+            //     ],
 
-                'faqs' => [
-                    [
-                        'question' => 'What is the difference between cybersecurity solutions and cybersecurity services?',
-                        'answer' => 'Cybersecurity solutions typically involve technology platforms and controls, while cybersecurity services focus on the expertise, assessment, advisory, implementation, monitoring, and ongoing support required to manage security effectively.',
-                    ],
-                    [
-                        'question' => 'How often should an organization perform a cybersecurity assessment?',
-                        'answer' => 'The appropriate frequency depends on the organization\'s risk profile, technology environment, regulatory requirements, and rate of change. Regular assessments combined with ongoing monitoring provide stronger protection.',
-                    ],
-                    [
-                        'question' => 'Can you help us prepare for a cyber incident?',
-                        'answer' => 'Yes. We can help organizations improve incident readiness through risk assessments, response planning, security controls, awareness, and recovery planning.',
-                    ],
-                    [
-                        'question' => 'Do cybersecurity services work for small businesses?',
-                        'answer' => 'Yes. Cybersecurity services can be scaled according to the size, technology environment, risk profile, and budget of an organization.',
-                    ],
-                ],
+            //     'faqs' => [
+            //         [
+            //             'question' => 'What is the difference between cybersecurity solutions and cybersecurity services?',
+            //             'answer' => 'Cybersecurity solutions typically involve technology platforms and controls, while cybersecurity services focus on the expertise, assessment, advisory, implementation, monitoring, and ongoing support required to manage security effectively.',
+            //         ],
+            //         [
+            //             'question' => 'How often should an organization perform a cybersecurity assessment?',
+            //             'answer' => 'The appropriate frequency depends on the organization\'s risk profile, technology environment, regulatory requirements, and rate of change. Regular assessments combined with ongoing monitoring provide stronger protection.',
+            //         ],
+            //         [
+            //             'question' => 'Can you help us prepare for a cyber incident?',
+            //             'answer' => 'Yes. We can help organizations improve incident readiness through risk assessments, response planning, security controls, awareness, and recovery planning.',
+            //         ],
+            //         [
+            //             'question' => 'Do cybersecurity services work for small businesses?',
+            //             'answer' => 'Yes. Cybersecurity services can be scaled according to the size, technology environment, risk profile, and budget of an organization.',
+            //         ],
+            //     ],
 
-                'icon' => 'shield-half-outline',
-                'hero_image' => null,
-                'meta_title' => 'Cybersecurity Services | South-End Tech',
-                'meta_description' => 'Strengthen your organization\'s security posture with cybersecurity assessments, advisory, vulnerability management, monitoring, and incident readiness services.',
-                'is_published' => true,
-                'sort_order' => 7,
-            ],
+            //     'icon' => 'shield-half-outline',
+            //     'hero_image' => null,
+            //     'meta_title' => 'Cybersecurity Services | South-End Tech',
+            //     'meta_description' => 'Strengthen your organization\'s security posture with cybersecurity assessments, advisory, vulnerability management, monitoring, and incident readiness services.',
+            //     'is_published' => true,
+            //     'sort_order' => 7,
+            // ],
         ];
 
         foreach ($solutions as $solution) {
