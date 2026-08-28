@@ -97,4 +97,13 @@ class NavigationTest extends TestCase
             strpos($html, 'First Service')
         );
     }
+
+    public function test_footer_lists_published_solution_links(): void
+    {
+        $this->get('/')
+            ->assertOk()
+            ->assertSee(route('solution.show', $this->solution['slug']))
+            ->assertSee('Published Solution')
+            ->assertDontSee('Draft Solution');
+    }
 }

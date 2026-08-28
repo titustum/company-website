@@ -506,10 +506,9 @@
                 <div class="lg:col-span-2">
                     <h3 class="footer-title">Solutions</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Data Protection</a></li>
-                        <li><a href="#">Cybersecurity</a></li>
-                        <li><a href="#">Data & AI</a></li>
-                        <li><a href="#">Digital Transformation</a></li>
+                        @foreach ($navigationSolutions as $solution)
+                        <li><a href="{{ route('solution.show', $solution) }}" wire:navigate>{{ $solution->title }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
                 <!-- Company -->
