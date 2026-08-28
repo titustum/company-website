@@ -28,7 +28,9 @@ class DatabaseSeeder extends Seeder
             IndustrySeeder::class,
             BlogSeeder::class,
             TeamMemberSeeder::class,
+            TestimonialSeeder::class,
             WebinarSeeder::class,
+            CaseStudySeeder::class,
             ]);
     }
 }

@@ -855,7 +855,7 @@ new class extends Component
                 </article>
             </div>
             <div class="text-center mt-12" data-aos="fade-up">
-                <a href="/about" wire:navigate
+                <a href="{{ route('testimonials') }}" wire:navigate
                     class="inline-flex items-center gap-3 bg-blue-950 hover:bg-accent-yellow text-white hover:text-slate-900 px-8 py-4 rounded-xl font-semibold transition">
                     View More Success Stories
                     <ion-icon name="arrow-forward-outline"></ion-icon>

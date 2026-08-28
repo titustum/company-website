@@ -13,6 +13,17 @@ return new class extends Migration
     {
         Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
+            $table->string("client_name");
+            $table->string("client_role")->nullable();
+            $table->string("organization");
+            $table->string("organization_logo")->nullable();
+            $table->string("client_photo")->nullable();
+            $table->text("quote");
+            $table->string("service")->nullable();
+            $table->string("industry")->nullable();
+            $table->boolean("is_featured")->default(false);
+            $table->boolean("is_published")->default(true);
+            $table->unsignedInteger("sort_order")->default(0);
             $table->timestamps();
         });
     }

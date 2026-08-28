@@ -8,6 +8,7 @@ Route::livewire('/contact', 'pages::contact')->name('contact');
 Route::livewire('/book', 'pages::book')->name('book');
 Route::livewire('/careers', 'pages::careers')->name('careers');
 Route::livewire('/team', 'pages::team')->name('team');
+Route::livewire('/testimonials', 'pages::testimonials')->name('testimonials');
 
 Route::livewire('/service/{slug}', 'pages::service')->name('service.show');;
 Route::livewire('/solution/{slug}', 'pages::solution')->name('solution.show');;
@@ -17,3 +18,5 @@ Route::livewire('/blog/{slug}', 'pages::blog')->name('blog.show');
 Route::livewire('/webinars', 'pages::webinars')->name('webinars.index');
 Route::livewire('/webinar/{slug}', 'pages::webinar')->name('webinar.show');
 Route::livewire('/webinar/register/{slug}', 'pages::webinar-registration')->name('webinar.register');
+Route::livewire('/case-studies', 'pages::case-studies')->name('case-studies.index');
+Route::livewire('/case-studies/{slug}', 'pages::case-study')->name('case-study.show');

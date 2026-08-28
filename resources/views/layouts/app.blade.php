@@ -34,9 +34,13 @@
                 </a>
             </div>
             <div class="hidden md:flex items-center gap-6 font-medium">
-                <a href="/contact" wire:navigate class="hover:text-gray-900 transition-colors duration-300">Contact
+                <a href="{{ route('webinars.index') }}" wire:navigate
+                    class="hover:text-gray-900 transition-colors duration-300">Webinars</a>
+                <a href="{{ route('contact') }}" wire:navigate
+                    class="hover:text-gray-900 transition-colors duration-300">Contact
                     Us</a>
-                <a href="/careers" wire:navigate class="hover:text-gray-900 transition-colors duration-300">Careers</a>
+                <a href="{{ route('careers') }}" wire:navigate
+                    class="hover:text-gray-900 transition-colors duration-300">Careers</a>
             </div>
         </div>
     </div>
@@ -218,7 +222,7 @@
                                     Our Team
                                 </a>
 
-                                <a href="/about#why-us" wire:navigate
+                                {{-- <a href="/about#why-us" wire:navigate
                                     class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                                     Why Choose Us
                                 </a>
@@ -226,7 +230,7 @@
                                 <a href="/about#clients" wire:navigate
                                     class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                                     Client Stories
-                                </a>
+                                </a> --}}
 
                             </div>
                         </div>
@@ -247,17 +251,17 @@
                             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl
                        w-64 p-4 text-gray-700 dark:text-gray-200">
 
-                                <a href="/blogs" wire:navigate
+                                <a href="{{ route('blogs.index') }}" wire:navigate
                                     class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                                     Blogs
                                 </a>
 
-                                <a href="/webinars" wire:navigate
+                                {{-- <a href="/webinars" wire:navigate
                                     class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                                     Webinars
-                                </a>
+                                </a> --}}
 
-                                <a href="/case-studies" wire:navigate
+                                <a href="{{ route('case-studies.index') }}" wire:navigate
                                     class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                                     Case Studies
                                 </a>
@@ -289,7 +293,6 @@
         </div>
     </nav>
 
-    <!-- ===== MOBILE DRAWER ===== -->
     <!-- ===== MOBILE DRAWER ===== -->
     <div id="drawerOverlay" class="fixed inset-0 bg-black/50 z-40 hidden opacity-0 transition-opacity duration-300">
 
@@ -486,7 +489,7 @@
                             Our Team
                         </a>
 
-                        <a href="/about#why-us" wire:navigate
+                        {{-- <a href="/about#why-us" wire:navigate
                             class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
                             Why Choose Us
                         </a>
@@ -494,7 +497,7 @@
                         <a href="/about#clients" wire:navigate
                             class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
                             Client Stories
-                        </a>
+                        </a> --}}
 
                     </div>
                 </details>
@@ -522,12 +525,12 @@
                             Blogs
                         </a>
 
-                        <a href="/webinars" wire:navigate
+                        <a href="{{ route('webinars.index') }}" wire:navigate
                             class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
                             Webinars
                         </a>
 
-                        <a href="/case-studies" wire:navigate
+                        <a href="{{ route('case-studies.index') }}" wire:navigate
                             class="block py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
                             Case Studies
                         </a>
