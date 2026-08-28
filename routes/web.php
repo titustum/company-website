@@ -20,3 +20,4 @@ Route::livewire('/webinar/{slug}', 'pages::webinar')->name('webinar.show');
 Route::livewire('/webinar/register/{slug}', 'pages::webinar-registration')->name('webinar.register');
 Route::livewire('/case-studies', 'pages::case-studies')->name('case-studies.index');
 Route::livewire('/case-studies/{slug}', 'pages::case-study')->name('case-study.show');
+Route::livewire('/job/{slug}', 'pages::job-opening')->name('job.show');
