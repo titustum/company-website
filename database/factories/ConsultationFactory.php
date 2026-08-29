@@ -20,7 +20,7 @@ class ConsultationFactory extends Factory
     public function definition(): array
     {
         return [
-            'solution_id' => Solution::factory(),
+            'solution_id' => fn () => Solution::query()->value('id') ?? Solution::factory(),
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'phone' => fake()->numerify('+2547########'),
