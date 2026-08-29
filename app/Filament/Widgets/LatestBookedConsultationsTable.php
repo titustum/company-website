@@ -27,16 +27,12 @@ class LatestBookedConsultationsTable extends TableWidget
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
-                TextColumn::make('email')
-                    ->searchable(),
                 TextColumn::make('solution.title')
                     ->label('Category')
                     ->searchable(),
                 TextColumn::make('preferred_date')
                     ->date()
                     ->sortable(),
-                TextColumn::make('preferred_slot')
-                    ->searchable(),
                 TextColumn::make('status')
                     ->badge()
                     ->color(fn (ConsultationStatus $state): string => match ($state) {
@@ -45,9 +41,6 @@ class LatestBookedConsultationsTable extends TableWidget
                         ConsultationStatus::Completed => 'info',
                         ConsultationStatus::Cancelled => 'danger',
                     }),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable(),
             ])
             ->defaultPaginationPageOption(10)
             ->paginated([10, 25, 50]);
