@@ -7,7 +7,6 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
@@ -18,29 +17,17 @@ class SolutionsTable
         return $table
             ->columns([
                 TextColumn::make('title')
-                    ->searchable(),
-                TextColumn::make('slug')
-                    ->searchable(),
-                TextColumn::make('subtitle')
-                    ->searchable(),
+                    ->searchable()
+                    ->sortable()
+                    ->limit(50),
                 TextColumn::make('icon')
-                    ->searchable(),
-                ImageColumn::make('hero_image'),
-                TextColumn::make('meta_title')
+                    ->badge()
                     ->searchable(),
                 IconColumn::make('is_published')
                     ->boolean(),
                 TextColumn::make('sort_order')
                     ->numeric()
                     ->sortable(),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //

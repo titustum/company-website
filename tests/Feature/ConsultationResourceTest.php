@@ -29,7 +29,8 @@ class ConsultationResourceTest extends TestCase
 
         $this->get('/admin/consultations')
             ->assertOk()
-            ->assertSee($consultation->email);
+            ->assertSee($consultation->reference)
+            ->assertSee($consultation->name);
     }
 
     public function test_consultation_view_page_displays_record(): void

@@ -18,35 +18,23 @@ class ConsultationsTable
     {
         return $table
             ->columns([
-                TextColumn::make('solution.title')
-                    ->searchable(),
+                TextColumn::make('reference')
+                    ->badge()
+                    ->searchable()
+                    ->sortable(),
                 TextColumn::make('name')
-                    ->searchable(),
-                TextColumn::make('email')
-                    ->label('Email address')
-                    ->searchable(),
-                TextColumn::make('phone')
-                    ->searchable(),
-                TextColumn::make('company')
+                    ->searchable()
+                    ->sortable(),
+                TextColumn::make('solution.title')
+                    ->label('Solution')
                     ->searchable(),
                 TextColumn::make('preferred_date')
                     ->date()
                     ->sortable(),
-                TextColumn::make('preferred_slot')
-                    ->searchable(),
                 TextColumn::make('status')
                     ->badge()
-                    ->searchable(),
-                TextColumn::make('reference')
-                    ->searchable(),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->searchable()
+                    ->sortable(),
             ])
             ->filters([
                 TrashedFilter::make(),

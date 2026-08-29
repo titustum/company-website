@@ -17,34 +17,14 @@ class TestimonialsTable
         return $table
             ->columns([
                 TextColumn::make('client_name')
-                    ->searchable(),
-                TextColumn::make('client_role')
-                    ->searchable(),
+                    ->searchable()
+                    ->sortable(),
                 TextColumn::make('organization')
-                    ->searchable(),
-                TextColumn::make('organization_logo')
-                    ->searchable(),
-                TextColumn::make('client_photo')
                     ->searchable(),
                 TextColumn::make('service')
                     ->searchable(),
-                TextColumn::make('industry')
-                    ->searchable(),
-                IconColumn::make('is_featured')
-                    ->boolean(),
                 IconColumn::make('is_published')
                     ->boolean(),
-                TextColumn::make('sort_order')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //

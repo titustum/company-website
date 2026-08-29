@@ -18,21 +18,14 @@ class PartnersTable
         return $table
             ->columns([
                 TextColumn::make('name')
-                    ->searchable(),
+                    ->searchable()
+                    ->sortable(),
                 ImageColumn::make('image'),
+                IconColumn::make('is_published')
+                    ->boolean(),
                 TextColumn::make('sort_order')
                     ->numeric()
                     ->sortable(),
-                IconColumn::make('is_published')
-                    ->boolean(),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //

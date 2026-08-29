@@ -6,7 +6,6 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
@@ -17,41 +16,20 @@ class JobOpeningsTable
         return $table
             ->columns([
                 TextColumn::make('title')
-                    ->searchable(),
-                TextColumn::make('slug')
-                    ->searchable(),
+                    ->searchable()
+                    ->sortable()
+                    ->limit(50),
                 TextColumn::make('department')
+                    ->badge()
                     ->searchable(),
                 TextColumn::make('employment_type')
+                    ->badge()
                     ->searchable(),
                 TextColumn::make('location')
-                    ->searchable(),
-                TextColumn::make('work_arrangement')
-                    ->searchable(),
-                TextColumn::make('application_email')
-                    ->searchable(),
-                TextColumn::make('application_url')
                     ->searchable(),
                 TextColumn::make('application_deadline')
                     ->date()
                     ->sortable(),
-                IconColumn::make('is_published')
-                    ->boolean(),
-                IconColumn::make('is_featured')
-                    ->boolean(),
-                TextColumn::make('sort_order')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('meta_title')
-                    ->searchable(),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //
