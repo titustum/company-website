@@ -20,7 +20,7 @@ class WebinarResource extends Resource
 {
     protected static ?string $model = Webinar::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedVideoCamera;
 
     protected static ?string $recordTitleAttribute = 'title';
 

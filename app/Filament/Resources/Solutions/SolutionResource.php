@@ -20,7 +20,7 @@ class SolutionResource extends Resource
 {
     protected static ?string $model = Solution::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedLightBulb;
 
     protected static ?string $recordTitleAttribute = 'title';
 

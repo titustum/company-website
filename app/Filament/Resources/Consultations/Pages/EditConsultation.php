@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Filament\Resources\Consulations\Pages;
+namespace App\Filament\Resources\Consultations\Pages;
 
-use App\Filament\Resources\Consulations\ConsulationResource;
+use App\Filament\Resources\Consultations\ConsultationResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Actions\ViewAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditConsulation extends EditRecord
+class EditConsultation extends EditRecord
 {
-    protected static string $resource = ConsulationResource::class;
+    protected static string $resource = ConsultationResource::class;
 
     protected function getHeaderActions(): array
     {

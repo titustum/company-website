@@ -20,7 +20,7 @@ class WebinarRegistrationResource extends Resource
 {
     protected static ?string $model = WebinarRegistration::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedTicket;
 
     protected static ?string $recordTitleAttribute = 'name';
 
