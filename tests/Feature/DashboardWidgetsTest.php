@@ -83,6 +83,7 @@ class DashboardWidgetsTest extends TestCase
             ->assertSuccessful()
             ->assertSee('Latest Bookings')
             ->assertSee('Jane Doe')
-            ->assertSee('confirmed');
+            ->assertSee('confirmed')
+            ->assertSee('/admin/consultations/'.$consultation->id);
     }
 }

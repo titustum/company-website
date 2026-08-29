@@ -20,6 +20,7 @@ class LatestBookedConsultationsTable extends TableWidget
         return $table
             ->heading('Latest Bookings')
             ->query(fn (): Builder => Consultation::query()->with('solution')->latest())
+            ->recordUrl(fn (Consultation $record): string => route('filament.admin.resources.consultations.view', $record))
             ->columns([
                 TextColumn::make('reference')
                     ->badge()
