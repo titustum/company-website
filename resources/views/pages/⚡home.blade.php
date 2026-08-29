@@ -17,14 +17,14 @@ new class extends Component
     <!-- ===== HERO ===== -->
     <section
         class="relative overflow-hidden bg-slate-50 dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 transition-colors duration-300">
-        <div class="relative max-w-7xl mx-auto px-6 py-20 lg:py-28">
+        <div class="relative max-w-7xl mx-auto px-6 py-10">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <h1 data-aos="fade-up"
-                        class="mt-8 text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white">
+                        class="md:mt-8 text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight text-slate-900 dark:text-white">
                         Protect Your Data.
                         <br>
-                        <span class="text-blue-600 dark:text-blue-400">Secure Your Business.</span>
+                        <span class="text-blue-600 dark:text-blue-400">Secure Your Biz!</span>
                         <br>
                         Transform With Technology.
                     </h1>
@@ -70,7 +70,7 @@ new class extends Component
                     <div
                         class="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-gray-700 shadow-2xl bg-white dark:bg-gray-800">
                         <img src="{{ asset('images/heropic.webp') }}" alt="Digital Transformation"
-                            class="w-full h-140 object-cover">
+                            class="w-full h-auto md:h-140 object-cover">
                         <div class="absolute inset-0 bg-linear-to-t from-blue-900/20 via-transparent to-transparent">
                         </div>
                     </div>
@@ -102,15 +102,15 @@ new class extends Component
             <div class="marquee">
                 <div class="marquee-content">
                     @foreach ($partners as $partner)
-                        <div class="partner" title="{{ $partner->name }}"><img
-                                src="{{ $partner->image_url }}" alt="{{ $partner->name }}">
-                        </div>
+                    <div class="partner" title="{{ $partner->name }}"><img src="{{ $partner->image_url }}"
+                            alt="{{ $partner->name }}">
+                    </div>
                     @endforeach
                     <!-- duplicate for seamless scroll -->
                     @foreach ($partners as $partner)
-                        <div class="partner" title="{{ $partner->name }}"><img
-                                src="{{ $partner->image_url }}" alt="{{ $partner->name }}">
-                        </div>
+                    <div class="partner" title="{{ $partner->name }}"><img src="{{ $partner->image_url }}"
+                            alt="{{ $partner->name }}">
+                    </div>
                     @endforeach
                 </div>
             </div>
@@ -146,7 +146,7 @@ new class extends Component
                         <div data-aos="fade-right"
                             class="flex gap-5 items-start p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-amber-400 transition">
                             <div
-                                class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-50 dark:bg-red-500/10 flex items-center justify-center">
+                                class="shrink-0 w-12 h-12 rounded-xl bg-red-50 dark:bg-red-500/10 flex items-center justify-center">
                                 <ion-icon name="bug-outline" class="text-2xl text-red-500"></ion-icon>
                             </div>
                             <div>
@@ -159,7 +159,7 @@ new class extends Component
                         <div data-aos="fade-right" data-aos-delay="100"
                             class="flex gap-5 items-start p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-amber-400 transition">
                             <div
-                                class="flex-shrink-0 w-12 h-12 rounded-xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center">
+                                class="shrink-0 w-12 h-12 rounded-xl bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center">
                                 <ion-icon name="document-text-outline" class="text-2xl text-amber-600"></ion-icon>
                             </div>
                             <div>
@@ -172,7 +172,7 @@ new class extends Component
                         <div data-aos="fade-right" data-aos-delay="200"
                             class="flex gap-5 items-start p-5 rounded-2xl bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 hover:border-amber-400 transition">
                             <div
-                                class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center">
+                                class="shrink-0 w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center">
                                 <ion-icon name="eye-outline" class="text-2xl text-blue-900 dark:text-blue-400">
                                 </ion-icon>
                             </div>

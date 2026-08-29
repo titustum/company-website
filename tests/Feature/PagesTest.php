@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Consultation;
+use App\Models\Contact;
 use App\Models\Solution;
 use App\Notifications\ConsultationRequestReceived;
 use App\Notifications\NewConsultationRequest;
@@ -43,10 +44,19 @@ class PagesTest extends TestCase
             ->set('name', 'Jane Wanjiku')
             ->set('email', 'jane@example.co.ke')
             ->set('phone', '+254728223333')
+            ->set('subject', 'Data Protection')
             ->set('message', 'I need help with ODPC registration.')
             ->call('submit')
             ->assertHasNoErrors()
             ->assertSet('sent', true);
+
+        $contact = Contact::query()->firstOrFail();
+
+        $this->assertSame('Jane Wanjiku', $contact->name);
+        $this->assertSame('jane@example.co.ke', $contact->email);
+        $this->assertSame('+254728223333', $contact->phone);
+        $this->assertSame('Data Protection', $contact->subject);
+        $this->assertSame('I need help with ODPC registration.', $contact->message);
     }
 
     public function test_booking_form_validates_and_books(): void

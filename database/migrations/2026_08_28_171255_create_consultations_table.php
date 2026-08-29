@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('status')->default('pending');
             $table->string('reference', 32)->nullable()->unique();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

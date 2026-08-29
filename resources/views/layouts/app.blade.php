@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth transition">
 
 <head>
     <meta charset="utf-8">
@@ -11,14 +11,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
     <link rel="icon" href="{{ asset('favicon.ico') }}">
 
-
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @livewireStyles
 </head>
 
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
-
 
     <!-- ===== TOP HEADER BAR ===== -->
     <div class="bg-accent-yellow text-white text-sm py-2.5 px-4">
@@ -50,10 +48,11 @@
     <!-- ===== MAIN NAVIGATION ===== -->
     <nav class="sticky top-0 z-30 bg-blue-600 dark:bg-blue-900 text-white shadow-lg transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center justify-between h-20">
+            <div class="flex items-center justify-between h-16 md:h-20">
+
                 <a href="{{ route('home') }}" wire:navigate class="flex items-center shrink-0"
                     aria-label="SouthEnd Tech — Home">
-                    <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-12 w-auto">
+                    <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-10 md:h-12 w-auto">
                 </a>
 
                 <ul class="hidden lg:flex items-center gap-6 text-[15px] font-medium">
@@ -246,7 +245,7 @@
             class="absolute left-0 top-0 h-full w-80 max-w-[85%] bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 shadow-2xl -translate-x-full transition-transform duration-300 overflow-y-auto">
 
             <!-- Drawer Header -->
-            <div class="bg-blue-600 dark:bg-blue-900 text-white px-5 h-20 flex items-center justify-between">
+            <div class="bg-blue-600 dark:bg-blue-900 text-white px-5 h-16 sm:h-20 flex items-center justify-between">
                 <a href="{{ route('home') }}" wire:navigate class="flex items-center shrink-0"
                     aria-label="SouthEnd Tech — Home">
                     <img src="{{ asset('images/logo.png') }}" alt="SouthEnd Tech" class="h-10 w-auto">

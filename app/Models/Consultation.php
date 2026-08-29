@@ -7,6 +7,7 @@ use Database\Factories\ConsultationFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 
 class Consultation extends Model
@@ -14,7 +15,7 @@ class Consultation extends Model
     /** @use HasFactory<ConsultationFactory> */
     use HasFactory;
 
-    use Notifiable;
+    use Notifiable, SoftDeletes;
 
     protected $fillable = [
         'solution_id',

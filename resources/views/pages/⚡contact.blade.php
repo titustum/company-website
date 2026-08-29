@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Contact;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
@@ -27,6 +28,14 @@ class extends Component
     public function submit(): void
     {
         $this->validate();
+
+        Contact::create([
+            'name' => $this->name,
+            'email' => $this->email,
+            'phone' => $this->phone,
+            'subject' => $this->subject,
+            'message' => $this->message,
+        ]);
 
         $this->reset(['name', 'email', 'phone', 'subject', 'message']);
         $this->subject = 'General Inquiry';
