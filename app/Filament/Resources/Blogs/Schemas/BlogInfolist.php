@@ -27,7 +27,7 @@ class BlogInfolist
                         TextEntry::make('category')
                             ->placeholder('-'),
                         TextEntry::make('tags')
-                            ->placeholder('-')
+                            ->badge()
                             ->columnSpanFull(),
                         TextEntry::make('content')
                             ->html()

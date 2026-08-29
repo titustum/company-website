@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Industries\Schemas;
 
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\ImageEntry;
+use Filament\Infolists\Components\RepeatableEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -43,16 +44,19 @@ class IndustryInfolist
                     ->schema([
 
                         TextEntry::make('challenges')
-                            ->placeholder('-')
+                            ->listWithLineBreaks()
                             ->columnSpanFull(),
                         TextEntry::make('solutions')
-                            ->placeholder('-')
+                            ->badge()
                             ->columnSpanFull(),
                         TextEntry::make('benefits')
-                            ->placeholder('-')
+                            ->listWithLineBreaks()
                             ->columnSpanFull(),
-                        TextEntry::make('faqs')
-                            ->placeholder('-')
+                        RepeatableEntry::make('faqs')
+                            ->schema([
+                                TextEntry::make('question'),
+                                TextEntry::make('answer'),
+                            ])
                             ->columnSpanFull(),
 
                     ]),

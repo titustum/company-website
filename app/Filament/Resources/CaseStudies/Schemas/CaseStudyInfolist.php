@@ -67,22 +67,22 @@ class CaseStudyInfolist
                             ->placeholder('-')
                             ->columnSpanFull(),
                         TextEntry::make('objectives')
-                            ->placeholder('-')
+                            ->listWithLineBreaks()
                             ->columnSpanFull(),
                         TextEntry::make('key_challenges')
-                            ->placeholder('-')
+                            ->listWithLineBreaks()
                             ->columnSpanFull(),
                         TextEntry::make('services')
-                            ->placeholder('-')
+                            ->badge()
                             ->columnSpanFull(),
                         TextEntry::make('technologies')
-                            ->placeholder('-')
+                            ->badge()
                             ->columnSpanFull(),
                         TextEntry::make('results')
-                            ->placeholder('-')
+                            ->listWithLineBreaks()
                             ->columnSpanFull(),
                         TextEntry::make('highlights')
-                            ->placeholder('-')
+                            ->badge()
                             ->columnSpanFull(),
 
                     ]),

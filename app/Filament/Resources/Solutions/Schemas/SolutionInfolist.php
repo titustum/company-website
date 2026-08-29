@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Solutions\Schemas;
 
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\ImageEntry;
+use Filament\Infolists\Components\RepeatableEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -42,14 +43,27 @@ class SolutionInfolist
                     ->columnSpanFull()
                     ->schema([
 
-                        TextEntry::make('features')
-                            ->placeholder('-')
+                        RepeatableEntry::make('features')
+                            ->schema([
+                                TextEntry::make('title'),
+                                TextEntry::make('description'),
+                                TextEntry::make('icon')
+                                    ->badge(),
+                            ])
                             ->columnSpanFull(),
-                        TextEntry::make('benefits')
-                            ->placeholder('-')
+                        RepeatableEntry::make('benefits')
+                            ->schema([
+                                TextEntry::make('title'),
+                                TextEntry::make('description'),
+                                TextEntry::make('icon')
+                                    ->badge(),
+                            ])
                             ->columnSpanFull(),
-                        TextEntry::make('faqs')
-                            ->placeholder('-')
+                        RepeatableEntry::make('faqs')
+                            ->schema([
+                                TextEntry::make('question'),
+                                TextEntry::make('answer'),
+                            ])
                             ->columnSpanFull(),
 
                     ]),

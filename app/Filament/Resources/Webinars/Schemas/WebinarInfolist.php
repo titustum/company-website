@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Webinars\Schemas;
 
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\ImageEntry;
+use Filament\Infolists\Components\RepeatableEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -78,10 +79,13 @@ class WebinarInfolist
                     ->schema([
 
                         TextEntry::make('topics')
-                            ->placeholder('-')
+                            ->badge()
                             ->columnSpanFull(),
-                        TextEntry::make('faqs')
-                            ->placeholder('-')
+                        RepeatableEntry::make('faqs')
+                            ->schema([
+                                TextEntry::make('question'),
+                                TextEntry::make('answer'),
+                            ])
                             ->columnSpanFull(),
                         IconEntry::make('is_published')
                             ->boolean(),

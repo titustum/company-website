@@ -42,16 +42,16 @@ class JobOpeningInfolist
                             ->placeholder('-')
                             ->columnSpanFull(),
                         TextEntry::make('responsibilities')
-                            ->placeholder('-')
+                            ->listWithLineBreaks()
                             ->columnSpanFull(),
                         TextEntry::make('requirements')
-                            ->placeholder('-')
+                            ->listWithLineBreaks()
                             ->columnSpanFull(),
                         TextEntry::make('qualifications')
-                            ->placeholder('-')
+                            ->listWithLineBreaks()
                             ->columnSpanFull(),
                         TextEntry::make('benefits')
-                            ->placeholder('-')
+                            ->listWithLineBreaks()
                             ->columnSpanFull(),
 
                     ]),

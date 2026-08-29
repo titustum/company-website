@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Filament\Resources\Solutions\Pages\CreateSolution;
 use App\Filament\Resources\Solutions\Pages\EditSolution;
+use App\Filament\Resources\Solutions\Pages\ViewSolution;
 use App\Models\Solution;
 use App\Models\User;
 use Database\Factories\SolutionFactory;
@@ -128,5 +129,37 @@ class SolutionResourceTest extends TestCase
         $this->assertSame('Updated Feature', $solution->features[0]['title']);
         $this->assertSame('lock-closed-outline', $solution->features[0]['icon']);
         $this->assertSame('Updated question?', $solution->faqs[0]['question']);
+    }
+
+    public function test_solution_view_page_renders_repeatable_json_fields(): void
+    {
+        $solution = SolutionFactory::new()->create([
+            'features' => [
+                [
+                    'title' => 'Feature One',
+                    'description' => 'Feature one description',
+                    'icon' => 'shield-check-outline',
+                ],
+            ],
+            'benefits' => [
+                [
+                    'title' => 'Benefit One',
+                    'description' => 'Benefit one description',
+                    'icon' => 'eye-outline',
+                ],
+            ],
+            'faqs' => [
+                [
+                    'question' => 'First question?',
+                    'answer' => 'First answer.',
+                ],
+            ],
+        ]);
+
+        Livewire::test(ViewSolution::class, ['record' => $solution->getRouteKey()])
+            ->assertSuccessful()
+            ->assertSee('Feature One')
+            ->assertSee('First question?')
+            ->assertSee('First answer.');
     }
 }
