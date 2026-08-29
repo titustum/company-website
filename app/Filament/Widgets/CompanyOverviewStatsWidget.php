@@ -25,16 +25,20 @@ class CompanyOverviewStatsWidget extends StatsOverviewWidget
         return [
             Stat::make('Total Consultations', Consultation::count())
                 ->description('Booking requests received')
-                ->icon('heroicon-o-calendar-days'),
+                ->icon('heroicon-o-calendar-days')
+                ->url(route('filament.admin.resources.consultations.index')),
             Stat::make('Total Solutions', Solution::count())
                 ->description('Active solution offerings')
-                ->icon('heroicon-o-light-bulb'),
+                ->icon('heroicon-o-light-bulb')
+                ->url(route('filament.admin.resources.solutions.index')),
             Stat::make('Total Services', Service::count())
                 ->description('Services offered')
-                ->icon('heroicon-o-wrench-screwdriver'),
+                ->icon('heroicon-o-wrench-screwdriver')
+                ->url(route('filament.admin.resources.services.index')),
             Stat::make('Total Industries', Industry::count())
                 ->description('Industries served')
-                ->icon('heroicon-o-building-office-2'),
+                ->icon('heroicon-o-building-office-2')
+                ->url(route('filament.admin.resources.industries.index')),
         ];
     }
 }

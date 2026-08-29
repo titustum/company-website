@@ -52,7 +52,11 @@ class DashboardWidgetsTest extends TestCase
             ->assertSee('Total Consultations')
             ->assertSee('Total Solutions')
             ->assertSee('Total Services')
-            ->assertSee('Total Industries');
+            ->assertSee('Total Industries')
+            ->assertSee('/admin/consultations')
+            ->assertSee('/admin/solutions')
+            ->assertSee('/admin/services')
+            ->assertSee('/admin/industries');
     }
 
     public function test_consultations_per_category_chart_renders(): void
