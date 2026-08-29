@@ -3,9 +3,9 @@
 namespace Tests\Feature;
 
 use App\Filament\Widgets\CompanyOverviewStatsWidget;
-use App\Filament\Widgets\ConsultationsPerCategoryChart;
-use App\Filament\Widgets\LatestBookingsTable;
-use App\Filament\Widgets\PageVisitsTrendChart;
+use App\Filament\Widgets\ConsultationsBookingPerCategoryBarChart;
+use App\Filament\Widgets\LatestBookedConsultationsTable;
+use App\Filament\Widgets\PageVisitTrendChart;
 use App\Models\Consultation;
 use App\Models\PageVisit;
 use App\Models\Service;
@@ -60,7 +60,7 @@ class DashboardWidgetsTest extends TestCase
         $solution = Solution::factory()->create(['title' => 'Cybersecurity Solutions']);
         Consultation::factory()->count(3)->create(['solution_id' => $solution->id]);
 
-        Livewire::test(ConsultationsPerCategoryChart::class)
+        Livewire::test(ConsultationsBookingPerCategoryBarChart::class)
             ->assertSuccessful();
     }
 
@@ -68,7 +68,7 @@ class DashboardWidgetsTest extends TestCase
     {
         PageVisit::factory()->count(5)->create();
 
-        Livewire::test(PageVisitsTrendChart::class)
+        Livewire::test(PageVisitTrendChart::class)
             ->assertSuccessful();
     }
 
@@ -79,7 +79,7 @@ class DashboardWidgetsTest extends TestCase
             'status' => 'confirmed',
         ]);
 
-        Livewire::test(LatestBookingsTable::class)
+        Livewire::test(LatestBookedConsultationsTable::class)
             ->assertSuccessful()
             ->assertSee('Latest Bookings')
             ->assertSee('Jane Doe')
