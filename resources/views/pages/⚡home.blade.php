@@ -221,7 +221,7 @@ new class extends Component
     </section>
 
     <!-- ===== SOLUTIONS ===== -->
-    <section class="relative py-24 bg-white dark:bg-slate-950 overflow-hidden">
+    <section id="solutions" class="relative py-24 bg-white dark:bg-slate-950 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-3xl mb-20" data-aos="fade-up">
                 <div
