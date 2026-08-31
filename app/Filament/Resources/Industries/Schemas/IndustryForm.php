@@ -28,7 +28,9 @@ class IndustryForm
                         TextInput::make('subtitle'),
                         TextInput::make('icon'),
                         FileUpload::make('hero_image')
-                            ->image(),
+                            ->image()
+                            ->disk('public')
+                            ->directory('industries'),
                         Textarea::make('short_description')
                             ->columnSpanFull(),
                         RichEditor::make('description')

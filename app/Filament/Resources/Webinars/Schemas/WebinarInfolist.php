@@ -26,7 +26,8 @@ class WebinarInfolist
                         TextEntry::make('subtitle')
                             ->placeholder('-'),
                         ImageEntry::make('image')
-                            ->placeholder('-'),
+                            ->placeholder('-')
+                             ->disk('public'),
                         TextEntry::make('short_description')
                             ->placeholder('-')
                             ->columnSpanFull(),

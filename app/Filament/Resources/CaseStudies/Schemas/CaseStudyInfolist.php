@@ -108,7 +108,8 @@ class CaseStudyInfolist
                     ->schema([
 
                         ImageEntry::make('hero_image')
-                            ->placeholder('-'),
+                            ->placeholder('-')
+                             ->disk('public'),
                         TextEntry::make('images')
                             ->placeholder('-')
                             ->columnSpanFull(),

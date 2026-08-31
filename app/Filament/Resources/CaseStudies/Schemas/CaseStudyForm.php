@@ -82,7 +82,9 @@ class CaseStudyForm
                     ->columns(2)
                     ->schema([
                         FileUpload::make('hero_image')
-                            ->image(),
+                            ->image()
+                            ->disk('public')
+                            ->directory('case-studies'),
                         Textarea::make('images')
                             ->columnSpanFull(),
                         TextInput::make('meta_title'),

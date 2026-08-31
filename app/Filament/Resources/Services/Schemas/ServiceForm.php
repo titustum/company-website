@@ -28,6 +28,8 @@ class ServiceForm
                         TextInput::make('subtitle'),
                         TextInput::make('icon'),
                         FileUpload::make('hero_image')
+                            ->disk('public')
+                            ->directory('services')
                             ->image(),
                         Textarea::make('short_description')
                             ->columnSpanFull(),

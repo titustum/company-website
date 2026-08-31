@@ -28,7 +28,9 @@ class WebinarForm
                             ->required(),
                         TextInput::make('subtitle'),
                         FileUpload::make('image')
-                            ->image(),
+                            ->image()
+                             ->disk('public')
+                            ->directory('webinars'),
                         Textarea::make('short_description')
                             ->columnSpanFull(),
                         RichEditor::make('description')

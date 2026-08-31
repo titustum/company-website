@@ -28,7 +28,8 @@ class SolutionInfolist
                         TextEntry::make('icon')
                             ->placeholder('-'),
                         ImageEntry::make('hero_image')
-                            ->placeholder('-'),
+                            ->placeholder('-')
+                             ->disk('public'),
                         TextEntry::make('short_description')
                             ->placeholder('-')
                             ->columnSpanFull(),
