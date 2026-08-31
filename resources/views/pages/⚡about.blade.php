@@ -290,7 +290,7 @@ class extends Component
         <div class="relative max-w-5xl mx-auto px-6 text-center">
             <div class="mx-auto w-20 h-20 rounded-2xl bg-amber-500 flex items-center justify-center mb-8"
                 data-aos="zoom-in">
-                <ion-icon name="handshake-outline" class="text-5xl text-white"></ion-icon>
+                <x-icon-handshake class="w-12 h-12 text-white" />
             </div>
             <h2 data-aos="fade-up" class="text-4xl lg:text-5xl font-extrabold text-white leading-tight">
                 Let's Build Something Secure

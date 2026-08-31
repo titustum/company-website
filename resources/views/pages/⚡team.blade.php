@@ -522,8 +522,7 @@ new class extends Component
                 rounded-2xl bg-amber-500
                 flex items-center justify-center">
 
-                <ion-icon name="handshake-outline" class="text-2xl text-white">
-                </ion-icon>
+                <x-icon-handshake class="w-6 h-6 text-white" />
 
             </div>
 
