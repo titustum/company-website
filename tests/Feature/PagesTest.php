@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\Models\Consultation;
 use App\Models\Contact;
 use App\Models\Solution;
+use App\Models\TeamMember;
 use App\Notifications\ConsultationRequestReceived;
 use App\Notifications\NewConsultationRequest;
 use Database\Seeders\JobOpeningSeeder;
@@ -139,6 +140,39 @@ class PagesTest extends TestCase
             ->assertOk()
             ->assertSee('Data Protection & Privacy')
             ->assertDontSee('Draft Solution');
+    }
+
+    public function test_team_page_displays_published_member_photos(): void
+    {
+        $member = TeamMember::factory()->create([
+            'name' => 'Grace Njeri',
+            'photo' => 'team-members/grace-njeri.png',
+            'is_published' => true,
+        ]);
+
+        TeamMember::factory()->create([
+            'name' => 'Hidden Intern',
+            'is_published' => false,
+        ]);
+
+        $this->get('/team')
+            ->assertOk()
+            ->assertSee('Grace Njeri')
+            ->assertSee('storage/team-members/grace-njeri.png')
+            ->assertDontSee('Hidden Intern');
+    }
+
+    public function test_team_page_handles_members_without_photos(): void
+    {
+        TeamMember::factory()->create([
+            'name' => 'Jane Doe',
+            'photo' => null,
+            'is_published' => true,
+        ]);
+
+        $this->get('/team')
+            ->assertOk()
+            ->assertSee('Jane Doe');
     }
 
     public function test_careers_filter_narrows_job_listings(): void

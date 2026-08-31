@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\TeamMember;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -25,6 +26,24 @@ class ResourceSchemasTest extends TestCase
     {
         $this->get($url)
             ->assertOk();
+    }
+
+    public function test_team_member_list_page_renders(): void
+    {
+        $this->get('/admin/team-members')
+            ->assertOk();
+    }
+
+    public function test_team_member_view_page_renders(): void
+    {
+        $member = TeamMember::factory()->create([
+            'name' => 'Test Member',
+            'photo' => 'team-members/test-member.png',
+        ]);
+
+        $this->get('/admin/team-members/'.$member->id)
+            ->assertOk()
+            ->assertSee('Test Member');
     }
 
     public static function createPageUrls(): array

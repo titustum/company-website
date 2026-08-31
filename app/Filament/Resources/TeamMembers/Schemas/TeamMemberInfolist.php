@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\TeamMembers\Schemas;
 
 use Filament\Infolists\Components\IconEntry;
+use Filament\Infolists\Components\ImageEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -21,8 +22,9 @@ class TeamMemberInfolist
 
                         TextEntry::make('name'),
                         TextEntry::make('role'),
-                        TextEntry::make('photo')
-                            ->placeholder('-'),
+                        ImageEntry::make('photo')
+                            ->placeholder('-')
+                            ->disk('public'),
                         IconEntry::make('is_published')
                             ->boolean(),
                         TextEntry::make('sort_order')

@@ -563,8 +563,7 @@
                         <p class="mt-3 flex items-start gap-1.5 text-xs text-blue-200 leading-5">
                             <ion-icon name="lock-closed-outline" class="mt-0.5 shrink-0 text-amber-400"></ion-icon>
                             <span>
-                                We respect your privacy. Your data is protected in accordance with the Kenya Data
-                                Protection Act.
+                                We respect your privacy. Your data is protected in accordance with the Kenya Data Protection Act.
                             </span>
                         </p>
                     </div>

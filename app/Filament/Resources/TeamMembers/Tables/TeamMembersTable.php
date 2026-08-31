@@ -7,6 +7,7 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
@@ -19,6 +20,8 @@ class TeamMembersTable
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
+                ImageColumn::make('photo')
+                    ->disk('public'),
                 TextColumn::make('role')
                     ->searchable(),
                 IconColumn::make('is_published')
